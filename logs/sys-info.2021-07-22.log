@@ -1,0 +1,305 @@
+12:41:41.178 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 60940 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+12:41:41.182 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: prod
+12:42:42.829 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 60994 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+12:42:42.831 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+12:42:46.488 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+12:42:46.495 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+12:42:46.496 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+12:42:46.614 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+12:42:47.380 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+12:42:47.409 [cluster-ClusterId{value='60f8f74751d19eee42aa9a58', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+12:42:50.498 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+12:42:50.761 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+12:42:51.145 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+12:42:51.589 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+12:42:51.932 [redisson-netty-5-3] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+12:42:51.933 [redisson-netty-5-4] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+12:42:54.435 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+12:42:55.625 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+12:42:55.638 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+12:42:55.675 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+12:42:55.864 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+12:42:55.875 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+12:42:55.883 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+12:42:55.884 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+12:42:55.922 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+12:42:55.952 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+12:42:55.972 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 13.497 seconds (JVM running for 14.263)
+12:42:56.564 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:42:56.573 [RMI TCP Connection(2)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+12:43:11.970 [http-nio-8081-exec-18] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,89] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 12:43:11 CST 2021
+12:43:19.554 [Thread-34] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+12:43:19.843 [Thread-34] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+12:43:24.834 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 61030 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+12:43:24.836 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+12:43:30.137 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+12:43:30.150 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+12:43:30.151 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+12:43:30.707 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+12:43:32.859 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+12:43:32.915 [cluster-ClusterId{value='60f8f77451d19eee661012c3', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+12:43:36.209 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+12:43:36.435 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+12:43:36.823 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+12:43:37.183 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+12:43:37.355 [redisson-netty-5-10] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+12:43:37.355 [redisson-netty-5-4] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+12:43:39.824 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+12:43:41.102 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+12:43:41.120 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+12:43:41.161 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+12:43:41.336 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+12:43:41.348 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+12:43:41.356 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+12:43:41.357 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+12:43:41.400 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+12:43:41.435 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+12:43:41.457 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 17.241 seconds (JVM running for 18.954)
+12:43:41.694 [RMI TCP Connection(10)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:43:41.704 [RMI TCP Connection(9)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+12:43:50.696 [http-nio-8081-exec-1] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,89] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 12:43:50 CST 2021
+12:44:31.807 [http-nio-8081-exec-3] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,89] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 12:44:31 CST 2021
+12:44:44.756 [Thread-41] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+12:44:44.839 [Thread-41] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+12:44:49.508 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 61084 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+12:44:49.510 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+12:44:52.325 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+12:44:52.333 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+12:44:52.334 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+12:44:52.453 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+12:44:53.151 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+12:44:53.184 [cluster-ClusterId{value='60f8f7c551d19eee9ca8617c', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+12:44:55.982 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+12:44:56.173 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+12:44:56.510 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+12:44:56.911 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+12:44:57.081 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+12:44:57.081 [redisson-netty-5-3] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+12:44:59.205 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+12:45:00.395 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+12:45:00.405 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+12:45:00.436 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+12:45:00.600 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+12:45:00.614 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+12:45:00.622 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+12:45:00.623 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+12:45:00.661 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+12:45:00.685 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+12:45:00.704 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 11.52 seconds (JVM running for 12.199)
+12:45:01.214 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:45:01.224 [RMI TCP Connection(2)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+12:45:27.574 [http-nio-8081-exec-1] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,89] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 12:45:27 CST 2021
+12:45:40.724 [http-nio-8081-exec-1] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,105] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 12:45:40 CST 2021, get metadata success
+12:45:40.736 [http-nio-8081-exec-1] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,120] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 12:45:40 CST 2021, get artist info success
+12:45:45.893 [http-nio-8081-exec-1] INFO  c.r.m.aws.SendEmail - [sendEmailToSeller,99] - Email sent to kauchiaudio@gmail.com at Thu Jul 22 12:45:45 CST 2021
+12:45:46.142 [http-nio-8081-exec-1] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,125] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 12:45:46 CST 2021, send email to seller success
+12:45:50.616 [http-nio-8081-exec-1] INFO  c.r.m.aws.SendEmail - [sendEmailToBuyer,159] - Email sent to davidgluttongk@outlook.com at Thu Jul 22 12:45:50 CST 2021
+12:45:50.867 [http-nio-8081-exec-1] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,131] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 12:45:50 CST 2021, send to buyer success
+12:48:42.357 [http-nio-8081-exec-4] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,89] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0xa0eb8a6b20d7ff967531f8d1073408d20dcec57ddaf9942dcb290b271683e518 at Thu Jul 22 12:48:42 CST 2021
+12:49:31.225 [http-nio-8081-exec-6] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,89] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0xa0eb8a6b20d7ff967531f8d1073408d20dcec57ddaf9942dcb290b271683e518 at Thu Jul 22 12:49:31 CST 2021
+12:50:49.976 [http-nio-8081-exec-8] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,89] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0xa0eb8a6b20d7ff967531f8d1073408d20dcec57ddaf9942dcb290b271683e518 at Thu Jul 22 12:50:49 CST 2021
+12:51:44.337 [http-nio-8081-exec-10] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,89] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0xa0eb8a6b20d7ff967531f8d1073408d20dcec57ddaf9942dcb290b271683e518 at Thu Jul 22 12:51:44 CST 2021
+12:54:41.880 [http-nio-8081-exec-13] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,89] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 12:54:41 CST 2021
+12:54:49.368 [http-nio-8081-exec-13] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,105] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 12:54:49 CST 2021, get metadata success
+12:54:49.375 [http-nio-8081-exec-13] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,120] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 12:54:49 CST 2021, get artist info success
+12:54:54.095 [http-nio-8081-exec-13] INFO  c.r.m.aws.SendEmail - [sendEmailToSeller,99] - Email sent to kauchiaudio@gmail.com at Thu Jul 22 12:54:54 CST 2021
+12:54:54.342 [http-nio-8081-exec-13] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,125] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 12:54:54 CST 2021, send email to seller success
+12:54:58.769 [http-nio-8081-exec-13] INFO  c.r.m.aws.SendEmail - [sendEmailToBuyer,159] - Email sent to davidgluttongk@outlook.com at Thu Jul 22 12:54:58 CST 2021
+12:54:59.022 [http-nio-8081-exec-13] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,131] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 12:54:59 CST 2021, send to buyer success
+13:01:55.192 [http-nio-8081-exec-16] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,89] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 13:01:55 CST 2021
+13:02:02.750 [http-nio-8081-exec-16] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,105] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 13:02:02 CST 2021, get metadata success
+13:02:02.762 [http-nio-8081-exec-16] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,120] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 13:02:02 CST 2021, get artist info success
+13:02:07.255 [http-nio-8081-exec-16] INFO  c.r.m.aws.SendEmail - [sendEmailToSeller,99] - Email sent to kauchiaudio@gmail.com at Thu Jul 22 13:02:07 CST 2021
+13:02:07.509 [http-nio-8081-exec-16] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,125] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 13:02:07 CST 2021, send email to seller success
+13:02:12.728 [http-nio-8081-exec-16] INFO  c.r.m.aws.SendEmail - [sendEmailToBuyer,159] - Email sent to davidgluttongk@outlook.com at Thu Jul 22 13:02:12 CST 2021
+13:02:12.973 [http-nio-8081-exec-16] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,131] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 13:02:12 CST 2021, send to buyer success
+13:35:33.392 [Thread-29] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+13:35:33.773 [Thread-29] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+13:35:37.936 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 62553 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+13:35:37.938 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+13:35:41.542 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+13:35:41.556 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+13:35:41.556 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+13:35:41.828 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+13:35:42.775 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+13:35:42.834 [cluster-ClusterId{value='60f903ae51d19ef4592b4557', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+13:35:46.071 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+13:35:46.491 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+13:35:46.934 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+13:35:47.385 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+13:35:47.606 [redisson-netty-5-12] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+13:35:47.606 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+13:35:49.694 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+13:35:51.213 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+13:35:51.247 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+13:35:51.296 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+13:35:51.505 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+13:35:51.521 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+13:35:51.530 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+13:35:51.531 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+13:35:51.572 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+13:35:51.602 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+13:35:51.623 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 14.105 seconds (JVM running for 15.148)
+13:35:51.952 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:35:51.962 [RMI TCP Connection(1)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+13:50:02.080 [http-nio-8081-exec-1] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,89] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0xa0eb8a6b20d7ff967531f8d1073408d20dcec57ddaf9942dcb290b271683e518 at Thu Jul 22 13:50:02 CST 2021
+13:56:54.371 [Thread-34] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+13:56:54.510 [Thread-34] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+13:56:58.979 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 63125 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+13:56:58.981 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+13:57:02.220 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+13:57:02.231 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+13:57:02.231 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+13:57:02.368 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+13:57:03.102 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+13:57:03.137 [cluster-ClusterId{value='60f908af51d19ef695ad4fa3', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+13:57:06.321 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+13:57:06.557 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+13:57:06.981 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+13:57:07.334 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+13:57:07.503 [redisson-netty-5-1] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+13:57:07.502 [redisson-netty-5-6] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+13:57:09.637 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+13:57:10.792 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+13:57:10.802 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+13:57:10.831 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+13:57:10.985 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+13:57:10.997 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+13:57:11.007 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+13:57:11.008 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+13:57:11.046 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+13:57:11.069 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+13:57:11.088 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 12.487 seconds (JVM running for 13.575)
+13:57:11.214 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:57:11.223 [RMI TCP Connection(2)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+13:57:19.466 [http-nio-8081-exec-1] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,89] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0xa0eb8a6b20d7ff967531f8d1073408d20dcec57ddaf9942dcb290b271683e518 at Thu Jul 22 13:57:19 CST 2021
+14:06:03.968 [Thread-31] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+14:06:04.163 [Thread-31] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+14:13:16.870 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 63673 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+14:13:16.872 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+14:13:47.450 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 63698 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+14:13:47.452 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+14:13:50.477 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+14:13:50.485 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:13:50.485 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+14:13:50.610 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:13:51.381 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+14:13:51.414 [cluster-ClusterId{value='60f90c9f51d19ef8d2756013', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+14:13:54.143 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+14:13:54.424 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+14:13:54.816 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+14:13:55.228 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+14:13:55.408 [redisson-netty-5-2] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+14:13:55.408 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+14:13:57.594 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:13:58.763 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+14:13:58.777 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+14:13:58.808 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+14:13:58.958 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+14:13:58.968 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+14:13:58.977 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+14:13:58.978 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+14:13:59.013 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+14:13:59.044 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+14:13:59.065 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 11.9 seconds (JVM running for 12.566)
+14:13:59.309 [RMI TCP Connection(1)-192.168.1.40] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:13:59.321 [RMI TCP Connection(2)-192.168.1.40] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+14:15:14.682 [http-nio-8081-exec-22] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,119] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 14:15:14 CST 2021
+14:15:18.305 [http-nio-8081-exec-22] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,136] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 14:15:18 CST 2021, get metadata success
+14:15:18.316 [http-nio-8081-exec-22] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,151] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 14:15:18 CST 2021, get artist info success
+14:15:25.996 [http-nio-8081-exec-22] INFO  c.r.m.aws.SendEmail - [sendEmailToSeller,99] - Email sent to kauchiaudio@gmail.com at Thu Jul 22 14:15:25 CST 2021
+14:15:26.255 [http-nio-8081-exec-22] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,156] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 14:15:26 CST 2021, send email to seller success
+14:15:30.989 [http-nio-8081-exec-22] INFO  c.r.m.aws.SendEmail - [sendEmailToBuyer,159] - Email sent to davidgluttongk@outlook.com at Thu Jul 22 14:15:30 CST 2021
+14:15:31.268 [http-nio-8081-exec-22] INFO  c.r.a.c.n.b.AppBounceBrandNftUserController - [sendReceipt,162] - userAddr: 127.0.0.1 : /api/v2/nft/user/brand/sendReceipt hash 0x9ba392a6e8f793986315f29cb8ce3a0507700fa9fa1496263796f41b6e72e760 at Thu Jul 22 14:15:31 CST 2021, send to buyer success
+14:15:42.430 [Thread-29] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+14:15:42.489 [Thread-29] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed

@@ -1,0 +1,700 @@
+12:22:40.903 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 36745 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+12:22:40.906 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+12:22:44.302 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+12:22:44.309 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+12:22:44.309 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+12:22:44.433 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+12:22:45.263 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+12:22:45.309 [cluster-ClusterId{value='60ff8a1515aede8f890df0d2', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+12:22:48.323 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+12:22:48.544 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+12:22:48.908 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+12:22:49.289 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+12:22:49.463 [redisson-netty-5-3] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+12:22:49.464 [redisson-netty-5-4] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+12:22:51.636 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+12:22:52.703 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+12:22:52.719 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+12:22:52.753 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+12:22:52.943 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+12:22:52.955 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+12:22:52.962 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+12:22:52.963 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+12:22:53.052 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+12:22:53.083 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+12:22:53.106 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 12.948 seconds (JVM running for 13.593)
+12:22:53.494 [RMI TCP Connection(1)-192.168.1.40] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:22:53.506 [RMI TCP Connection(2)-192.168.1.40] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+12:23:08.858 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,231] - Artist (157342754) has been verified, verified stated ================
+12:23:08.903 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,241] - resultEncoded: 000000000000000000000000e94db7dfedb554c57087cfa9a45d530a1d6f54e00000000000000000000000000000000000000000000000000000000060ff8db0
+12:23:08.905 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,248] - signedMessage: 0x11020d08ae73db3c56e0eea38ea7cc713ce53360cd1130646ea7388ee88f79b8
+12:23:08.919 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,253] - v0x1b
+12:23:08.919 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,254] - r0x17014044d26655216dbd1465d7fa8f0f4f68050372454ad97ff66fa5f790428b
+12:23:08.919 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,255] - s0x0ffbb016e3daa3b19a0f4450e6b8561ebaadfd31c6eb2ca02741e0ace222f3cc
+12:23:08.920 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,261] - verified ended. ================================
+12:23:37.669 [Thread-32] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+12:23:37.742 [Thread-32] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+12:23:41.952 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 36799 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+12:23:41.954 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+12:23:44.584 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+12:23:44.592 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+12:23:44.592 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+12:23:44.689 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+12:23:45.326 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+12:23:45.350 [cluster-ClusterId{value='60ff8a51bd5fbe8fbf7aaede', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+12:23:47.998 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+12:23:48.178 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+12:23:48.944 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+12:23:49.276 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+12:23:49.430 [redisson-netty-5-7] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+12:23:49.432 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+12:23:51.402 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+12:23:52.308 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+12:23:52.316 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+12:23:52.342 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+12:23:52.491 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+12:23:52.503 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+12:23:52.511 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+12:23:52.512 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+12:23:52.558 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+12:23:52.593 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+12:23:52.612 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 10.945 seconds (JVM running for 11.498)
+12:23:52.916 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:23:52.924 [RMI TCP Connection(3)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+12:24:26.665 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,231] - Artist (157342754) has been verified, verified stated ================
+12:24:26.703 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,241] - resultEncoded: 000000000000000000000000e94db7dfedb554c57087cfa9a45d530a1d6f54e00000000000000000000000000000000000000000000000000000000060ff8dfe
+12:24:26.705 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,248] - signedMessage: 0x0333bcfa8878f293a845159605cf79836033f59ca19a9b066e5d23502af8aec8
+12:24:26.717 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,253] - v: 0x1c
+12:24:26.717 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,254] - r: 0x6d973849718ebf24153b0a7f49acf0eb3125c70ee294861d190257635aa63a4f
+12:24:26.718 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,255] - s: 0x3bc3681934b846ced948e9a584ceddcb0244678d226f8d6f2401ddecc7bf4754
+12:24:26.718 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,261] - verified ended. ================================
+12:24:57.322 [http-nio-8081-exec-3] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,231] - Artist (157342754) has been verified, verified stated ================
+12:24:57.330 [http-nio-8081-exec-3] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,241] - resultEncoded: 000000000000000000000000e94db7dfedb554c57087cfa9a45d530a1d6f54e00000000000000000000000000000000000000000000000000000000060ff8e1d
+12:24:57.331 [http-nio-8081-exec-3] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,248] - signedMessage: 0x72b7764339cd5576480dbbd9a41b7b57e884be8bc5f1445ba8507b4e366284f1
+12:24:57.333 [http-nio-8081-exec-3] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,253] - v: 0x1b
+12:24:57.333 [http-nio-8081-exec-3] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,254] - r: 0xbbb462b0dfeb5a210eb0ef7f61badcd72a8d78c057e4ad949172df1deea0d4ef
+12:24:57.334 [http-nio-8081-exec-3] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,255] - s: 0x4c3bf6cd7cdfadd73599db5fe8478913e31ed27872a6a853bd811c54037b7581
+12:24:57.334 [http-nio-8081-exec-3] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,261] - verified ended. ================================
+14:05:42.468 [http-nio-8081-exec-7] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,231] - Artist (157342754) has been verified, verified stated ================
+14:05:42.537 [http-nio-8081-exec-7] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,241] - resultEncoded: 000000000000000000000000e94db7dfedb554c57087cfa9a45d530a1d6f54e00000000000000000000000000000000000000000000000000000000060ffa5ba
+14:05:42.539 [http-nio-8081-exec-7] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,248] - signedMessage: 0xcbc9466b5bf8fca9df2ffe0984f2b36b1657d4c4aea65be21bf36d2005b50d1c
+14:05:42.542 [http-nio-8081-exec-7] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,253] - v: 0x1c
+14:05:42.543 [http-nio-8081-exec-7] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,254] - r: 0x80ffc9e1401b843e35ea318f65944a5f5ff0148fea0ad9e8656d927d22e4aaca
+14:05:42.543 [http-nio-8081-exec-7] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,255] - s: 0x6d3eb060e66874fb54de17ba1e219200a242700efb68bf8c0a6c9aba5200b208
+14:05:42.544 [http-nio-8081-exec-7] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,261] - verified ended. ================================
+14:09:45.342 [Thread-28] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+14:09:45.421 [Thread-28] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+14:09:50.397 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 39572 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+14:09:50.398 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+14:09:52.953 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+14:09:52.960 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:09:52.960 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+14:09:53.056 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:09:53.670 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+14:09:53.693 [cluster-ClusterId{value='60ffa33163a8fe9a94bc3d9c', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+14:09:56.093 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+14:09:56.263 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+14:09:56.640 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+14:09:56.951 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+14:09:57.101 [redisson-netty-5-8] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+14:09:57.103 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+14:09:59.071 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:10:00.011 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+14:10:00.019 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+14:10:00.043 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+14:10:00.178 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+14:10:00.188 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+14:10:00.195 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+14:10:00.196 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+14:10:00.237 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+14:10:00.271 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+14:10:00.292 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 10.21 seconds (JVM running for 10.998)
+14:10:00.570 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:10:00.578 [RMI TCP Connection(2)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+14:10:38.116 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,231] - Artist (157342754) has been verified, verified stated ================
+14:10:38.151 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,242] - timestamp: 1627367138
+14:10:38.152 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,243] - resultEncoded: 000000000000000000000000e94db7dfedb554c57087cfa9a45d530a1d6f54e00000000000000000000000000000000000000000000000000000000060ffa6e2
+14:10:38.153 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,250] - signedMessage: 0x4763612809a2e256e6c6a989bff412e04db5d8aec9a76df3fa388c97c663c187
+14:10:38.167 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,255] - v: 0x1c
+14:10:38.168 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,256] - r: 0x4ab6fffb4e0fe4f512371e8b1e0e83e7c52c6d0b33016299e51d59e0647363ac
+14:10:38.168 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,257] - s: 0x450d5ce6975e26e91c96be7486a56f412105bfd614dc53be61314a3284880033
+14:10:38.168 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,263] - verified ended. ================================
+14:13:20.554 [http-nio-8081-exec-5] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,231] - Artist (157342754) has been verified, verified stated ================
+14:13:20.582 [http-nio-8081-exec-5] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,242] - timestamp: 1627367300
+14:13:20.583 [http-nio-8081-exec-5] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,243] - resultEncoded: 000000000000000000000000e94db7dfedb554c57087cfa9a45d530a1d6f54e00000000000000000000000000000000000000000000000000000000060ffa784
+14:13:20.584 [http-nio-8081-exec-5] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,250] - signedMessage: 0xe72ffb3e5013dede19897798aa06b336958b7cbc1c3e4c28486e8b4a2e5287bb
+14:13:20.586 [http-nio-8081-exec-5] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,255] - v: 0x1b
+14:13:20.586 [http-nio-8081-exec-5] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,256] - r: 0x2b1949c4c56b69b47183ff3dd2fc00ede06b0740cb9da11e203d51dda39f4721
+14:13:20.586 [http-nio-8081-exec-5] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,257] - s: 0x0876f8fb21eacff5530b2541d325fbef6544a65a7be7ba610dcb403836a24833
+14:13:20.586 [http-nio-8081-exec-5] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,263] - verified ended. ================================
+14:13:27.055 [Thread-27] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+14:13:27.112 [Thread-27] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+14:13:31.628 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 39665 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+14:13:31.630 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+14:13:34.916 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+14:13:34.926 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:13:34.926 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+14:13:35.090 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:13:35.770 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+14:13:35.794 [cluster-ClusterId{value='60ffa40f63a8fe9af17a7d2d', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+14:13:38.494 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+14:13:38.680 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+14:13:39.014 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+14:13:39.334 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+14:13:39.491 [redisson-netty-5-10] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+14:13:39.491 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+14:13:41.489 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:13:42.423 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+14:13:42.432 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+14:13:42.458 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+14:13:42.608 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+14:13:42.620 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+14:13:42.630 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+14:13:42.634 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+14:13:42.677 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+14:13:42.740 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+14:13:42.757 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 11.423 seconds (JVM running for 11.964)
+14:13:42.915 [RMI TCP Connection(6)-192.168.1.40] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:13:42.925 [RMI TCP Connection(7)-192.168.1.40] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+14:13:47.703 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,232] - Artist (157342754) has been verified, verified stated ================
+14:13:47.737 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,243] - timestamp: 1627367327
+14:13:47.737 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,244] - resultEncoded: 000000000000000000000000e94db7dfedb554c57087cfa9a45d530a1d6f54e00000000000000000000000000000000000000000000000000000000060ffa79f
+14:13:47.739 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,251] - signedMessage: 0xafb36d31279d9d19947540e15e6cf3b1aafebef56e6ebf08032bb673509ec44f
+14:13:47.752 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,256] - v: 0x1c
+14:13:47.752 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,257] - r: 0x8bd9b37220e0d554bb8140c025ed1a3b49983fe34eca4d3d4dd1aa0b63edde77
+14:13:47.753 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,258] - s: 0x4fcdc24855264f0e02e171d5691e502d3f9ebfd15b8f7b8d41cb6a557edf5e74
+14:13:47.753 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,264] - verified ended. ================================
+14:25:38.902 [Thread-28] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+14:25:38.956 [Thread-28] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+14:25:44.004 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 39997 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+14:25:44.009 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+14:25:46.794 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+14:25:46.801 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:25:46.801 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+14:25:46.903 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:25:47.557 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+14:25:47.581 [cluster-ClusterId{value='60ffa6eba9ec5e9c3d953da4', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+14:25:50.159 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+14:25:50.329 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+14:25:50.698 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+14:25:51.012 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+14:25:51.167 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+14:25:51.167 [redisson-netty-5-3] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+14:25:53.164 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:25:54.140 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+14:25:54.150 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+14:25:54.176 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+14:25:54.312 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+14:25:54.322 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+14:25:54.329 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+14:25:54.330 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+14:25:54.370 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+14:25:54.403 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+14:25:54.420 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 10.746 seconds (JVM running for 11.313)
+14:25:54.515 [RMI TCP Connection(3)-192.168.1.40] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:25:54.525 [RMI TCP Connection(2)-192.168.1.40] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+14:25:58.057 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,232] - Artist (157342754) has been verified, verified stated ================
+14:25:58.094 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,243] - timestamp: 1627368058
+14:25:58.094 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,244] - resultEncoded: 000000000000000000000000e94db7dfedb554c57087cfa9a45d530a1d6f54e00000000000000000000000000000000000000000000000000000000060ffaa7a
+14:25:58.096 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,251] - signedMessage: 07400e567d25b72a4288d5e0905f57d459e4f9be2870dbca018f199867283b28
+14:25:58.109 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,256] - v: 1c
+14:25:58.109 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,257] - r: d2f8da21b1b9f124f95eb7cd378f8b49ff785f4d5e9c72c2a2c6d51bda61b22a
+14:25:58.110 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,258] - s: 490833e0edc7ab0515638914d9e730f4c6e70ba97d021e7e8a1528f214974e1d
+14:25:58.110 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,264] - verified ended. ================================
+14:31:11.300 [Thread-27] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+14:31:11.354 [Thread-27] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+14:31:16.165 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 40133 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+14:31:16.172 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+14:31:18.819 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+14:31:18.825 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:31:18.825 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+14:31:18.927 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:31:19.532 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+14:31:19.556 [cluster-ClusterId{value='60ffa837a9ec5e9cc5041aa8', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+14:31:21.930 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+14:31:22.101 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+14:31:22.474 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+14:31:22.790 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+14:31:22.943 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+14:31:22.942 [redisson-netty-5-12] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+14:31:24.833 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:31:25.781 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+14:31:25.790 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+14:31:25.816 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+14:31:25.951 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+14:31:25.961 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+14:31:25.967 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+14:31:25.968 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+14:31:26.002 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+14:31:26.032 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+14:31:26.048 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 10.236 seconds (JVM running for 10.996)
+14:31:26.305 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:31:26.313 [RMI TCP Connection(2)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+14:32:00.409 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,234] - Artist (157342754) has been verified, verified stated ================
+14:32:00.444 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,245] - timestamp: 1627368420
+14:32:00.445 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,246] - resultEncoded: 000000000000000000000000e94db7dfedb554c57087cfa9a45d530a1d6f54e00000000000000000000000000000000000000000000000000000000060ffabe4
+14:32:00.446 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,253] - signedMessage: a7e12d53d2bbcfe4c48707631873815a653ab94a18665d508cf25bdd028f8e14
+14:32:00.458 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,258] - v: 1b
+14:32:00.459 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,259] - r: 1b60676af016a481872383a9061728fb7e363cc94322f16d50e278dc9ebcf061
+14:32:00.459 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,260] - s: 48bd57bcf8a059196953401a7071621f362bea22ee2d62ab5b6f3d4112096a1f
+14:32:00.459 [http-nio-8081-exec-1] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,266] - verified ended. ================================
+14:34:30.624 [http-nio-8081-exec-27] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,234] - Artist (157342754) has been verified, verified stated ================
+14:34:30.662 [http-nio-8081-exec-27] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,245] - timestamp: 1627368570
+14:34:30.662 [http-nio-8081-exec-27] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,246] - resultEncoded: 000000000000000000000000e94db7dfedb554c57087cfa9a45d530a1d6f54e00000000000000000000000000000000000000000000000000000000060ffac7a
+14:34:30.664 [http-nio-8081-exec-27] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,253] - signedMessage: 51d427970b9be7d61dac3faad7878e4152724ab260d3ef2b4d34298b972da835
+14:34:30.665 [http-nio-8081-exec-27] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,258] - v: 1b
+14:34:30.666 [http-nio-8081-exec-27] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,259] - r: 56917c16bb2c4c277b6ee8ef81d0d7640ad8be0a3524621e051cb2707bc5067e
+14:34:30.666 [http-nio-8081-exec-27] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,260] - s: 6f923d41d38ce2d3fc1c9bd43816bc15ed02de32573c3727eccfe2352ede5698
+14:34:30.667 [http-nio-8081-exec-27] INFO  c.r.a.c.s.AppVerificationController - [verifyArtist,266] - verified ended. ================================
+14:37:26.504 [Thread-27] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+14:37:26.554 [Thread-27] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+17:13:22.994 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 45290 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+17:13:22.996 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: stage
+17:13:25.987 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8443"]
+17:13:25.999 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+17:13:25.999 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+17:13:26.119 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+17:13:26.929 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+17:13:26.965 [cluster-ClusterId{value='60ffce36e3689eb0ea8adc5c', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+17:13:29.492 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+17:13:29.497 [main] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+17:13:29.514 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+17:16:05.490 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 45365 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+17:16:05.492 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: stage
+17:16:09.223 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8443"]
+17:16:09.231 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+17:16:09.231 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+17:16:09.372 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+17:16:10.159 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+17:16:10.191 [cluster-ClusterId{value='60ffcedae3689eb135979174', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+17:16:13.453 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+17:16:13.469 [main] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+17:16:13.509 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+17:16:39.012 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 45389 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+17:16:39.014 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+17:16:41.686 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+17:16:41.694 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+17:16:41.694 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+17:16:41.815 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+17:16:42.552 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+17:16:42.578 [cluster-ClusterId{value='60ffcefae3689eb14d21e45b', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+17:16:45.397 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+17:16:45.646 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+17:16:46.046 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+17:16:46.439 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+17:16:46.617 [redisson-netty-5-9] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+17:16:46.619 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+17:16:48.745 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+17:16:49.887 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+17:16:49.899 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+17:16:49.926 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+17:16:50.112 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+17:16:50.123 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+17:16:50.130 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+17:16:50.131 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+17:16:50.164 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+17:16:50.196 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+17:16:50.218 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 11.536 seconds (JVM running for 12.086)
+17:16:50.513 [RMI TCP Connection(5)-192.168.1.40] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:16:50.523 [RMI TCP Connection(4)-192.168.1.40] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+17:23:19.872 [Thread-29] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+17:23:19.952 [Thread-29] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+17:23:25.623 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 45606 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+17:23:25.625 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+17:23:28.278 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+17:23:28.285 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+17:23:28.285 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+17:23:28.383 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+17:23:29.026 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+17:23:29.053 [cluster-ClusterId{value='60ffd091e3689eb226e39a74', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+17:23:31.538 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+17:23:31.714 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+17:23:32.094 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+17:23:32.410 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+17:23:32.560 [redisson-netty-5-3] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+17:23:32.560 [redisson-netty-5-4] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+17:23:34.629 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+17:23:35.605 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+17:23:35.614 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+17:23:35.638 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+17:23:35.775 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+17:23:35.785 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+17:23:35.792 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+17:23:35.793 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+17:23:35.838 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+17:23:35.871 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+17:23:35.893 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 10.599 seconds (JVM running for 11.358)
+17:23:36.453 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:23:36.461 [RMI TCP Connection(3)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+17:25:23.356 [Thread-28] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+17:25:23.412 [Thread-28] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+17:25:27.745 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 45679 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+17:25:27.747 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+17:25:30.324 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+17:25:30.331 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+17:25:30.332 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+17:25:30.429 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+17:25:31.068 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+17:25:31.093 [cluster-ClusterId{value='60ffd10be3689eb26f2b8ff6', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+17:25:33.862 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+17:25:34.030 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+17:25:34.412 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+17:25:34.734 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+17:25:34.915 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+17:25:34.914 [redisson-netty-5-2] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+17:25:36.931 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+17:25:37.842 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+17:25:37.851 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+17:25:37.875 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+17:25:38.029 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+17:25:38.041 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+17:25:38.049 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+17:25:38.050 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+17:25:38.094 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+17:25:38.130 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+17:25:38.150 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 10.809 seconds (JVM running for 11.501)
+17:25:38.458 [RMI TCP Connection(6)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:25:38.473 [RMI TCP Connection(7)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+17:26:47.642 [Thread-28] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+17:26:47.694 [Thread-28] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+17:26:51.763 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 45733 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+17:26:51.764 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+17:26:54.366 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+17:26:54.375 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+17:26:54.375 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+17:26:54.476 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+17:26:55.137 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+17:26:55.162 [cluster-ClusterId{value='60ffd15fe3689eb2a52507a1', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+17:26:57.792 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+17:26:57.985 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+17:26:58.190 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+17:26:58.509 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+17:26:58.666 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+17:26:58.666 [redisson-netty-5-3] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+17:27:00.641 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+17:27:01.568 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+17:27:01.577 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+17:27:01.604 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+17:27:01.759 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+17:27:01.772 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+17:27:01.784 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+17:27:01.785 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+17:27:01.832 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+17:27:01.870 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+17:27:01.891 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 10.406 seconds (JVM running for 11.007)
+17:27:02.186 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:27:02.196 [RMI TCP Connection(3)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+17:31:05.905 [Thread-27] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+17:31:05.973 [Thread-27] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+17:31:09.318 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 45834 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+17:31:09.320 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+17:31:12.035 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+17:31:12.043 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+17:31:12.044 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+17:31:12.153 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+17:31:12.769 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+17:31:12.793 [cluster-ClusterId{value='60ffd260e3689eb30ad609bd', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+17:31:15.503 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+17:31:15.711 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+17:31:16.086 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+17:31:16.419 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+17:31:16.573 [redisson-netty-5-2] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+17:31:16.574 [redisson-netty-5-2] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+17:31:18.565 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+17:31:19.553 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+17:31:19.561 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+17:31:19.588 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+17:31:19.727 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+17:31:19.738 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+17:31:19.745 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+17:31:19.746 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+17:31:19.788 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+17:31:19.820 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+17:31:19.842 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 10.872 seconds (JVM running for 11.676)
+17:31:19.942 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:31:19.949 [RMI TCP Connection(3)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+17:34:04.186 [Thread-27] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+17:34:04.227 [Thread-27] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+17:34:07.607 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 45923 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+17:34:07.609 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+17:34:10.043 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+17:34:10.053 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+17:34:10.053 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+17:34:10.287 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+17:34:11.107 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+17:34:11.133 [cluster-ClusterId{value='60ffd313e3689eb36360fb4b', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+17:34:13.587 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+17:34:13.770 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+17:34:13.834 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+17:34:14.178 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+17:34:14.333 [redisson-netty-5-11] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+17:34:14.334 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+17:34:16.298 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+17:34:17.235 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+17:34:17.243 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+17:34:17.267 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+17:34:17.422 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+17:34:17.432 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+17:34:17.439 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+17:34:17.442 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+17:34:17.479 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+17:34:17.511 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+17:34:17.532 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 10.374 seconds (JVM running for 11.135)
+17:34:17.728 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:34:17.745 [RMI TCP Connection(3)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+17:49:20.016 [Thread-27] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+17:49:20.071 [Thread-27] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+17:49:25.420 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 46345 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+17:49:25.422 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+17:49:30.108 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+17:49:30.124 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+17:49:30.125 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+17:49:30.297 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+17:49:31.145 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+17:49:31.188 [cluster-ClusterId{value='60ffd6abe3689eb509a4d990', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+17:49:33.710 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+17:49:33.935 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+17:49:34.318 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+17:49:34.628 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+17:49:34.784 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+17:49:34.784 [redisson-netty-5-12] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+17:49:37.085 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+17:49:38.028 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+17:49:38.037 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+17:49:38.063 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+17:49:38.207 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+17:49:38.217 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+17:49:38.224 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+17:49:38.225 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+17:49:38.263 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+17:49:38.295 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+17:49:38.315 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 13.235 seconds (JVM running for 13.772)
+17:49:38.435 [RMI TCP Connection(12)-192.168.1.40] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:49:38.442 [RMI TCP Connection(11)-192.168.1.40] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+17:56:14.136 [Thread-32] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+17:56:14.200 [Thread-32] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed

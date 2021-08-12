@@ -1,0 +1,4 @@
+10:19:18.813 [http-nio-8080-exec-9] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1225 millis. SELECT COUNT( 1 ) FROM tb_track 
+ 
+ WHERE (release_date >= ?)["2021-07-19"]
+11:03:19.745 [http-nio-8080-exec-22] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1013 millis. SELECT COUNT(1) FROM (SELECT  kyc_id,user_id,region,doc_id,doc_type,name_in_doc,owner_did,encrypt_data,requesttime,create_at,update_at  FROM tb_user_kyc_info) TOTAL[]

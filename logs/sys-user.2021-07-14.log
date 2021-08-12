@@ -1,0 +1,5 @@
+15:04:59.396 [Thread-34] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+15:13:06.064 [Thread-31] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+15:50:08.867 [Thread-29] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+15:50:35.717 [Thread-28] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+15:52:13.672 [Thread-26] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====

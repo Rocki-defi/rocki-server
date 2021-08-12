@@ -1,0 +1,1443 @@
+12:27:53.028 [main] INFO  o.s.c.KotlinDetector - [<clinit>,57] - Kotlin reflection implementation not found at runtime, related features won't be available.
+12:27:53.595 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 9891 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+12:27:53.595 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+12:27:56.948 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+12:27:56.955 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+12:27:56.955 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+12:27:57.079 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+12:27:57.869 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+12:27:57.898 [cluster-ClusterId{value='6114a34d1c935e26a3c80ed2', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+12:28:00.721 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+12:28:00.955 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+12:28:01.232 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+12:28:01.640 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+12:28:01.817 [redisson-netty-5-6] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+12:28:01.819 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+12:28:04.038 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+12:28:05.185 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+12:28:05.198 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+12:28:05.228 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+12:28:05.423 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+12:28:05.434 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+12:28:05.440 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+12:28:05.441 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+12:28:05.480 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+12:28:05.508 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+12:28:05.527 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 12.453 seconds (JVM running for 13.094)
+12:28:06.067 [RMI TCP Connection(2)-192.168.1.40] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+12:28:06.078 [RMI TCP Connection(1)-192.168.1.40] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+14:07:26.992 [Thread-30] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+14:07:27.092 [Thread-30] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+14:10:10.274 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 11921 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+14:10:10.278 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+14:10:13.909 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+14:10:13.917 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:10:13.917 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+14:10:14.023 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:10:14.828 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+14:10:14.861 [cluster-ClusterId{value='6114bb461c935e2e91e476d4', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+14:10:18.654 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+14:10:18.896 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+14:10:18.970 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+14:10:20.338 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+14:10:20.349 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+14:10:20.350 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+14:10:20.355 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628748620340'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+14:10:20.355 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+14:10:20.355 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+14:10:20.356 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@1b9dfd42
+14:10:21.959 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:10:22.605 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+14:10:22.791 [redisson-netty-5-4] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+14:10:22.792 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+14:10:23.646 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+14:10:23.657 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+14:10:23.715 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+14:10:23.845 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+14:10:23.871 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 14.146 seconds (JVM running for 15.147)
+14:10:24.190 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:10:24.203 [RMI TCP Connection(2)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+14:10:24.863 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628748620340 started.
+14:10:25.386 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9009173, and end block: 9011173
+14:10:25.386 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9009168, and end block: 9011168
+14:10:56.980 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9011173, and end block: 9013173
+14:10:56.980 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9011168, and end block: 9013168
+14:11:27.079 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9013174, and end block: 9015174
+14:11:27.079 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9013169, and end block: 9015169
+14:11:56.879 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9015175, and end block: 9017175
+14:11:56.879 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9015170, and end block: 9017170
+14:12:27.204 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9017171, and end block: 9019171
+14:12:27.204 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9017176, and end block: 9019176
+14:12:56.930 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9019177, and end block: 9021177
+14:12:57.042 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9019172, and end block: 9021172
+14:13:27.229 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9021173, and end block: 9023173
+14:13:27.229 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9021178, and end block: 9023178
+14:14:00.081 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9023179, and end block: 9025179
+14:14:00.081 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9023174, and end block: 9025174
+14:14:04.340 [Thread-44] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628748620340 paused.
+14:14:04.397 [Thread-44] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628748620340 shutting down.
+14:14:04.397 [Thread-44] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628748620340 paused.
+14:14:04.398 [Thread-44] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628748620340 shutdown complete.
+14:14:04.398 [Thread-44] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+14:14:04.426 [Thread-44] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+14:14:28.171 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 12032 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+14:14:28.177 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+14:14:31.578 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+14:14:31.585 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:14:31.585 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+14:14:31.675 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:14:32.373 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+14:14:32.402 [cluster-ClusterId{value='6114bc481c935e2f00aecfc6', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+14:14:35.934 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+14:14:36.105 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+14:14:36.168 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+14:14:37.585 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+14:14:37.595 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+14:14:37.595 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+14:14:37.599 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628748877587'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+14:14:37.600 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+14:14:37.600 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+14:14:37.601 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@7d966f7c
+14:14:38.991 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:14:39.550 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+14:14:39.706 [redisson-netty-5-5] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+14:14:39.705 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+14:14:40.404 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+14:14:40.412 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+14:14:40.467 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+14:14:40.570 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+14:14:40.587 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 12.977 seconds (JVM running for 14.032)
+14:14:40.915 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:14:40.923 [RMI TCP Connection(1)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+14:14:41.589 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628748877587 started.
+14:14:43.954 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9025175, and end block: 9027175
+14:14:43.954 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9025180, and end block: 9027180
+14:15:13.597 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9027176, and end block: 9029176
+14:15:13.597 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9027181, and end block: 9029181
+14:15:43.604 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9029177, and end block: 9031177
+14:15:43.615 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9029182, and end block: 9031182
+14:16:13.769 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9031178, and end block: 9033178
+14:16:13.769 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9031183, and end block: 9033183
+14:16:43.812 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9033179, and end block: 9035179
+14:16:43.812 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9033184, and end block: 9035184
+14:17:13.544 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9035180, and end block: 9037180
+14:17:13.627 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9035185, and end block: 9037185
+14:17:43.827 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9037186, and end block: 9039186
+14:17:43.827 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9037181, and end block: 9039181
+14:18:13.671 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9039187, and end block: 9041187
+14:18:13.680 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9039182, and end block: 9041182
+14:18:43.938 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9041183, and end block: 9043183
+14:18:43.938 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9041188, and end block: 9043188
+14:19:13.780 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9043189, and end block: 9045189
+14:19:15.577 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9043184, and end block: 9045184
+14:19:43.777 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9045190, and end block: 9047190
+14:19:43.777 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9045185, and end block: 9047185
+14:20:13.760 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9047191, and end block: 9049191
+14:20:13.760 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9047186, and end block: 9049186
+14:20:43.791 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9049192, and end block: 9051192
+14:20:43.798 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9049187, and end block: 9051187
+14:21:14.576 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9051188, and end block: 9053188
+14:21:16.239 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9051193, and end block: 9053193
+14:21:43.751 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9053189, and end block: 9055189
+14:21:43.751 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9053194, and end block: 9055194
+14:22:13.693 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9055195, and end block: 9057195
+14:22:13.702 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9055190, and end block: 9057190
+14:22:43.967 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9057196, and end block: 9059196
+14:22:43.967 [schedule-pool-18] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9057191, and end block: 9059191
+14:23:13.600 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9059192, and end block: 9061192
+14:23:13.600 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9059197, and end block: 9061197
+14:23:43.701 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9061193, and end block: 9063193
+14:23:43.701 [schedule-pool-20] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9061198, and end block: 9063198
+14:24:13.666 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9063194, and end block: 9065194
+14:24:13.666 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9063199, and end block: 9065199
+14:24:43.977 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9065195, and end block: 9067195
+14:24:43.977 [schedule-pool-22] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9065200, and end block: 9067200
+14:25:13.848 [schedule-pool-23] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9067201, and end block: 9069201
+14:25:13.848 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9067196, and end block: 9069196
+14:25:43.698 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9069197, and end block: 9071197
+14:25:43.698 [schedule-pool-24] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9069202, and end block: 9071202
+14:26:13.699 [schedule-pool-25] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9071203, and end block: 9073203
+14:26:13.710 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9071198, and end block: 9073198
+14:26:43.737 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9073199, and end block: 9075199
+14:26:45.673 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9073204, and end block: 9075204
+14:27:13.699 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9075200, and end block: 9077200
+14:27:13.699 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9075205, and end block: 9077205
+14:27:43.590 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9077206, and end block: 9079206
+14:27:43.834 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9077201, and end block: 9079201
+14:28:13.696 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9079207, and end block: 9081207
+14:28:13.696 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9079202, and end block: 9081202
+14:28:43.803 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9081203, and end block: 9083203
+14:28:43.803 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9081208, and end block: 9083208
+14:28:55.412 [Thread-42] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628748877587 paused.
+14:28:55.469 [Thread-42] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628748877587 shutting down.
+14:28:55.469 [Thread-42] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628748877587 paused.
+14:28:55.470 [Thread-42] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628748877587 shutdown complete.
+14:28:55.470 [Thread-42] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+14:28:55.482 [Thread-42] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+14:30:34.864 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 12349 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+14:30:34.867 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+14:30:38.497 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+14:30:38.504 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:30:38.505 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+14:30:38.610 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:30:55.280 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 12357 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+14:30:55.283 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+14:30:59.336 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+14:30:59.347 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:30:59.347 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+14:30:59.499 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:31:00.497 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+14:31:00.541 [cluster-ClusterId{value='6114c0241c935e304521ecea', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+14:31:04.744 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+14:31:05.017 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+14:31:05.096 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+14:31:06.600 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+14:31:06.613 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+14:31:06.613 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+14:31:06.620 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628749866602'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+14:31:06.620 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+14:31:06.620 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+14:31:06.621 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@37580ea9
+14:31:08.153 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:31:08.973 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+14:31:09.146 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+14:31:09.147 [redisson-netty-5-5] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+14:31:09.964 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+14:31:09.976 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+14:31:10.040 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+14:31:10.177 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+14:31:10.200 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 15.493 seconds (JVM running for 17.825)
+14:31:10.718 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:31:10.734 [RMI TCP Connection(1)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+14:31:11.345 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628749866602 started.
+14:31:11.732 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9009173, and end block: 9011173
+14:31:20.090 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9009168, and end block: 9011168
+14:31:43.253 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9011173, and end block: 9013173
+14:31:44.187 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9011168, and end block: 9013168
+14:32:13.421 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9013169, and end block: 9015169
+14:32:16.700 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9013174, and end block: 9015174
+14:32:43.353 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9015175, and end block: 9017175
+14:32:45.116 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9015170, and end block: 9017170
+14:33:13.528 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9017171, and end block: 9019171
+14:33:13.528 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9017176, and end block: 9019176
+14:33:43.245 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9019177, and end block: 9021177
+14:33:43.245 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9019172, and end block: 9021172
+14:34:13.259 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9021173, and end block: 9023173
+14:34:13.259 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9021178, and end block: 9023178
+14:34:43.327 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9023179, and end block: 9025179
+14:34:43.333 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9023174, and end block: 9025174
+14:35:13.460 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9025175, and end block: 9027175
+14:35:13.466 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9025180, and end block: 9027180
+14:35:43.455 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9027181, and end block: 9029181
+14:35:43.455 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9027176, and end block: 9029176
+14:36:13.177 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9029182, and end block: 9031182
+14:36:13.185 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9029177, and end block: 9031177
+14:36:43.346 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9031178, and end block: 9033178
+14:36:43.346 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9031183, and end block: 9033183
+14:37:13.437 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9033184, and end block: 9035184
+14:37:13.437 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9033179, and end block: 9035179
+14:37:43.360 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9035180, and end block: 9037180
+14:37:43.644 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9035185, and end block: 9037185
+14:38:13.361 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9037186, and end block: 9039186
+14:38:13.362 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9037181, and end block: 9039181
+14:38:43.357 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9039182, and end block: 9041182
+14:38:43.357 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9039187, and end block: 9041187
+14:39:13.367 [schedule-pool-18] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9041188, and end block: 9043188
+14:39:13.368 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9041183, and end block: 9043183
+14:39:43.296 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9043184, and end block: 9045184
+14:39:43.297 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9043189, and end block: 9045189
+14:40:13.292 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9045190, and end block: 9047190
+14:40:13.299 [schedule-pool-20] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9045185, and end block: 9047185
+14:40:43.299 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9047191, and end block: 9049191
+14:40:43.301 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9047186, and end block: 9049186
+14:41:13.311 [schedule-pool-22] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9049187, and end block: 9051187
+14:41:13.317 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9049192, and end block: 9051192
+14:41:43.281 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9051193, and end block: 9053193
+14:41:43.281 [schedule-pool-23] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9051188, and end block: 9053188
+14:42:13.363 [schedule-pool-24] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9053189, and end block: 9055189
+14:42:14.716 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9053194, and end block: 9055194
+14:42:44.179 [schedule-pool-25] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9055195, and end block: 9057195
+14:42:44.476 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9055190, and end block: 9057190
+14:43:14.520 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9057191, and end block: 9059191
+14:43:15.847 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9057196, and end block: 9059196
+14:43:43.390 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9059192, and end block: 9061192
+14:43:43.405 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9059197, and end block: 9061197
+14:44:13.203 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9061193, and end block: 9063193
+14:44:13.203 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9061198, and end block: 9063198
+14:44:43.574 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9063194, and end block: 9065194
+14:44:43.622 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9063199, and end block: 9065199
+14:45:13.334 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9065200, and end block: 9067200
+14:45:43.840 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9065195, and end block: 9067195
+14:45:43.840 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9067201, and end block: 9069201
+14:46:13.233 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9069202, and end block: 9071202
+14:46:13.235 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9067196, and end block: 9069196
+14:46:43.502 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9069197, and end block: 9071197
+14:46:43.503 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9071203, and end block: 9073203
+14:47:13.279 [schedule-pool-18] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9071198, and end block: 9073198
+14:47:13.295 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9073204, and end block: 9075204
+14:48:20.950 [Thread-47] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628749866602 paused.
+14:48:21.000 [Thread-47] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628749866602 shutting down.
+14:48:21.000 [Thread-47] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628749866602 paused.
+14:48:21.001 [Thread-47] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628749866602 shutdown complete.
+14:48:21.001 [Thread-47] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+14:48:21.013 [Thread-47] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+14:48:35.705 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 12864 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+14:48:35.714 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+14:48:39.932 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+14:48:39.940 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:48:39.940 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+14:48:40.045 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:48:40.723 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+14:48:40.752 [cluster-ClusterId{value='6114c4481c935e32408b86c9', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+14:48:44.381 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+14:48:44.564 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+14:48:44.626 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+14:48:45.949 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+14:48:45.962 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+14:48:45.962 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+14:48:45.967 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628750925950'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+14:48:45.967 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+14:48:45.968 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+14:48:45.971 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@176684e0
+14:48:47.393 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:48:47.961 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+14:48:48.110 [redisson-netty-5-4] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+14:48:48.113 [redisson-netty-5-5] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+14:48:48.911 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+14:48:48.919 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+14:48:48.972 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+14:48:49.075 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+14:48:49.091 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 13.723 seconds (JVM running for 14.554)
+14:48:49.492 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:48:49.504 [RMI TCP Connection(2)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+14:48:50.096 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628750925950 started.
+14:48:54.479 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9075205, and end block: 9077205
+14:48:55.097 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9073199, and end block: 9075199
+14:49:23.805 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9075200, and end block: 9077200
+14:49:26.001 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9077206, and end block: 9079206
+14:49:54.939 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,93] - stake-pool event scan start block:9077201, and end block: 9079201
+14:49:58.165 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,93] - burn-pool event scan start block:9079207, and end block: 9081207
+14:50:17.406 [Thread-42] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628750925950 paused.
+14:50:17.440 [Thread-42] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628750925950 shutting down.
+14:50:17.440 [Thread-42] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628750925950 paused.
+14:50:17.441 [Thread-42] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628750925950 shutdown complete.
+14:50:17.441 [Thread-42] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+14:50:17.453 [Thread-42] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+14:52:53.607 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 12972 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+14:52:53.611 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+14:52:57.880 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+14:52:57.887 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:52:57.887 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+14:52:58.009 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:52:58.805 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+14:52:58.841 [cluster-ClusterId{value='6114c54a1c935e32ac2fd1c1', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+14:53:02.582 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+14:53:02.826 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+14:53:03.226 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+14:53:04.642 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+14:53:04.655 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+14:53:04.655 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+14:53:04.660 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628751184645'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+14:53:04.661 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+14:53:04.661 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+14:53:04.663 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@6b31cc8
+14:53:06.019 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:53:06.655 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+14:53:06.834 [redisson-netty-5-3] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+14:53:06.836 [redisson-netty-5-3] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+14:53:07.655 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+14:53:07.665 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+14:53:07.726 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+14:53:07.853 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+14:53:07.878 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 14.816 seconds (JVM running for 15.653)
+14:53:08.311 [RMI TCP Connection(2)-192.168.1.40] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:53:08.330 [RMI TCP Connection(3)-192.168.1.40] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+14:53:08.867 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628751184645 started.
+14:57:37.356 [Thread-44] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628751184645 paused.
+14:57:37.390 [Thread-44] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628751184645 shutting down.
+14:57:37.391 [Thread-44] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628751184645 paused.
+14:57:37.395 [Thread-44] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628751184645 shutdown complete.
+14:57:37.395 [Thread-44] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+14:57:37.413 [Thread-44] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+14:58:13.802 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 13100 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+14:58:13.805 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+14:58:17.207 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+14:58:17.214 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:58:17.214 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+14:58:17.331 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:58:17.998 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+14:58:18.026 [cluster-ClusterId{value='6114c6891c935e332c5e9627', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+14:58:21.531 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+14:58:21.716 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+14:58:21.781 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+14:58:23.185 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+14:58:23.196 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+14:58:23.196 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+14:58:23.201 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628751503187'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+14:58:23.201 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+14:58:23.201 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+14:58:23.203 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@6aa1b2d3
+14:58:24.577 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:58:25.143 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+14:58:25.294 [redisson-netty-5-4] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+14:58:25.294 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+14:58:26.061 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+14:58:26.069 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+14:58:26.121 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+14:58:26.226 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+14:58:26.242 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 12.768 seconds (JVM running for 13.589)
+14:58:26.578 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:58:26.588 [RMI TCP Connection(1)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+14:58:27.240 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628751503187 started.
+14:58:27.762 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9009168, and end block: 9011168
+14:58:48.238 [Thread-41] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628751503187 paused.
+14:58:48.282 [Thread-41] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628751503187 shutting down.
+14:58:48.282 [Thread-41] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628751503187 paused.
+14:58:48.283 [Thread-41] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628751503187 shutdown complete.
+14:58:48.283 [Thread-41] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+14:58:48.295 [Thread-41] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+14:59:05.192 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 13122 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+14:59:05.197 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+14:59:08.399 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+14:59:08.405 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:59:08.405 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+14:59:08.495 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:59:09.157 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+14:59:09.187 [cluster-ClusterId{value='6114c6bd1c935e3342f82da6', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+14:59:12.640 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+14:59:12.834 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+14:59:13.126 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+14:59:14.398 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+14:59:14.407 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+14:59:14.407 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+14:59:14.412 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628751554399'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+14:59:14.412 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+14:59:14.412 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+14:59:14.413 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@7edfe270
+14:59:15.620 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:59:16.182 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+14:59:16.329 [redisson-netty-5-9] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+14:59:16.330 [redisson-netty-5-5] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+14:59:17.109 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+14:59:17.119 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+14:59:17.173 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+14:59:17.278 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+14:59:17.295 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 12.692 seconds (JVM running for 13.331)
+14:59:17.782 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:59:17.792 [RMI TCP Connection(2)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+14:59:18.391 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628751554399 started.
+14:59:18.823 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9009173, and end block: 9011173
+14:59:23.068 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9011168, and end block: 9013168
+14:59:51.708 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9011173, and end block: 9013173
+14:59:56.550 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9013169, and end block: 9015169
+15:00:21.337 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9015170, and end block: 9017170
+15:00:21.890 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9013174, and end block: 9015174
+15:00:53.438 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9015175, and end block: 9017175
+15:00:54.019 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9017171, and end block: 9019171
+15:01:22.734 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9019172, and end block: 9021172
+15:01:24.858 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9017176, and end block: 9019176
+15:01:51.943 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9021173, and end block: 9023173
+15:01:52.672 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9019177, and end block: 9021177
+15:02:24.254 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9023174, and end block: 9025174
+15:02:25.123 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9021178, and end block: 9023178
+15:02:55.321 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9025175, and end block: 9027175
+15:02:55.679 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9023179, and end block: 9025179
+15:03:53.411 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9027176, and end block: 9029176
+15:03:55.061 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9025180, and end block: 9027180
+15:04:23.779 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9029177, and end block: 9031177
+15:04:25.661 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9027181, and end block: 9029181
+15:04:51.707 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9031178, and end block: 9033178
+15:04:53.454 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9029182, and end block: 9031182
+15:05:21.411 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9033179, and end block: 9035179
+15:05:22.277 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9031183, and end block: 9033183
+15:05:51.314 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9033184, and end block: 9035184
+15:05:51.319 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9035180, and end block: 9037180
+15:06:21.421 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9035185, and end block: 9037185
+15:06:22.789 [schedule-pool-18] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9037181, and end block: 9039181
+15:06:37.779 [Thread-41] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628751554399 paused.
+15:06:37.824 [Thread-41] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628751554399 shutting down.
+15:06:37.824 [Thread-41] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628751554399 paused.
+15:06:37.825 [Thread-41] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628751554399 shutdown complete.
+15:06:37.825 [Thread-41] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+15:06:37.834 [Thread-41] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+15:11:28.938 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 13381 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+15:11:28.949 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+15:11:32.648 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+15:11:32.655 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:11:32.656 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+15:11:32.770 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:11:33.554 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+15:11:33.589 [cluster-ClusterId{value='6114c9a51c935e344582a25e', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+15:11:37.302 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+15:11:37.524 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+15:11:37.592 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+15:11:38.939 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+15:11:38.951 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:11:38.951 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+15:11:38.957 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628752298941'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+15:11:38.957 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+15:11:38.957 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+15:11:38.958 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@590925bd
+15:11:40.272 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+15:11:40.917 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+15:11:41.084 [redisson-netty-5-9] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+15:11:41.085 [redisson-netty-5-9] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+15:11:41.933 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+15:11:41.945 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+15:11:42.004 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+15:11:42.124 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+15:11:42.147 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 13.688 seconds (JVM running for 14.491)
+15:11:42.246 [RMI TCP Connection(1)-192.168.1.40] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:11:42.258 [RMI TCP Connection(2)-192.168.1.40] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+15:11:43.140 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628752298941 started.
+15:11:43.657 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9009168, and end block: 9011168
+15:11:43.658 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9009173, and end block: 9011173
+15:12:16.905 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9011173, and end block: 9013173
+15:12:17.143 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9011168, and end block: 9013168
+15:12:49.110 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9013169, and end block: 9015169
+15:12:49.570 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9013174, and end block: 9015174
+15:13:17.473 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9015170, and end block: 9017170
+15:13:17.845 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9015175, and end block: 9017175
+15:13:49.165 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9017176, and end block: 9019176
+15:14:17.069 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9019177, and end block: 9021177
+15:14:20.362 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9017171, and end block: 9019171
+15:14:51.115 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9021178, and end block: 9023178
+15:15:16.558 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9019172, and end block: 9021172
+15:15:19.510 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9023179, and end block: 9025179
+15:15:45.925 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9021173, and end block: 9023173
+15:15:47.364 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9025180, and end block: 9027180
+15:16:19.554 [Thread-42] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628752298941 paused.
+15:16:19.594 [Thread-42] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628752298941 shutting down.
+15:16:19.595 [Thread-42] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628752298941 paused.
+15:16:19.595 [Thread-42] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628752298941 shutdown complete.
+15:16:19.596 [Thread-42] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+15:16:19.608 [Thread-42] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+15:22:34.917 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 13613 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+15:22:34.922 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+15:22:38.698 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+15:22:38.706 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:22:38.706 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+15:22:38.804 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:22:39.634 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+15:22:39.668 [cluster-ClusterId{value='6114cc3f1c935e352dfe7c09', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+15:22:43.349 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+15:22:43.596 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+15:22:43.658 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+15:22:45.023 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+15:22:45.034 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:22:45.034 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+15:22:45.043 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628752965025'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+15:22:45.043 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+15:22:45.043 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+15:22:45.045 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@2f0a2202
+15:22:46.373 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+15:22:47.012 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+15:22:47.176 [redisson-netty-5-3] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+15:22:47.178 [redisson-netty-5-5] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+15:22:47.947 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+15:22:47.959 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+15:22:48.020 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+15:22:48.144 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+15:22:48.171 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 13.752 seconds (JVM running for 14.538)
+15:22:48.554 [RMI TCP Connection(2)-192.168.1.40] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:22:48.565 [RMI TCP Connection(3)-192.168.1.40] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+15:22:49.180 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628752965025 started.
+15:22:49.749 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,95] - stake-pool event scan start block:9009168, and end block: 9011168
+15:22:49.752 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,95] - burn-pool event scan start block:9009173, and end block: 9011173
+15:23:27.705 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,95] - burn-pool event scan start block:9011173, and end block: 9013173
+15:23:35.922 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,95] - stake-pool event scan start block:9011168, and end block: 9013168
+15:23:53.467 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,95] - stake-pool event scan start block:9013169, and end block: 9015169
+15:23:59.040 [Thread-42] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628752965025 paused.
+15:23:59.084 [Thread-42] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628752965025 shutting down.
+15:23:59.084 [Thread-42] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628752965025 paused.
+15:23:59.088 [Thread-42] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628752965025 shutdown complete.
+15:23:59.088 [Thread-42] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+15:23:59.100 [Thread-42] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+15:26:33.996 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 13699 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+15:26:34.003 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+15:26:37.730 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+15:26:37.737 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:26:37.737 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+15:26:37.842 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:26:38.601 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+15:26:38.633 [cluster-ClusterId{value='6114cd2eaa737e35838628fd', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+15:26:42.297 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+15:26:42.515 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+15:26:42.588 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+15:26:43.965 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+15:26:43.997 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:26:43.997 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+15:26:44.005 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628753203982'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+15:26:44.005 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+15:26:44.005 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+15:26:44.007 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@38abc4c0
+15:26:45.460 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+15:26:46.121 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+15:26:46.293 [redisson-netty-5-11] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+15:26:46.294 [redisson-netty-5-5] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+15:26:47.083 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+15:26:47.095 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+15:26:47.156 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+15:26:47.281 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+15:26:47.303 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 13.774 seconds (JVM running for 14.81)
+15:26:47.409 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:26:47.422 [RMI TCP Connection(2)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+15:26:48.291 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628753203982 started.
+15:26:48.812 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,95] - stake-pool event scan start block:9009168, and end block: 9011168
+15:26:48.813 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,95] - burn-pool event scan start block:9009173, and end block: 9011173
+15:27:25.508 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,95] - stake-pool event scan start block:9011168, and end block: 9013168
+15:27:27.862 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,95] - burn-pool event scan start block:9011173, and end block: 9013173
+15:27:52.792 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,95] - burn-pool event scan start block:9013174, and end block: 9015174
+15:27:57.698 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,95] - stake-pool event scan start block:9013169, and end block: 9015169
+15:28:22.781 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,95] - stake-pool event scan start block:9015170, and end block: 9017170
+15:28:29.388 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,95] - burn-pool event scan start block:9015175, and end block: 9017175
+15:28:53.784 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,95] - stake-pool event scan start block:9017171, and end block: 9019171
+15:28:55.015 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,95] - burn-pool event scan start block:9017176, and end block: 9019176
+15:29:56.560 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,95] - stake-pool event scan start block:9019172, and end block: 9021172
+15:30:27.176 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,95] - burn-pool event scan start block:9019177, and end block: 9021177
+15:30:40.520 [Thread-42] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628753203982 paused.
+15:30:40.555 [Thread-42] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628753203982 shutting down.
+15:30:40.555 [Thread-42] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628753203982 paused.
+15:30:40.556 [Thread-42] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628753203982 shutdown complete.
+15:30:40.556 [Thread-42] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+15:30:40.567 [Thread-42] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+15:35:33.884 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 13901 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+15:35:33.887 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+15:35:37.449 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+15:35:37.456 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:35:37.456 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+15:35:37.557 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:35:38.334 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+15:35:38.372 [cluster-ClusterId{value='6114cf4aaa737e364dfad1ac', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+15:35:42.104 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+15:35:42.335 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+15:35:42.407 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+15:35:43.744 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+15:35:43.758 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:35:43.758 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+15:35:43.765 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628753743747'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+15:35:43.765 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+15:35:43.765 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+15:35:43.767 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@75eff817
+15:35:45.073 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+15:35:45.730 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+15:35:45.891 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+15:35:45.892 [redisson-netty-5-5] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+15:35:46.730 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+15:35:46.742 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+15:35:46.802 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+15:35:46.930 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+15:35:46.952 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 13.643 seconds (JVM running for 14.33)
+15:35:47.535 [RMI TCP Connection(2)-192.168.1.40] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:35:47.548 [RMI TCP Connection(1)-192.168.1.40] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+15:35:48.147 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628753743747 started.
+15:35:48.512 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9009173, and end block: 9011173
+15:35:48.512 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9009168, and end block: 9011168
+15:36:25.828 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9011173, and end block: 9013173
+15:36:27.338 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9011168, and end block: 9013168
+15:36:53.529 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9013174, and end block: 9015174
+15:36:56.619 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9013169, and end block: 9015169
+15:37:25.011 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9015170, and end block: 9017170
+15:37:28.301 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9015175, and end block: 9017175
+15:37:58.265 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9017176, and end block: 9019176
+15:37:58.643 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9017171, and end block: 9019171
+15:38:23.939 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9019177, and end block: 9021177
+15:38:30.041 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9019172, and end block: 9021172
+15:38:51.679 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9021173, and end block: 9023173
+15:38:54.555 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9021178, and end block: 9023178
+15:39:20.752 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9023179, and end block: 9025179
+15:39:20.803 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9023174, and end block: 9025174
+15:39:56.158 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9025175, and end block: 9027175
+15:39:57.002 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9025180, and end block: 9027180
+15:40:22.530 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9027181, and end block: 9029181
+15:40:25.035 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9027176, and end block: 9029176
+15:40:57.678 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9029177, and end block: 9031177
+15:40:58.988 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9029182, and end block: 9031182
+15:41:23.776 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9031183, and end block: 9033183
+15:41:26.103 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9031178, and end block: 9033178
+15:41:53.598 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9033184, and end block: 9035184
+15:41:54.381 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9033179, and end block: 9035179
+15:42:23.602 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9035185, and end block: 9037185
+15:42:34.675 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9035180, and end block: 9037180
+15:42:56.119 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9037181, and end block: 9039181
+15:42:56.184 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9037186, and end block: 9039186
+15:43:26.319 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9039187, and end block: 9041187
+15:43:26.506 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9039182, and end block: 9041182
+15:43:57.512 [schedule-pool-18] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9041188, and end block: 9043188
+15:44:54.764 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9037183, and end block: 9039183
+15:45:24.076 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9039189, and end block: 9041189
+15:45:24.340 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9039184, and end block: 9041184
+15:45:52.723 [schedule-pool-22] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9041190, and end block: 9043190
+15:45:56.442 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9041185, and end block: 9043185
+15:47:00.620 [schedule-pool-24] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9041191, and end block: 9043191
+15:47:04.075 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9041186, and end block: 9043186
+15:47:30.931 [schedule-pool-25] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9043192, and end block: 9045192
+15:47:48.911 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9043187, and end block: 9045187
+15:47:52.052 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9045193, and end block: 9047193
+15:48:04.684 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9045188, and end block: 9047188
+15:48:22.914 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9047189, and end block: 9049189
+15:48:25.013 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9047194, and end block: 9049194
+15:48:53.423 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9049195, and end block: 9051195
+15:48:58.030 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9049190, and end block: 9051190
+15:49:23.174 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9051196, and end block: 9053196
+15:49:23.530 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9051191, and end block: 9053191
+15:49:55.328 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9053197, and end block: 9055197
+15:49:56.290 [schedule-pool-31] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9053192, and end block: 9055192
+15:50:23.498 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9055198, and end block: 9057198
+15:50:26.047 [schedule-pool-32] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9055193, and end block: 9057193
+15:50:53.235 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9057199, and end block: 9059199
+15:50:54.645 [schedule-pool-33] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9057194, and end block: 9059194
+15:51:22.253 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9059200, and end block: 9061200
+15:51:23.240 [Thread-41] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628753743747 paused.
+15:51:23.282 [Thread-41] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628753743747 shutting down.
+15:51:23.283 [Thread-41] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628753743747 paused.
+15:51:23.284 [Thread-41] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628753743747 shutdown complete.
+15:51:23.284 [Thread-41] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+15:51:23.294 [Thread-41] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+15:52:20.450 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 14213 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+15:52:20.453 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+15:52:23.854 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+15:52:23.861 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:52:23.861 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+15:52:23.954 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:52:24.634 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+15:52:24.663 [cluster-ClusterId{value='6114d338aa737e3785a063eb', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+15:52:28.158 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+15:52:28.343 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+15:52:28.416 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+15:52:29.755 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+15:52:29.764 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:52:29.764 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+15:52:29.769 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628754749756'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+15:52:29.769 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+15:52:29.769 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+15:52:29.770 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@71f80771
+15:52:31.015 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+15:52:31.593 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+15:52:31.746 [redisson-netty-5-11] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+15:52:31.747 [redisson-netty-5-5] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+15:52:32.449 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+15:52:32.458 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+15:52:32.510 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+15:52:32.614 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+15:52:32.631 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 12.575 seconds (JVM running for 13.508)
+15:52:32.820 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:52:32.828 [RMI TCP Connection(3)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+15:52:33.659 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628754749756 started.
+15:52:34.147 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9009173, and end block: 9011173
+15:52:34.149 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9009168, and end block: 9011168
+15:53:13.970 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9011168, and end block: 9013168
+15:53:14.238 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9011173, and end block: 9013173
+15:53:39.812 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9013169, and end block: 9015169
+15:53:43.725 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9013174, and end block: 9015174
+15:54:10.246 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9015175, and end block: 9017175
+15:54:11.689 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9015170, and end block: 9017170
+15:54:41.371 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9017176, and end block: 9019176
+15:54:42.198 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9017171, and end block: 9019171
+15:55:09.961 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9019172, and end block: 9021172
+15:55:12.728 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9019177, and end block: 9021177
+15:55:38.115 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9021178, and end block: 9023178
+15:55:39.270 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9021173, and end block: 9023173
+15:56:06.716 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9023174, and end block: 9025174
+15:56:09.982 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9023179, and end block: 9025179
+15:56:41.552 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9025175, and end block: 9027175
+15:56:42.333 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9025180, and end block: 9027180
+15:57:15.566 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9027181, and end block: 9029181
+15:57:38.610 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9029182, and end block: 9031182
+15:57:41.070 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9025175, and end block: 9027175
+15:58:06.684 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9027176, and end block: 9029176
+15:58:08.843 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9031183, and end block: 9033183
+15:58:39.170 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9033184, and end block: 9035184
+15:58:41.835 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9029177, and end block: 9031177
+15:59:12.605 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9035185, and end block: 9037185
+15:59:17.110 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9031178, and end block: 9033178
+15:59:36.786 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9033179, and end block: 9035179
+15:59:43.519 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9037186, and end block: 9039186
+16:00:11.345 [schedule-pool-18] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9039187, and end block: 9041187
+16:00:14.709 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9035180, and end block: 9037180
+16:00:40.352 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9037181, and end block: 9039181
+16:00:40.604 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9041188, and end block: 9043188
+16:01:08.690 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9039182, and end block: 9041182
+16:01:09.175 [schedule-pool-20] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9043189, and end block: 9045189
+16:01:40.262 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9041183, and end block: 9043183
+16:01:42.751 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9045190, and end block: 9047190
+16:02:13.989 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9043184, and end block: 9045184
+16:02:18.815 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9047191, and end block: 9049191
+16:03:11.887 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9043184, and end block: 9045184
+16:03:28.962 [Thread-40] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628754749756 paused.
+16:03:29.011 [Thread-40] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628754749756 shutting down.
+16:03:29.011 [Thread-40] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628754749756 paused.
+16:03:29.012 [Thread-40] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628754749756 shutdown complete.
+16:03:29.012 [Thread-40] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+16:03:29.022 [Thread-40] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+16:04:22.968 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 14473 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+16:04:22.971 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+16:04:26.478 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+16:04:26.484 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+16:04:26.485 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+16:04:26.576 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+16:04:27.253 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:04:27.281 [cluster-ClusterId{value='6114d60baa737e38898d76a9', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+16:04:30.829 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+16:04:31.007 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+16:04:31.072 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+16:04:32.530 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+16:04:32.539 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+16:04:32.539 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+16:04:32.544 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628755472531'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+16:04:32.544 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+16:04:32.544 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+16:04:32.545 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@630d96e7
+16:04:33.874 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:04:34.636 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+16:04:34.811 [redisson-netty-5-5] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+16:04:34.811 [redisson-netty-5-11] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+16:04:35.659 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+16:04:35.669 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+16:04:35.723 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+16:04:35.824 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+16:04:35.841 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 13.284 seconds (JVM running for 14.16)
+16:04:36.270 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:04:36.279 [RMI TCP Connection(3)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:04:36.842 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628755472531 started.
+16:04:37.357 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9009168, and end block: 9011168
+16:04:37.359 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9009173, and end block: 9011173
+16:05:09.887 [Thread-42] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628755472531 paused.
+16:05:09.926 [Thread-42] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628755472531 shutting down.
+16:05:09.926 [Thread-42] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628755472531 paused.
+16:05:09.932 [Thread-42] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628755472531 shutdown complete.
+16:05:09.932 [Thread-42] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+16:05:09.946 [Thread-42] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+16:05:43.406 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 14519 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+16:05:43.411 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+16:05:46.756 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+16:05:46.762 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+16:05:46.763 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+16:05:46.856 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+16:05:47.509 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:05:47.536 [cluster-ClusterId{value='6114d65baa737e38b7717182', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+16:05:50.940 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+16:05:51.119 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+16:05:51.804 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+16:05:53.108 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+16:05:53.117 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+16:05:53.117 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+16:05:53.122 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628755553108'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+16:05:53.122 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+16:05:53.122 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+16:05:53.124 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@20de0c6d
+16:05:54.307 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:05:54.873 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+16:05:55.028 [redisson-netty-5-11] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+16:05:55.031 [redisson-netty-5-5] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+16:05:55.889 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+16:05:55.898 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+16:05:55.950 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+16:05:56.056 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+16:05:56.072 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 13.109 seconds (JVM running for 13.826)
+16:05:56.518 [RMI TCP Connection(6)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:05:56.526 [RMI TCP Connection(7)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:05:57.071 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628755553108 started.
+16:06:01.414 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9011173, and end block: 9013173
+16:06:02.606 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9011168, and end block: 9013168
+16:06:30.353 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9013174, and end block: 9015174
+16:06:31.137 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9013169, and end block: 9015169
+16:07:01.725 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9015175, and end block: 9017175
+16:07:04.398 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9015170, and end block: 9017170
+16:07:34.809 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9017176, and end block: 9019176
+16:07:37.350 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9017171, and end block: 9019171
+16:08:00.795 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9019172, and end block: 9021172
+16:08:06.037 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9019177, and end block: 9021177
+16:08:33.904 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9021173, and end block: 9023173
+16:08:37.290 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9021178, and end block: 9023178
+16:09:00.474 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9023174, and end block: 9025174
+16:09:02.146 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9023179, and end block: 9025179
+16:09:34.627 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9025175, and end block: 9027175
+16:09:35.171 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9025180, and end block: 9027180
+16:10:05.820 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9027181, and end block: 9029181
+16:10:09.369 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9027176, and end block: 9029176
+16:10:39.310 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9029177, and end block: 9031177
+16:10:40.675 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9029182, and end block: 9031182
+16:11:07.283 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9031183, and end block: 9033183
+16:11:34.344 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9033184, and end block: 9035184
+16:11:37.138 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9029177, and end block: 9031177
+16:12:01.516 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9035185, and end block: 9037185
+16:12:02.259 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9031178, and end block: 9033178
+16:12:33.524 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9033179, and end block: 9035179
+16:12:36.001 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9037186, and end block: 9039186
+16:13:07.679 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9039187, and end block: 9041187
+16:13:32.084 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9033179, and end block: 9035179
+16:13:33.044 [schedule-pool-18] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9041188, and end block: 9043188
+16:14:03.648 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9043189, and end block: 9045189
+16:14:04.792 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9035180, and end block: 9037180
+16:14:32.230 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9037181, and end block: 9039181
+16:14:39.831 [schedule-pool-20] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9045190, and end block: 9047190
+16:15:00.818 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9047191, and end block: 9049191
+16:15:01.188 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9039182, and end block: 9041182
+16:15:32.921 [schedule-pool-23] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9041183, and end block: 9043183
+16:15:34.005 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9049192, and end block: 9051192
+16:16:01.300 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9043184, and end block: 9045184
+16:16:34.351 [schedule-pool-25] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9045185, and end block: 9047185
+16:16:38.172 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9049192, and end block: 9051192
+16:17:01.655 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9051193, and end block: 9053193
+16:17:05.145 [schedule-pool-27] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9047186, and end block: 9049186
+16:17:34.594 [schedule-pool-28] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9049187, and end block: 9051187
+16:17:37.299 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9053194, and end block: 9055194
+16:18:01.305 [schedule-pool-29] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9055195, and end block: 9057195
+16:18:01.318 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9051188, and end block: 9053188
+16:18:33.639 [schedule-pool-29] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9057196, and end block: 9059196
+16:18:33.950 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9053189, and end block: 9055189
+16:19:04.387 [schedule-pool-31] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9055190, and end block: 9057190
+16:19:32.653 [schedule-pool-32] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9057191, and end block: 9059191
+16:19:37.484 [schedule-pool-29] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9057196, and end block: 9059196
+16:20:02.351 [schedule-pool-29] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9059197, and end block: 9061197
+16:20:04.615 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9059192, and end block: 9061192
+16:20:31.592 [schedule-pool-18] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9061193, and end block: 9063193
+16:20:32.828 [schedule-pool-29] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9061198, and end block: 9063198
+16:21:01.186 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9063194, and end block: 9065194
+16:21:01.556 [schedule-pool-29] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9063199, and end block: 9065199
+16:21:18.593 [Thread-42] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628755553108 paused.
+16:21:18.654 [Thread-42] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628755553108 shutting down.
+16:21:18.654 [Thread-42] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628755553108 paused.
+16:21:18.655 [Thread-42] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628755553108 shutdown complete.
+16:21:18.656 [Thread-42] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+16:21:18.667 [Thread-42] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+16:45:17.076 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 15440 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+16:45:17.079 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+16:45:21.047 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+16:45:21.056 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+16:45:21.057 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+16:45:21.166 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+16:45:21.962 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:45:21.998 [cluster-ClusterId{value='6114dfa14aa87e3c504a23b2', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+16:45:25.898 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+16:45:26.162 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+16:45:26.235 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+16:45:27.606 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+16:45:27.618 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+16:45:27.618 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+16:45:27.626 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628757927608'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+16:45:27.626 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+16:45:27.626 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+16:45:27.628 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@3bf90ea0
+16:45:29.007 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:45:29.640 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+16:45:29.802 [redisson-netty-5-5] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+16:45:29.803 [redisson-netty-5-5] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+16:45:30.522 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+16:45:30.533 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+16:45:30.596 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+16:45:30.759 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+16:45:30.778 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 14.157 seconds (JVM running for 15.322)
+16:45:31.049 [RMI TCP Connection(6)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:45:31.068 [RMI TCP Connection(5)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:45:31.772 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628757927608 started.
+16:45:32.295 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,95] - stake-pool event scan start block:9009168, and end block: 9011168
+16:45:32.297 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9009173, and end block: 9011173
+16:46:06.581 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9011173, and end block: 9013173
+16:46:07.338 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,95] - stake-pool event scan start block:9011168, and end block: 9013168
+16:46:36.217 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,95] - stake-pool event scan start block:9013169, and end block: 9015169
+16:46:39.673 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9013174, and end block: 9015174
+16:47:04.937 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9015175, and end block: 9017175
+16:47:06.684 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,95] - stake-pool event scan start block:9015170, and end block: 9017170
+16:47:36.690 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9017176, and end block: 9019176
+16:47:37.166 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,95] - stake-pool event scan start block:9017171, and end block: 9019171
+16:48:09.277 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9019177, and end block: 9021177
+16:48:10.389 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,95] - stake-pool event scan start block:9019172, and end block: 9021172
+16:48:38.631 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9021178, and end block: 9023178
+16:49:05.249 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,95] - stake-pool event scan start block:9019172, and end block: 9021172
+16:49:07.433 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9023179, and end block: 9025179
+16:49:39.695 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9025180, and end block: 9027180
+16:50:06.560 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9027181, and end block: 9029181
+16:50:20.464 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,95] - stake-pool event scan start block:9019172, and end block: 9021172
+16:50:39.441 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9029182, and end block: 9031182
+16:50:39.788 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,95] - stake-pool event scan start block:9021173, and end block: 9023173
+16:50:47.107 [Thread-44] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628757927608 paused.
+16:50:47.174 [Thread-44] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628757927608 shutting down.
+16:50:47.176 [Thread-44] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628757927608 paused.
+16:50:47.179 [Thread-44] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628757927608 shutdown complete.
+16:50:47.179 [Thread-44] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+16:50:47.202 [Thread-44] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+16:59:44.872 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 15794 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+16:59:44.889 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+16:59:48.523 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+16:59:48.530 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+16:59:48.530 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+16:59:48.643 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+16:59:49.419 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:59:49.456 [cluster-ClusterId{value='6114e3054aa87e3db20c6a4e', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+16:59:53.198 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+16:59:53.430 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+16:59:53.499 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+16:59:54.857 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+16:59:54.869 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+16:59:54.869 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+16:59:54.874 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628758794859'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+16:59:54.875 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+16:59:54.875 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+16:59:54.876 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@5be27522
+16:59:56.182 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:59:56.842 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+16:59:57.029 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+16:59:57.030 [redisson-netty-5-5] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+16:59:57.855 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+16:59:57.870 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+16:59:57.932 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+16:59:58.055 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+16:59:58.078 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 13.832 seconds (JVM running for 14.552)
+16:59:58.507 [RMI TCP Connection(3)-192.168.1.40] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:59:58.520 [RMI TCP Connection(2)-192.168.1.40] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:59:59.088 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628758794859 started.
+16:59:59.650 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9009173, and end block: 9011173
+16:59:59.650 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9009168, and end block: 9011168
+17:00:31.071 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9011173, and end block: 9013173
+17:00:31.079 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9011168, and end block: 9013168
+17:01:01.238 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9013169, and end block: 9015169
+17:01:01.241 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9013174, and end block: 9015174
+17:01:31.113 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9015170, and end block: 9017170
+17:01:31.119 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9015175, and end block: 9017175
+17:01:56.249 [Thread-42] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628758794859 paused.
+17:01:56.292 [Thread-42] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628758794859 shutting down.
+17:01:56.292 [Thread-42] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628758794859 paused.
+17:01:56.293 [Thread-42] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628758794859 shutdown complete.
+17:01:56.293 [Thread-42] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+17:01:56.307 [Thread-42] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+17:21:56.184 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 16317 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+17:21:56.196 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+17:21:59.969 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+17:21:59.977 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+17:21:59.978 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+17:22:00.085 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+17:22:00.842 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+17:22:00.879 [cluster-ClusterId{value='6114e8384aa87e3fbd0657ce', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+17:22:04.580 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+17:22:04.810 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+17:22:04.872 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+17:22:06.251 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+17:22:06.269 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+17:22:06.269 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+17:22:06.274 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628760126254'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+17:22:06.275 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+17:22:06.275 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+17:22:06.276 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@24108836
+17:22:07.674 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+17:22:08.301 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+17:22:08.469 [redisson-netty-5-5] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+17:22:08.469 [redisson-netty-5-3] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+17:22:09.299 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+17:22:09.313 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+17:22:09.378 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+17:22:09.498 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+17:22:09.526 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 13.974 seconds (JVM running for 15.007)
+17:22:09.786 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:22:09.845 [RMI TCP Connection(3)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+17:22:10.517 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628760126254 started.
+17:22:11.071 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9009168, and end block: 9011168
+17:22:11.071 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9009173, and end block: 9011173
+17:22:42.704 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9011168, and end block: 9013168
+17:22:42.704 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9011173, and end block: 9013173
+17:23:12.733 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9013169, and end block: 9015169
+17:23:12.733 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9013174, and end block: 9015174
+17:23:42.809 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9015170, and end block: 9017170
+17:23:42.809 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9015175, and end block: 9017175
+17:24:12.858 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9017176, and end block: 9019176
+17:24:12.858 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9017171, and end block: 9019171
+17:24:42.538 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9019172, and end block: 9021172
+17:24:42.538 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9019177, and end block: 9021177
+17:25:12.763 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,94] - stake-pool event scan start block:9021173, and end block: 9023173
+17:25:12.763 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,94] - burn-pool event scan start block:9021178, and end block: 9023178
+17:25:30.152 [Thread-43] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628760126254 paused.
+17:25:30.214 [Thread-43] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628760126254 shutting down.
+17:25:30.214 [Thread-43] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628760126254 paused.
+17:25:30.216 [Thread-43] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628760126254 shutdown complete.
+17:25:30.216 [Thread-43] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+17:25:30.241 [Thread-43] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed

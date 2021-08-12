@@ -1,0 +1,583 @@
+10:52:59.997 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 1864 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+10:53:00.004 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+10:53:03.904 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+10:53:03.913 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+10:53:03.914 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+10:53:04.048 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+10:53:04.922 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+10:53:04.957 [cluster-ClusterId{value='610b529047c31e07488f95b8', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+10:53:08.771 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+10:53:09.012 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+10:53:09.504 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+10:53:10.873 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+10:53:10.887 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+10:53:10.888 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+10:53:10.893 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628131990874'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+10:53:10.893 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+10:53:10.893 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+10:53:10.895 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@35e380b8
+10:53:12.355 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+10:53:12.995 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+10:53:13.174 [redisson-netty-5-9] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+10:53:13.175 [redisson-netty-5-5] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+10:53:13.978 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+10:53:13.989 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+10:53:14.048 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+10:53:14.176 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+10:53:14.200 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 14.76 seconds (JVM running for 15.687)
+10:53:14.509 [RMI TCP Connection(2)-192.168.1.40] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:53:14.529 [RMI TCP Connection(3)-192.168.1.40] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+10:53:15.222 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628131990874 started.
+10:53:15.679 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009168, and end block: 9009300
+10:53:15.703 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628131995703 =====
+10:53:16.176 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9009168, and end block: 9009300
+10:53:16.177 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628131996177 =====
+10:53:22.752 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132002752 =====
+10:53:29.900 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9009301, and end block: 9011301
+10:53:29.901 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132009901 =====
+10:53:33.564 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009301, and end block: 9011301
+10:53:33.564 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132013564 =====
+10:53:34.516 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132014516 =====
+10:53:38.504 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011302, and end block: 9013302
+10:53:38.504 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132018504 =====
+10:53:39.468 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132019468 =====
+10:53:41.110 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9011302, and end block: 9013302
+10:53:41.110 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132021110 =====
+10:53:48.540 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9013303, and end block: 9015303
+10:53:48.541 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132028541 =====
+10:53:49.010 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9013303, and end block: 9015303
+10:53:49.010 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132029010 =====
+10:53:49.501 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132029501 =====
+10:53:59.265 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9015304, and end block: 9017304
+10:53:59.267 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132039267 =====
+10:54:00.201 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132040201 =====
+10:54:01.405 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9015304, and end block: 9017304
+10:54:01.405 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132041405 =====
+10:54:09.134 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9017305, and end block: 9019305
+10:54:09.135 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132049135 =====
+10:54:09.263 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9017305, and end block: 9019305
+10:54:09.263 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132049263 =====
+10:54:10.059 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132050059 =====
+10:54:18.672 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9019306, and end block: 9021306
+10:54:18.673 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132058673 =====
+10:54:19.433 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9019306, and end block: 9021306
+10:54:19.433 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132059433 =====
+10:54:19.610 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132059610 =====
+10:54:28.337 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9021307, and end block: 9023307
+10:54:28.337 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132068337 =====
+10:54:28.832 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9021307, and end block: 9023307
+10:54:28.832 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132068832 =====
+10:54:29.257 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132069257 =====
+10:54:38.509 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9023308, and end block: 9025308
+10:54:38.510 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132078510 =====
+10:54:39.421 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9023308, and end block: 9025308
+10:54:39.421 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132079421 =====
+10:54:39.467 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132079467 =====
+10:54:48.338 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9025309, and end block: 9027309
+10:54:48.338 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132088338 =====
+10:54:48.808 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9025309, and end block: 9027309
+10:54:48.809 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132088809 =====
+10:54:49.358 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132089358 =====
+10:54:58.392 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9027310, and end block: 9029310
+10:54:58.392 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132098392 =====
+10:54:59.238 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132099238 =====
+10:54:59.377 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9027310, and end block: 9029310
+10:54:59.378 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132099378 =====
+10:55:08.399 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9029311, and end block: 9031311
+10:55:08.400 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132108400 =====
+10:55:09.357 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132109357 =====
+10:55:10.794 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9029311, and end block: 9031311
+10:55:10.794 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132110794 =====
+10:55:18.929 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9031312, and end block: 9033312
+10:55:18.930 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132118930 =====
+10:55:19.911 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132119911 =====
+10:55:21.101 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9031312, and end block: 9033312
+10:55:21.101 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132121101 =====
+10:55:28.925 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9033313, and end block: 9035313
+10:55:28.925 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132128925 =====
+10:55:29.850 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9033313, and end block: 9035313
+10:55:29.850 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132129850 =====
+10:55:29.864 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132129864 =====
+10:55:38.354 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9035314, and end block: 9037314
+10:55:38.354 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132138354 =====
+10:55:38.861 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9035314, and end block: 9037314
+10:55:38.861 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132138861 =====
+10:55:39.591 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132139591 =====
+10:55:48.919 [schedule-pool-18] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9037315, and end block: 9039315
+10:55:48.920 [schedule-pool-18] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132148920 =====
+10:55:48.955 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9037315, and end block: 9039315
+10:55:48.956 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132148956 =====
+10:55:50.421 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132150421 =====
+10:55:59.535 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9039316, and end block: 9041316
+10:55:59.535 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132159535 =====
+10:56:00.115 [schedule-pool-20] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9039316, and end block: 9041316
+10:56:00.116 [schedule-pool-20] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132160116 =====
+10:56:01.056 [schedule-pool-20] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132161056 =====
+10:56:08.349 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9041317, and end block: 9043317
+10:56:08.349 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132168349 =====
+10:56:09.155 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9041317, and end block: 9043317
+10:56:09.155 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132169155 =====
+10:56:09.303 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132169303 =====
+10:56:18.302 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043318, and end block: 9045318
+10:56:18.303 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132178303 =====
+10:56:19.131 [schedule-pool-22] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9043318, and end block: 9045318
+10:56:19.131 [schedule-pool-22] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132179131 =====
+10:56:19.285 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132179285 =====
+10:56:28.456 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9045319, and end block: 9047319
+10:56:28.456 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132188456 =====
+10:56:28.871 [schedule-pool-23] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9045319, and end block: 9047319
+10:56:28.871 [schedule-pool-23] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132188871 =====
+10:56:29.407 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132189407 =====
+10:56:38.633 [schedule-pool-25] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9047320, and end block: 9049320
+10:56:38.633 [schedule-pool-25] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132198633 =====
+10:56:38.955 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9047320, and end block: 9049320
+10:56:38.956 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132198956 =====
+10:56:40.648 [schedule-pool-25] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132200648 =====
+10:56:48.892 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9049321, and end block: 9051321
+10:56:48.893 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132208893 =====
+10:56:49.297 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9049321, and end block: 9051321
+10:56:49.297 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132209297 =====
+10:56:50.229 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132210229 =====
+10:56:58.340 [schedule-pool-28] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9051322, and end block: 9053322
+10:56:58.341 [schedule-pool-28] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132218341 =====
+10:56:59.272 [schedule-pool-28] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132219272 =====
+10:57:00.484 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9051322, and end block: 9053322
+10:57:00.484 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132220484 =====
+10:57:08.775 [schedule-pool-29] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9053323, and end block: 9055323
+10:57:08.776 [schedule-pool-29] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132228776 =====
+10:57:09.722 [schedule-pool-29] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132229722 =====
+10:57:11.300 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9053323, and end block: 9055323
+10:57:11.300 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132231300 =====
+10:57:19.441 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9055324, and end block: 9057324
+10:57:19.441 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132239441 =====
+10:57:19.490 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9055324, and end block: 9057324
+10:57:19.490 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132239490 =====
+10:57:20.442 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132240442 =====
+10:57:28.826 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9057325, and end block: 9059325
+10:57:28.827 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132248827 =====
+10:57:28.945 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9057325, and end block: 9059325
+10:57:28.946 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132248946 =====
+10:57:29.816 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132249816 =====
+10:57:38.367 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059326, and end block: 9061326
+10:57:38.368 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132258368 =====
+10:57:38.863 [schedule-pool-18] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059326, and end block: 9061326
+10:57:38.863 [schedule-pool-18] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132258863 =====
+10:57:39.859 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132259859 =====
+10:57:48.857 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9061327, and end block: 9059500
+10:57:48.857 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132268857 =====
+10:57:48.879 [schedule-pool-34] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9061327, and end block: 9059500
+10:57:48.879 [schedule-pool-34] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132268879 =====
+10:57:49.792 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132269792 =====
+10:57:58.903 [schedule-pool-34] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059501, and end block: 9059501
+10:57:58.903 [schedule-pool-34] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132278903 =====
+10:57:59.670 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059501, and end block: 9059501
+10:57:59.671 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132279671 =====
+10:58:00.834 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132280834 =====
+10:58:08.904 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059502, and end block: 9059502
+10:58:08.904 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132288904 =====
+10:58:09.171 [schedule-pool-34] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059502, and end block: 9059502
+10:58:09.171 [schedule-pool-34] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132289171 =====
+10:58:09.853 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132289853 =====
+10:58:19.236 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059503, and end block: 9059502
+10:58:19.236 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132299236 =====
+10:58:20.122 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059503, and end block: 9059502
+10:58:20.122 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132300122 =====
+10:58:21.407 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132301407 =====
+10:58:28.418 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059503, and end block: 9059503
+10:58:28.418 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132308418 =====
+10:58:29.360 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132309360 =====
+10:58:29.370 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059503, and end block: 9059503
+10:58:29.370 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132309370 =====
+10:58:38.196 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059504, and end block: 9059504
+10:58:38.196 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132318196 =====
+10:58:39.111 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132319111 =====
+10:58:39.329 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059504, and end block: 9059504
+10:58:39.329 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132319329 =====
+10:58:48.362 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059505, and end block: 9059504
+10:58:48.363 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132328363 =====
+10:58:49.173 [schedule-pool-23] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059505, and end block: 9059504
+10:58:49.173 [schedule-pool-23] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132329173 =====
+10:58:49.305 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132329305 =====
+10:58:58.924 [schedule-pool-23] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059505, and end block: 9059505
+10:58:58.925 [schedule-pool-23] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132338925 =====
+10:58:59.601 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059505, and end block: 9059505
+10:58:59.601 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132339601 =====
+10:59:00.533 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132340533 =====
+10:59:08.984 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059506, and end block: 9059506
+10:59:08.985 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132348985 =====
+10:59:09.024 [schedule-pool-43] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059506, and end block: 9059506
+10:59:09.025 [schedule-pool-43] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132349025 =====
+10:59:09.918 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132349918 =====
+10:59:18.407 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059507, and end block: 9059506
+10:59:18.407 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132358407 =====
+10:59:18.928 [schedule-pool-43] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059507, and end block: 9059506
+10:59:18.928 [schedule-pool-43] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132358928 =====
+10:59:19.352 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132359352 =====
+10:59:28.969 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059507, and end block: 9059507
+10:59:28.970 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132368970 =====
+10:59:29.498 [schedule-pool-43] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059507, and end block: 9059507
+10:59:29.499 [schedule-pool-43] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132369499 =====
+10:59:29.929 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132369929 =====
+10:59:39.166 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059508, and end block: 9059508
+10:59:39.167 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132379167 =====
+10:59:39.183 [schedule-pool-43] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059508, and end block: 9059508
+10:59:39.184 [schedule-pool-43] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132379184 =====
+10:59:40.084 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132380084 =====
+10:59:49.204 [schedule-pool-43] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059509, and end block: 9059508
+10:59:49.205 [schedule-pool-43] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132389205 =====
+10:59:49.420 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059509, and end block: 9059508
+10:59:49.420 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132389420 =====
+10:59:50.297 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132390297 =====
+10:59:59.165 [schedule-pool-43] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059509, and end block: 9059509
+10:59:59.166 [schedule-pool-43] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132399166 =====
+10:59:59.911 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059509, and end block: 9059509
+10:59:59.911 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132399911 =====
+11:00:00.846 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132400846 =====
+11:00:08.845 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059510, and end block: 9059510
+11:00:08.845 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132408845 =====
+11:00:09.288 [schedule-pool-31] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059510, and end block: 9059510
+11:00:09.288 [schedule-pool-31] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132409288 =====
+11:00:09.812 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132409812 =====
+11:00:18.975 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059511, and end block: 9059510
+11:00:18.975 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132418975 =====
+11:00:19.056 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059511, and end block: 9059510
+11:00:19.056 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132419056 =====
+11:00:20.450 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132420450 =====
+11:00:28.738 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059511, and end block: 9059511
+11:00:28.739 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132428739 =====
+11:00:28.818 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059511, and end block: 9059511
+11:00:28.819 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132428819 =====
+11:00:29.762 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132429762 =====
+11:00:38.468 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059512, and end block: 9059512
+11:00:38.469 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132438469 =====
+11:00:39.466 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132439466 =====
+11:00:40.237 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059512, and end block: 9059512
+11:00:40.237 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132440237 =====
+11:00:48.415 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059513, and end block: 9059512
+11:00:48.416 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132448416 =====
+11:00:48.827 [schedule-pool-20] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059513, and end block: 9059512
+11:00:48.827 [schedule-pool-20] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132448827 =====
+11:00:49.997 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132449997 =====
+11:00:58.505 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059513, and end block: 9059513
+11:00:58.507 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132458507 =====
+11:00:58.954 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059513, and end block: 9059513
+11:00:58.954 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132458954 =====
+11:00:59.462 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132459462 =====
+11:01:08.577 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059514, and end block: 9059514
+11:01:08.577 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132468577 =====
+11:01:09.064 [schedule-pool-34] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059514, and end block: 9059514
+11:01:09.064 [schedule-pool-34] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132469064 =====
+11:01:09.563 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132469563 =====
+11:01:18.658 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059515, and end block: 9059514
+11:01:18.659 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132478659 =====
+11:01:18.854 [schedule-pool-22] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059515, and end block: 9059514
+11:01:18.854 [schedule-pool-22] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132478854 =====
+11:01:20.127 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132480127 =====
+11:01:28.481 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059515, and end block: 9059515
+11:01:28.481 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132488481 =====
+11:01:29.420 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132489420 =====
+11:01:30.785 [schedule-pool-22] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059515, and end block: 9059515
+11:01:30.785 [schedule-pool-22] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132490785 =====
+11:01:38.397 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059516, and end block: 9059516
+11:01:38.397 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132498397 =====
+11:01:39.170 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059516, and end block: 9059516
+11:01:39.170 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132499170 =====
+11:01:39.318 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132499318 =====
+11:01:48.882 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059517, and end block: 9059516
+11:01:48.882 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132508882 =====
+11:01:49.015 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059517, and end block: 9059516
+11:01:49.015 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132509015 =====
+11:01:49.994 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132509994 =====
+11:01:58.380 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059517, and end block: 9059517
+11:01:58.381 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132518381 =====
+11:01:59.430 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059517, and end block: 9059517
+11:01:59.430 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132519430 =====
+11:01:59.983 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132519983 =====
+11:02:08.381 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059518, and end block: 9059518
+11:02:08.381 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132528381 =====
+11:02:09.163 [schedule-pool-27] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059518, and end block: 9059518
+11:02:09.163 [schedule-pool-27] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132529163 =====
+11:02:10.156 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132530156 =====
+11:02:18.770 [schedule-pool-27] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059519, and end block: 9059518
+11:02:18.770 [schedule-pool-27] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132538770 =====
+11:02:21.416 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059519, and end block: 9059518
+11:02:21.417 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132541417 =====
+11:02:22.382 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132542382 =====
+11:02:29.615 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059519, and end block: 9059519
+11:02:29.616 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132549616 =====
+11:02:29.755 [schedule-pool-27] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059519, and end block: 9059519
+11:02:29.755 [schedule-pool-27] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132549755 =====
+11:02:30.537 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132550537 =====
+11:02:38.797 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059520, and end block: 9059520
+11:02:38.798 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132558798 =====
+11:02:39.278 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059520, and end block: 9059520
+11:02:39.278 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132559278 =====
+11:02:39.752 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132559752 =====
+11:02:49.104 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059521, and end block: 9059520
+11:02:49.104 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132569104 =====
+11:02:49.968 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059521, and end block: 9059520
+11:02:49.969 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132569969 =====
+11:02:50.066 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132570066 =====
+11:02:58.915 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059521, and end block: 9059521
+11:02:58.915 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132578915 =====
+11:02:58.919 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059521, and end block: 9059521
+11:02:58.919 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132578919 =====
+11:02:59.883 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132579883 =====
+11:03:08.860 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059522, and end block: 9059522
+11:03:08.860 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132588860 =====
+11:03:09.103 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059522, and end block: 9059522
+11:03:09.103 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132589103 =====
+11:03:10.625 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132590625 =====
+11:03:18.757 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059523, and end block: 9059522
+11:03:18.758 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132598758 =====
+11:03:19.876 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059523, and end block: 9059522
+11:03:19.876 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132599876 =====
+11:03:20.004 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132600004 =====
+11:03:28.375 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059523, and end block: 9059523
+11:03:28.376 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132608376 =====
+11:03:28.743 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059523, and end block: 9059523
+11:03:28.743 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132608743 =====
+11:03:29.969 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132609969 =====
+11:03:38.387 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059524, and end block: 9059524
+11:03:38.388 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132618388 =====
+11:03:39.268 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059524, and end block: 9059524
+11:03:39.268 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132619268 =====
+11:03:39.333 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132619333 =====
+11:03:48.742 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059525, and end block: 9059524
+11:03:48.743 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132628743 =====
+11:03:48.939 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059525, and end block: 9059524
+11:03:48.940 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132628940 =====
+11:03:49.687 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132629687 =====
+11:03:58.380 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059525, and end block: 9059525
+11:03:58.381 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132638381 =====
+11:03:58.878 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059525, and end block: 9059525
+11:03:58.878 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132638878 =====
+11:03:59.312 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132639312 =====
+11:04:08.265 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059526, and end block: 9059526
+11:04:08.267 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132648267 =====
+11:04:08.803 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059526, and end block: 9059526
+11:04:08.804 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132648804 =====
+11:04:09.165 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132649165 =====
+11:04:18.695 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059527, and end block: 9059526
+11:04:18.695 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132658695 =====
+11:04:18.875 [schedule-pool-22] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059527, and end block: 9059526
+11:04:18.875 [schedule-pool-22] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132658875 =====
+11:04:19.680 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132659680 =====
+11:04:28.369 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059527, and end block: 9059527
+11:04:28.369 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132668369 =====
+11:04:28.884 [schedule-pool-22] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059527, and end block: 9059527
+11:04:28.884 [schedule-pool-22] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132668884 =====
+11:04:29.320 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132669320 =====
+11:04:38.551 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059528, and end block: 9059528
+11:04:38.551 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132678551 =====
+11:04:39.480 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132679480 =====
+11:04:39.744 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059528, and end block: 9059528
+11:04:39.744 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132679744 =====
+11:04:50.283 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059529, and end block: 9059528
+11:04:50.284 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132690284 =====
+11:04:50.746 [schedule-pool-25] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059529, and end block: 9059528
+11:04:50.746 [schedule-pool-25] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132690746 =====
+11:04:51.257 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132691257 =====
+11:04:58.347 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059529, and end block: 9059529
+11:04:58.347 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132698347 =====
+11:04:59.205 [schedule-pool-25] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059529, and end block: 9059529
+11:04:59.205 [schedule-pool-25] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132699205 =====
+11:04:59.280 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132699280 =====
+11:05:08.403 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059530, and end block: 9059530
+11:05:08.404 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132708404 =====
+11:05:09.267 [schedule-pool-25] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059530, and end block: 9059530
+11:05:09.267 [schedule-pool-25] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132709267 =====
+11:05:09.340 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132709340 =====
+11:05:18.004 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059531, and end block: 9059530
+11:05:18.005 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132718005 =====
+11:05:18.833 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132718833 =====
+11:05:19.112 [schedule-pool-25] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059531, and end block: 9059530
+11:05:19.112 [schedule-pool-25] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132719112 =====
+11:05:28.712 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059531, and end block: 9059531
+11:05:28.713 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132728713 =====
+11:05:28.907 [schedule-pool-27] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059531, and end block: 9059531
+11:05:28.907 [schedule-pool-27] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132728907 =====
+11:05:29.694 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132729694 =====
+11:05:38.950 [schedule-pool-27] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059532, and end block: 9059532
+11:05:38.950 [schedule-pool-27] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132738950 =====
+11:05:39.584 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059532, and end block: 9059532
+11:05:39.584 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132739584 =====
+11:05:40.557 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132740557 =====
+11:05:48.905 [schedule-pool-27] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059533, and end block: 9059532
+11:05:48.906 [schedule-pool-27] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132748906 =====
+11:05:49.070 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059533, and end block: 9059532
+11:05:49.070 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132749070 =====
+11:05:50.050 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132750050 =====
+11:05:58.429 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059533, and end block: 9059533
+11:05:58.429 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132758429 =====
+11:05:58.983 [schedule-pool-31] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059533, and end block: 9059533
+11:05:58.983 [schedule-pool-31] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132758983 =====
+11:05:59.338 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132759338 =====
+11:06:08.357 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059534, and end block: 9059534
+11:06:08.357 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132768357 =====
+11:06:08.990 [schedule-pool-33] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059534, and end block: 9059534
+11:06:08.990 [schedule-pool-33] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132768990 =====
+11:06:09.290 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132769290 =====
+11:06:19.518 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059535, and end block: 9059534
+11:06:19.518 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132779518 =====
+11:06:19.566 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059535, and end block: 9059534
+11:06:19.567 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132779567 =====
+11:06:20.505 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132780505 =====
+11:06:28.370 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059535, and end block: 9059535
+11:06:28.370 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132788370 =====
+11:06:29.151 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059535, and end block: 9059535
+11:06:29.151 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132789151 =====
+11:06:29.264 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132789264 =====
+11:06:38.946 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059536, and end block: 9059536
+11:06:38.946 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132798946 =====
+11:06:39.224 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059536, and end block: 9059536
+11:06:39.224 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132799224 =====
+11:06:39.892 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132799892 =====
+11:06:48.955 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059537, and end block: 9059536
+11:06:48.955 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132808955 =====
+11:06:49.438 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059537, and end block: 9059536
+11:06:49.438 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132809438 =====
+11:06:49.908 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132809908 =====
+11:06:58.909 [schedule-pool-39] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059537, and end block: 9059537
+11:06:58.909 [schedule-pool-39] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132818909 =====
+11:06:59.577 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059537, and end block: 9059537
+11:06:59.577 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132819577 =====
+11:07:00.545 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132820545 =====
+11:07:08.245 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059538, and end block: 9059538
+11:07:08.246 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132828246 =====
+11:07:08.816 [schedule-pool-39] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059538, and end block: 9059538
+11:07:08.816 [schedule-pool-39] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132828816 =====
+11:07:09.142 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132829141 =====
+11:07:18.948 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059539, and end block: 9059538
+11:07:18.948 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132838948 =====
+11:07:19.951 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132839951 =====
+11:07:20.538 [schedule-pool-39] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059539, and end block: 9059538
+11:07:20.538 [schedule-pool-39] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132840538 =====
+11:07:28.353 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059539, and end block: 9059539
+11:07:28.354 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132848354 =====
+11:07:29.307 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132849307 =====
+11:07:29.635 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059539, and end block: 9059539
+11:07:29.635 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132849635 =====
+11:07:38.659 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059540, and end block: 9059540
+11:07:38.659 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132858659 =====
+11:07:39.604 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132859604 =====
+11:07:39.895 [schedule-pool-23] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059540, and end block: 9059540
+11:07:39.895 [schedule-pool-23] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132859895 =====
+11:07:48.298 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059541, and end block: 9059540
+11:07:48.298 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132868298 =====
+11:07:48.810 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059541, and end block: 9059540
+11:07:48.810 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132868810 =====
+11:07:50.246 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132870246 =====
+11:07:58.404 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059541, and end block: 9059541
+11:07:58.404 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132878404 =====
+11:07:59.643 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132879643 =====
+11:08:00.236 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059541, and end block: 9059541
+11:08:00.236 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132880236 =====
+11:08:08.343 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059542, and end block: 9059542
+11:08:08.343 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132888343 =====
+11:08:08.833 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059542, and end block: 9059542
+11:08:08.833 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132888833 =====
+11:08:09.276 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132889276 =====
+11:08:18.779 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059543, and end block: 9059542
+11:08:18.780 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132898780 =====
+11:08:18.821 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059543, and end block: 9059542
+11:08:18.821 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132898821 =====
+11:08:19.719 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132899719 =====
+11:08:29.020 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059543, and end block: 9059543
+11:08:29.020 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132909020 =====
+11:08:29.024 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059543, and end block: 9059543
+11:08:29.024 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132909024 =====
+11:08:30.631 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132910631 =====
+11:08:38.426 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059544, and end block: 9059544
+11:08:38.426 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132918426 =====
+11:08:39.911 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059544, and end block: 9059544
+11:08:39.911 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132919911 =====
+11:08:39.919 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132919919 =====
+11:08:49.015 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059545, and end block: 9059544
+11:08:49.015 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132929015 =====
+11:08:49.220 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059545, and end block: 9059544
+11:08:49.220 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132929220 =====
+11:08:49.969 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132929969 =====
+11:08:58.216 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059545, and end block: 9059545
+11:08:58.216 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132938216 =====
+11:08:58.821 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059545, and end block: 9059545
+11:08:58.821 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132938821 =====
+11:08:59.136 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132939136 =====
+11:09:08.455 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059546, and end block: 9059546
+11:09:08.455 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132948455 =====
+11:09:09.404 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132949404 =====
+11:09:09.779 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059546, and end block: 9059546
+11:09:09.779 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132949779 =====
+11:09:18.801 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059547, and end block: 9059546
+11:09:18.802 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132958802 =====
+11:09:20.378 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132960378 =====
+11:09:20.728 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059547, and end block: 9059546
+11:09:20.728 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132960728 =====
+11:09:28.948 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059547, and end block: 9059547
+11:09:28.948 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132968948 =====
+11:09:29.330 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059547, and end block: 9059547
+11:09:29.330 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132969330 =====
+11:09:30.277 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132970277 =====
+11:09:38.358 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059548, and end block: 9059547
+11:09:38.358 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132978358 =====
+11:09:39.140 [schedule-pool-20] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059548, and end block: 9059548
+11:09:39.140 [schedule-pool-20] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132979140 =====
+11:09:39.573 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132979573 =====
+11:09:48.337 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059548, and end block: 9059548
+11:09:48.337 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132988337 =====
+11:09:48.859 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059549, and end block: 9059548
+11:09:48.860 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132988860 =====
+11:09:49.275 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132989275 =====
+11:09:58.334 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059549, and end block: 9059549
+11:09:58.334 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628132998334 =====
+11:09:59.620 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059549, and end block: 9059549
+11:09:59.621 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628132999621 =====
+11:09:59.798 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628132999798 =====
+11:10:08.294 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059550, and end block: 9059549
+11:10:08.294 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628133008294 =====
+11:10:08.699 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059550, and end block: 9059550
+11:10:08.700 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628133008700 =====
+11:10:09.210 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628133009210 =====
+11:10:19.988 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059550, and end block: 9059550
+11:10:19.989 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628133019989 =====
+11:10:20.921 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628133020921 =====
+11:10:20.927 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059551, and end block: 9059550
+11:10:20.927 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628133020927 =====
+11:10:28.570 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059551, and end block: 9059551
+11:10:28.571 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628133028571 =====
+11:10:29.496 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628133029496 =====
+11:10:29.803 [schedule-pool-39] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059551, and end block: 9059551
+11:10:29.803 [schedule-pool-39] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628133029803 =====
+11:10:39.570 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9059552, and end block: 9059552
+11:10:39.571 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1628133039571 =====
+11:10:40.396 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,113] - start block:9059552, and end block: 9059552
+11:10:40.397 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,129] - ==== burn deposit record start at: 1628133040397 =====
+11:10:40.519 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1628133040519 =====
+11:10:44.640 [Thread-44] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628131990874 paused.
+11:10:44.691 [Thread-44] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628131990874 shutting down.
+11:10:44.691 [Thread-44] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628131990874 paused.
+11:10:44.692 [Thread-44] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628131990874 shutdown complete.
+11:10:44.692 [Thread-44] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+11:10:44.705 [Thread-44] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed

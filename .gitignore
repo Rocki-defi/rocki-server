@@ -1,0 +1,7 @@
+.idea/
+*.iml
+*.yml
+*.properties
+*.xml
+*.txt
+*test/

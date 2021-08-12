@@ -1,0 +1,1404 @@
+16:01:40.877 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 58570 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+16:01:40.889 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+16:01:44.829 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+16:01:44.837 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+16:01:44.837 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+16:01:44.957 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+16:01:45.818 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:01:45.858 [cluster-ClusterId{value='6107a6693aaabee4ca46664a', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+16:01:49.589 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+16:01:49.834 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+16:01:50.327 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+16:01:51.662 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+16:01:51.683 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+16:01:51.683 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+16:01:51.689 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1627891311666'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+16:01:51.689 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+16:01:51.689 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+16:01:51.691 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@46a76253
+16:01:53.114 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:01:53.763 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+16:01:53.943 [redisson-netty-5-12] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+16:01:53.945 [redisson-netty-5-5] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+16:01:54.951 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+16:01:54.963 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+16:01:55.022 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+16:01:55.164 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+16:01:55.185 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 14.734 seconds (JVM running for 15.646)
+16:01:55.649 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:01:55.664 [RMI TCP Connection(3)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:01:56.197 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1627891311666 started.
+16:01:56.668 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009168, and end block: 9009300
+16:01:56.693 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891316693 =====
+16:02:00.015 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891320015 =====
+16:02:09.138 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009301, and end block: 9009321
+16:02:09.138 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891329138 =====
+16:02:10.066 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891330066 =====
+16:02:23.722 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009322, and end block: 9009342
+16:02:23.722 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891343722 =====
+16:02:24.712 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891344712 =====
+16:02:29.224 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009343, and end block: 9009363
+16:02:29.224 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891349224 =====
+16:02:30.183 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891350183 =====
+16:02:39.325 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009364, and end block: 9009384
+16:02:39.326 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891359326 =====
+16:02:40.314 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891360314 =====
+16:02:49.237 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009385, and end block: 9009405
+16:02:49.238 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891369238 =====
+16:02:50.192 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891370192 =====
+16:02:59.271 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009406, and end block: 9009426
+16:02:59.271 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891379271 =====
+16:03:00.210 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891380210 =====
+16:03:09.224 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009427, and end block: 9009447
+16:03:09.225 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891389225 =====
+16:03:10.195 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891390195 =====
+16:03:19.222 [schedule-pool-5] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009448, and end block: 9009468
+16:03:19.223 [schedule-pool-5] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891399223 =====
+16:03:20.169 [schedule-pool-5] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891400169 =====
+16:03:30.179 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009469, and end block: 9009489
+16:03:30.185 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891410185 =====
+16:03:31.164 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891411164 =====
+16:03:39.569 [schedule-pool-6] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009490, and end block: 9009510
+16:03:39.570 [schedule-pool-6] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891419570 =====
+16:03:40.535 [schedule-pool-6] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891420535 =====
+16:03:49.209 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009511, and end block: 9009531
+16:03:49.210 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891429210 =====
+16:03:50.176 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891430176 =====
+16:03:59.195 [schedule-pool-7] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009532, and end block: 9009552
+16:03:59.196 [schedule-pool-7] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891439196 =====
+16:04:00.160 [schedule-pool-7] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891440160 =====
+16:04:09.335 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009553, and end block: 9009573
+16:04:09.336 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891449336 =====
+16:04:10.264 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891450264 =====
+16:04:19.140 [schedule-pool-8] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009574, and end block: 9009594
+16:04:19.141 [schedule-pool-8] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891459141 =====
+16:04:20.094 [schedule-pool-8] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891460094 =====
+16:04:29.254 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009595, and end block: 9009615
+16:04:29.255 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891469255 =====
+16:04:30.208 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891470208 =====
+16:04:39.210 [schedule-pool-9] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009616, and end block: 9009636
+16:04:39.210 [schedule-pool-9] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891479210 =====
+16:04:40.168 [schedule-pool-9] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891480168 =====
+16:04:49.351 [schedule-pool-5] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009637, and end block: 9009657
+16:04:49.351 [schedule-pool-5] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891489351 =====
+16:04:50.297 [schedule-pool-5] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891490297 =====
+16:04:59.331 [schedule-pool-10] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009658, and end block: 9009678
+16:04:59.332 [schedule-pool-10] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891499332 =====
+16:05:00.346 [schedule-pool-10] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891500346 =====
+16:05:09.258 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009679, and end block: 9009699
+16:05:09.259 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891509259 =====
+16:05:10.233 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891510233 =====
+16:05:20.050 [schedule-pool-11] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009700, and end block: 9009720
+16:05:20.051 [schedule-pool-11] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891520051 =====
+16:05:21.093 [schedule-pool-11] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891521093 =====
+16:05:29.346 [schedule-pool-6] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009721, and end block: 9009741
+16:05:29.347 [schedule-pool-6] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891529347 =====
+16:05:30.906 [schedule-pool-6] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891530906 =====
+16:05:39.159 [schedule-pool-12] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009742, and end block: 9009762
+16:05:39.160 [schedule-pool-12] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891539160 =====
+16:05:40.090 [schedule-pool-12] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891540090 =====
+16:05:49.819 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009763, and end block: 9009783
+16:05:49.820 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891549820 =====
+16:05:50.781 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891550781 =====
+16:06:00.002 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009784, and end block: 9009804
+16:06:00.002 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891560002 =====
+16:06:00.947 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891560946 =====
+16:06:09.942 [schedule-pool-7] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009805, and end block: 9009825
+16:06:09.943 [schedule-pool-7] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891569943 =====
+16:06:10.899 [schedule-pool-7] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891570899 =====
+16:06:20.722 [schedule-pool-14] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009826, and end block: 9009846
+16:06:20.722 [schedule-pool-14] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891580722 =====
+16:06:21.671 [schedule-pool-14] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891581671 =====
+16:06:29.171 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009847, and end block: 9009867
+16:06:29.171 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891589171 =====
+16:06:30.111 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891590111 =====
+16:06:39.327 [schedule-pool-15] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009868, and end block: 9009888
+16:06:39.328 [schedule-pool-15] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891599328 =====
+16:06:40.299 [schedule-pool-15] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891600299 =====
+16:06:49.206 [schedule-pool-8] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009889, and end block: 9009909
+16:06:49.206 [schedule-pool-8] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891609206 =====
+16:06:50.168 [schedule-pool-8] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891610168 =====
+16:06:59.170 [schedule-pool-16] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009910, and end block: 9009930
+16:06:59.170 [schedule-pool-16] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891619170 =====
+16:07:00.131 [schedule-pool-16] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891620131 =====
+16:07:09.316 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009931, and end block: 9009951
+16:07:09.316 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891629316 =====
+16:07:10.274 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891630274 =====
+16:07:19.256 [schedule-pool-17] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009952, and end block: 9009972
+16:07:19.257 [schedule-pool-17] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891639257 =====
+16:07:20.216 [schedule-pool-17] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891640216 =====
+16:07:29.333 [schedule-pool-9] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009973, and end block: 9009993
+16:07:29.334 [schedule-pool-9] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891649334 =====
+16:07:30.398 [schedule-pool-9] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891650398 =====
+16:07:39.629 [schedule-pool-18] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009994, and end block: 9010014
+16:07:39.630 [schedule-pool-18] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891659630 =====
+16:07:41.328 [schedule-pool-18] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891661328 =====
+16:07:51.925 [schedule-pool-5] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010015, and end block: 9010035
+16:07:51.929 [schedule-pool-5] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891671929 =====
+16:07:52.882 [schedule-pool-5] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891672882 =====
+16:07:59.177 [schedule-pool-19] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010036, and end block: 9010056
+16:07:59.177 [schedule-pool-19] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891679177 =====
+16:08:00.118 [schedule-pool-19] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891680118 =====
+16:08:09.213 [schedule-pool-10] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010057, and end block: 9010077
+16:08:09.213 [schedule-pool-10] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891689213 =====
+16:08:10.175 [schedule-pool-10] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891690175 =====
+16:08:19.288 [schedule-pool-20] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010078, and end block: 9010098
+16:08:19.288 [schedule-pool-20] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891699288 =====
+16:08:21.915 [schedule-pool-20] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891701915 =====
+16:08:29.367 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010099, and end block: 9010119
+16:08:29.367 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891709367 =====
+16:08:30.328 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891710328 =====
+16:08:40.462 [schedule-pool-21] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010120, and end block: 9010140
+16:08:40.462 [schedule-pool-21] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891720462 =====
+16:08:44.241 [schedule-pool-21] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891724241 =====
+16:08:49.323 [schedule-pool-11] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010141, and end block: 9010161
+16:08:49.323 [schedule-pool-11] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891729323 =====
+16:08:50.286 [schedule-pool-11] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891730286 =====
+16:08:59.264 [schedule-pool-22] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010162, and end block: 9010182
+16:08:59.265 [schedule-pool-22] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891739265 =====
+16:09:00.253 [schedule-pool-22] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891740253 =====
+16:09:09.227 [schedule-pool-6] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010183, and end block: 9010203
+16:09:09.227 [schedule-pool-6] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891749227 =====
+16:09:10.194 [schedule-pool-6] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891750194 =====
+16:09:19.177 [schedule-pool-23] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010204, and end block: 9010224
+16:09:19.178 [schedule-pool-23] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891759178 =====
+16:09:20.412 [schedule-pool-23] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891760412 =====
+16:09:29.565 [schedule-pool-12] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010225, and end block: 9010245
+16:09:29.566 [schedule-pool-12] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891769566 =====
+16:09:30.556 [schedule-pool-12] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891770556 =====
+16:09:40.814 [schedule-pool-24] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010246, and end block: 9010266
+16:09:40.814 [schedule-pool-24] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891780814 =====
+16:09:41.812 [schedule-pool-24] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891781812 =====
+16:09:49.219 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010267, and end block: 9010287
+16:09:49.219 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891789219 =====
+16:09:50.182 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891790182 =====
+16:09:59.364 [schedule-pool-25] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010288, and end block: 9010308
+16:09:59.364 [schedule-pool-25] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891799364 =====
+16:10:00.375 [schedule-pool-25] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891800375 =====
+16:10:09.200 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010309, and end block: 9010329
+16:10:09.200 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891809200 =====
+16:10:10.182 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891810182 =====
+16:10:19.258 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010330, and end block: 9010350
+16:10:19.259 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891819259 =====
+16:10:20.245 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891820245 =====
+16:10:29.214 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010351, and end block: 9010371
+16:10:29.215 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891829215 =====
+16:10:30.142 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891830142 =====
+16:10:39.556 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010372, and end block: 9010392
+16:10:39.556 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891839556 =====
+16:10:40.824 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891840824 =====
+16:10:49.210 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010393, and end block: 9010413
+16:10:49.210 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891849210 =====
+16:10:50.178 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891850178 =====
+16:10:59.335 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010414, and end block: 9010434
+16:10:59.336 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891859336 =====
+16:11:00.323 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891860323 =====
+16:11:09.957 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010435, and end block: 9010455
+16:11:09.958 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891869958 =====
+16:11:10.915 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891870915 =====
+16:11:19.199 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010456, and end block: 9010476
+16:11:19.199 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891879199 =====
+16:11:20.740 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891880740 =====
+16:11:29.171 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010477, and end block: 9010497
+16:11:29.172 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891889172 =====
+16:11:30.101 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891890101 =====
+16:11:39.304 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010498, and end block: 9010518
+16:11:39.305 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891899305 =====
+16:11:40.256 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891900256 =====
+16:11:49.205 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010519, and end block: 9010539
+16:11:49.208 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891909208 =====
+16:11:50.858 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891910858 =====
+16:11:59.469 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010540, and end block: 9010560
+16:11:59.470 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891919470 =====
+16:12:00.505 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891920505 =====
+16:12:10.021 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010561, and end block: 9010581
+16:12:10.022 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891930022 =====
+16:12:10.961 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891930961 =====
+16:12:22.706 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010582, and end block: 9010602
+16:12:22.707 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891942707 =====
+16:12:24.192 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891944192 =====
+16:12:29.312 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010603, and end block: 9010623
+16:12:29.312 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891949312 =====
+16:12:30.271 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891950271 =====
+16:12:39.197 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010624, and end block: 9010644
+16:12:39.197 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891959197 =====
+16:12:40.713 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891960713 =====
+16:12:49.937 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010645, and end block: 9010665
+16:12:49.937 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891969937 =====
+16:12:50.893 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891970893 =====
+16:12:59.544 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010666, and end block: 9010686
+16:12:59.545 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891979545 =====
+16:13:01.047 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891981047 =====
+16:13:10.369 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010687, and end block: 9010707
+16:13:10.370 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627891990370 =====
+16:13:11.880 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627891991880 =====
+16:13:20.701 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010708, and end block: 9010728
+16:13:20.703 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892000703 =====
+16:13:21.677 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892001677 =====
+16:13:29.791 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010729, and end block: 9010749
+16:13:29.791 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892009791 =====
+16:13:31.628 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892011628 =====
+16:13:40.639 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010750, and end block: 9010770
+16:13:40.640 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892020640 =====
+16:13:41.619 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892021619 =====
+16:13:49.228 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010771, and end block: 9010791
+16:13:49.229 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892029229 =====
+16:13:50.190 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892030190 =====
+16:13:59.268 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010792, and end block: 9010812
+16:13:59.268 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892039268 =====
+16:14:00.237 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892040237 =====
+16:14:11.126 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010813, and end block: 9010833
+16:14:11.126 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892051126 =====
+16:14:12.116 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892052116 =====
+16:14:19.377 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010834, and end block: 9010854
+16:14:19.378 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892059378 =====
+16:14:20.956 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892060956 =====
+16:14:31.444 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010855, and end block: 9010875
+16:14:31.444 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892071444 =====
+16:14:32.457 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892072457 =====
+16:14:40.270 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010876, and end block: 9010896
+16:14:40.270 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892080270 =====
+16:14:41.304 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892081304 =====
+16:14:49.494 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010897, and end block: 9010917
+16:14:49.494 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892089494 =====
+16:14:50.445 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892090445 =====
+16:14:59.312 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010918, and end block: 9010938
+16:14:59.312 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892099312 =====
+16:15:00.284 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892100284 =====
+16:15:09.337 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010939, and end block: 9010959
+16:15:09.338 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892109338 =====
+16:15:10.332 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892110332 =====
+16:15:19.813 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010960, and end block: 9010980
+16:15:19.814 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892119814 =====
+16:15:20.769 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892120769 =====
+16:15:29.270 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9010981, and end block: 9011001
+16:15:29.271 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892129271 =====
+16:15:30.219 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892130219 =====
+16:15:39.604 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011002, and end block: 9011022
+16:15:39.605 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892139605 =====
+16:15:40.595 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892140595 =====
+16:15:49.999 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011023, and end block: 9011043
+16:15:50.000 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892150000 =====
+16:15:51.531 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892151531 =====
+16:15:59.397 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011044, and end block: 9011064
+16:15:59.397 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892159397 =====
+16:16:00.951 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892160951 =====
+16:16:09.261 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011065, and end block: 9011085
+16:16:09.261 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892169261 =====
+16:16:10.213 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892170213 =====
+16:16:19.321 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011086, and end block: 9011106
+16:16:19.322 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892179322 =====
+16:16:20.290 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892180290 =====
+16:16:29.729 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011107, and end block: 9011127
+16:16:29.778 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892189778 =====
+16:16:30.675 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892190675 =====
+16:16:39.198 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011128, and end block: 9011148
+16:16:39.198 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892199198 =====
+16:16:40.141 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892200141 =====
+16:16:51.676 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011149, and end block: 9011169
+16:16:51.677 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892211677 =====
+16:16:52.637 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892212637 =====
+16:16:59.792 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011170, and end block: 9011190
+16:16:59.792 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892219792 =====
+16:17:00.735 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892220735 =====
+16:17:10.714 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011191, and end block: 9011211
+16:17:10.715 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892230715 =====
+16:17:12.788 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892232788 =====
+16:17:19.213 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011212, and end block: 9011232
+16:17:19.216 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892239216 =====
+16:17:20.164 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892240164 =====
+16:17:29.224 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011233, and end block: 9011253
+16:17:29.224 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892249224 =====
+16:17:30.169 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892250169 =====
+16:17:39.211 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011254, and end block: 9011274
+16:17:39.211 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892259211 =====
+16:17:40.153 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892260153 =====
+16:17:49.956 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011275, and end block: 9011295
+16:17:49.958 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892269958 =====
+16:17:50.890 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892270890 =====
+16:17:59.713 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011296, and end block: 9011316
+16:17:59.713 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892279713 =====
+16:18:01.005 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892281005 =====
+16:18:09.566 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011317, and end block: 9011337
+16:18:09.566 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892289566 =====
+16:18:11.061 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892291061 =====
+16:18:19.215 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011338, and end block: 9011358
+16:18:19.216 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892299216 =====
+16:18:20.158 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892300158 =====
+16:18:29.745 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011359, and end block: 9011379
+16:18:29.745 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892309745 =====
+16:18:30.716 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892310716 =====
+16:18:41.092 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011380, and end block: 9011400
+16:18:41.093 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892321093 =====
+16:18:42.097 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892322097 =====
+16:18:49.201 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011401, and end block: 9011421
+16:18:49.201 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892329201 =====
+16:18:50.149 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892330149 =====
+16:19:00.031 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011422, and end block: 9011442
+16:19:00.031 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892340031 =====
+16:19:00.947 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892340947 =====
+16:19:09.154 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011443, and end block: 9011463
+16:19:09.154 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892349154 =====
+16:19:10.081 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892350081 =====
+16:19:20.362 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011464, and end block: 9011484
+16:19:20.362 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892360362 =====
+16:19:21.883 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892361883 =====
+16:19:30.262 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011485, and end block: 9011505
+16:19:30.262 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892370262 =====
+16:19:31.751 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892371751 =====
+16:19:40.489 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011506, and end block: 9011526
+16:19:40.489 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892380489 =====
+16:19:42.109 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892382109 =====
+16:19:49.350 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011527, and end block: 9011547
+16:19:49.351 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892389351 =====
+16:19:50.339 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892390339 =====
+16:19:59.241 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011548, and end block: 9011568
+16:19:59.242 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892399242 =====
+16:20:00.200 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892400200 =====
+16:20:11.204 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011569, and end block: 9011589
+16:20:11.206 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892411206 =====
+16:20:12.177 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892412177 =====
+16:20:19.245 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011590, and end block: 9011610
+16:20:19.245 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892419245 =====
+16:20:20.220 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892420220 =====
+16:20:31.003 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011611, and end block: 9011631
+16:20:31.004 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892431004 =====
+16:20:32.540 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892432540 =====
+16:20:39.975 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011632, and end block: 9011652
+16:20:39.975 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892439975 =====
+16:20:40.937 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892440937 =====
+16:20:49.980 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011653, and end block: 9011673
+16:20:49.980 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892449980 =====
+16:20:50.974 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892450974 =====
+16:20:59.548 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011674, and end block: 9011694
+16:20:59.548 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892459548 =====
+16:21:00.509 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892460509 =====
+16:21:09.203 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011695, and end block: 9011715
+16:21:09.203 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892469203 =====
+16:21:10.159 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892470159 =====
+16:21:19.275 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011716, and end block: 9011736
+16:21:19.275 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892479275 =====
+16:21:20.827 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892480827 =====
+16:21:29.282 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011737, and end block: 9011757
+16:21:29.282 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892489282 =====
+16:21:30.240 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892490240 =====
+16:21:40.118 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011758, and end block: 9011778
+16:21:40.118 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892500118 =====
+16:21:41.078 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892501078 =====
+16:21:49.293 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011779, and end block: 9011799
+16:21:49.293 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892509293 =====
+16:21:50.926 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892510926 =====
+16:21:59.948 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011800, and end block: 9011820
+16:21:59.948 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892519948 =====
+16:22:00.895 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892520895 =====
+16:22:09.186 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011821, and end block: 9011841
+16:22:09.187 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892529187 =====
+16:22:10.226 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892530226 =====
+16:22:19.174 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011842, and end block: 9011862
+16:22:19.174 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892539174 =====
+16:22:20.128 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892540128 =====
+16:22:29.890 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011863, and end block: 9011883
+16:22:29.890 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892549890 =====
+16:22:30.874 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892550874 =====
+16:22:39.238 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011884, and end block: 9011904
+16:22:39.238 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892559238 =====
+16:22:40.205 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892560205 =====
+16:22:49.310 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011905, and end block: 9011925
+16:22:49.310 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892569310 =====
+16:22:50.291 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892570291 =====
+16:23:00.523 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011926, and end block: 9011946
+16:23:00.523 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892580523 =====
+16:23:02.163 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892582163 =====
+16:23:09.764 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011947, and end block: 9011967
+16:23:09.764 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892589764 =====
+16:23:10.774 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892590774 =====
+16:23:21.916 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011968, and end block: 9011988
+16:23:21.916 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892601916 =====
+16:23:22.874 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892602874 =====
+16:23:31.541 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011989, and end block: 9012009
+16:23:31.541 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892611541 =====
+16:23:32.494 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892612494 =====
+16:23:41.765 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9012010, and end block: 9012030
+16:23:41.765 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892621765 =====
+16:23:43.294 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892623294 =====
+16:23:52.936 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9012031, and end block: 9012051
+16:23:52.937 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892632937 =====
+16:23:54.462 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892634462 =====
+16:23:59.539 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9012052, and end block: 9012072
+16:23:59.539 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892639539 =====
+16:24:00.497 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892640497 =====
+16:24:09.300 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9012073, and end block: 9012093
+16:24:09.300 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892649300 =====
+16:24:10.624 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892650624 =====
+16:24:19.200 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9012094, and end block: 9012114
+16:24:19.201 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892659201 =====
+16:24:20.128 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892660128 =====
+16:24:29.804 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9012115, and end block: 9012135
+16:24:29.805 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892669805 =====
+16:24:30.746 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892670746 =====
+16:24:39.811 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9012136, and end block: 9012156
+16:24:39.812 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start: at1627892679812 =====
+16:24:40.787 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892680787 =====
+16:24:45.995 [Thread-45] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1627891311666 paused.
+16:24:46.075 [Thread-45] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1627891311666 shutting down.
+16:24:46.076 [Thread-45] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1627891311666 paused.
+16:24:46.077 [Thread-45] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1627891311666 shutdown complete.
+16:24:46.079 [Thread-45] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+16:24:46.100 [Thread-45] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+16:25:12.077 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 59244 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+16:25:12.079 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+16:25:16.459 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+16:25:16.476 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+16:25:16.478 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+16:25:16.624 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+16:25:17.584 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:25:17.618 [cluster-ClusterId{value='6107abed3aaabee76ca8a67c', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+16:25:21.613 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+16:25:21.873 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+16:25:21.941 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+16:25:23.339 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+16:25:23.354 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+16:25:23.354 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+16:25:23.363 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1627892723341'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+16:25:23.363 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+16:25:23.363 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+16:25:23.393 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@5ccc19f1
+16:25:25.079 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:25:25.982 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+16:25:26.161 [redisson-netty-5-11] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+16:25:26.161 [redisson-netty-5-5] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+16:25:26.961 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+16:25:26.973 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+16:25:27.036 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+16:25:27.164 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+16:25:27.185 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 15.519 seconds (JVM running for 16.526)
+16:25:27.604 [RMI TCP Connection(9)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:25:27.617 [RMI TCP Connection(10)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:25:28.219 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1627892723341 started.
+16:25:31.494 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9012157, and end block: 9014157
+16:25:31.516 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start at: 1627892731516 =====
+16:25:32.529 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892732529 =====
+16:25:41.182 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9014158, and end block: 9016158
+16:25:41.186 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start at: 1627892741186 =====
+16:25:42.159 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892742159 =====
+16:25:51.597 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9016159, and end block: 9018159
+16:25:51.598 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start at: 1627892751598 =====
+16:25:52.572 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892752572 =====
+16:26:01.716 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9018160, and end block: 9020160
+16:26:01.716 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start at: 1627892761716 =====
+16:26:02.704 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892762704 =====
+16:26:11.561 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9020161, and end block: 9022161
+16:26:11.562 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start at: 1627892771562 =====
+16:26:12.511 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892772511 =====
+16:26:21.767 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9022162, and end block: 9024162
+16:26:21.768 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start at: 1627892781768 =====
+16:26:22.736 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892782736 =====
+16:26:31.198 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9024163, and end block: 9026163
+16:26:31.198 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start at: 1627892791198 =====
+16:26:32.134 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892792134 =====
+16:26:41.163 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9026164, and end block: 9028164
+16:26:41.163 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start at: 1627892801163 =====
+16:26:42.361 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892802361 =====
+16:26:51.235 [schedule-pool-5] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9028165, and end block: 9030165
+16:26:51.235 [schedule-pool-5] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start at: 1627892811235 =====
+16:26:52.187 [schedule-pool-5] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892812187 =====
+16:27:02.574 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9030166, and end block: 9032166
+16:27:02.574 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start at: 1627892822574 =====
+16:27:05.621 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892825621 =====
+16:27:11.785 [schedule-pool-6] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9032167, and end block: 9034167
+16:27:11.786 [schedule-pool-6] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start at: 1627892831786 =====
+16:27:12.752 [schedule-pool-6] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892832752 =====
+16:27:22.334 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9034168, and end block: 9036168
+16:27:22.335 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start at: 1627892842335 =====
+16:27:23.634 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892843634 =====
+16:27:33.008 [schedule-pool-7] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9036169, and end block: 9038169
+16:27:33.008 [schedule-pool-7] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start at: 1627892853008 =====
+16:27:34.221 [schedule-pool-7] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892854221 =====
+16:27:41.214 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9038170, and end block: 9040170
+16:27:41.215 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start at: 1627892861215 =====
+16:27:42.182 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892862182 =====
+16:27:51.214 [schedule-pool-8] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9040171, and end block: 9042171
+16:27:51.215 [schedule-pool-8] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start at: 1627892871215 =====
+16:27:52.139 [schedule-pool-8] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892872139 =====
+16:28:02.281 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9042172, and end block: 9044172
+16:28:02.282 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start at: 1627892882282 =====
+16:28:03.326 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892883326 =====
+16:28:11.501 [schedule-pool-9] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9044173, and end block: 9043563
+16:28:11.502 [schedule-pool-9] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start at: 1627892891502 =====
+16:28:12.442 [schedule-pool-9] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892892442 =====
+16:28:21.584 [schedule-pool-5] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043564, and end block: 9043564
+16:28:21.585 [schedule-pool-5] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start at: 1627892901585 =====
+16:28:23.648 [schedule-pool-5] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892903648 =====
+16:28:33.318 [schedule-pool-10] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043565, and end block: 9043565
+16:28:33.318 [schedule-pool-10] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start at: 1627892913318 =====
+16:28:35.697 [schedule-pool-10] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892915697 =====
+16:28:42.571 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043566, and end block: 9043565
+16:28:42.571 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start at: 1627892922571 =====
+16:28:43.555 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892923555 =====
+16:28:51.328 [schedule-pool-11] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043566, and end block: 9043566
+16:28:51.329 [schedule-pool-11] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,132] - ==== deposit record start at: 1627892931329 =====
+16:28:52.270 [schedule-pool-11] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,155] - ==== withdraw record start: at1627892932270 =====
+16:28:58.716 [Thread-47] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1627892723341 paused.
+16:28:58.757 [Thread-47] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1627892723341 shutting down.
+16:28:58.757 [Thread-47] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1627892723341 paused.
+16:28:58.758 [Thread-47] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1627892723341 shutdown complete.
+16:28:58.758 [Thread-47] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+16:28:58.780 [Thread-47] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+16:31:04.224 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 59384 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+16:31:04.235 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+16:31:08.423 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+16:31:08.432 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+16:31:08.433 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+16:31:08.550 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+16:31:09.326 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+16:31:09.359 [cluster-ClusterId{value='6107ad4d3aaabee7f878d1f0', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+16:31:12.870 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+16:31:13.083 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+16:31:13.580 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+16:31:14.948 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+16:31:14.959 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+16:31:14.959 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+16:31:14.964 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1627893074950'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+16:31:14.965 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+16:31:14.965 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+16:31:14.966 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@41365db3
+16:31:16.262 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+16:31:16.864 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+16:31:17.044 [redisson-netty-5-8] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+16:31:17.046 [redisson-netty-5-5] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+16:31:17.817 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+16:31:17.828 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+16:31:17.884 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+16:31:18.001 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+16:31:18.020 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 14.123 seconds (JVM running for 15.528)
+16:31:18.390 [RMI TCP Connection(8)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:31:18.398 [RMI TCP Connection(7)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+16:31:19.050 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1627893074950 started.
+16:31:19.503 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9009168, and end block: 9009300
+16:31:19.526 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893079526 =====
+16:31:25.391 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893085391 =====
+16:31:33.769 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9009301, and end block: 9011301
+16:31:33.769 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893093769 =====
+16:31:35.466 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893095466 =====
+16:31:44.912 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9011302, and end block: 9013302
+16:31:44.913 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893104913 =====
+16:31:45.891 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893105890 =====
+16:31:52.025 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9013303, and end block: 9015303
+16:31:52.025 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893112025 =====
+16:31:52.970 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893112970 =====
+16:32:02.229 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9015304, and end block: 9017304
+16:32:02.230 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893122230 =====
+16:32:03.204 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893123204 =====
+16:32:12.069 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9017305, and end block: 9019305
+16:32:12.070 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893132070 =====
+16:32:13.033 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893133033 =====
+16:32:22.040 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9019306, and end block: 9021306
+16:32:22.040 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893142040 =====
+16:32:22.989 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893142989 =====
+16:32:32.387 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9021307, and end block: 9023307
+16:32:32.388 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893152388 =====
+16:32:33.898 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893153898 =====
+16:32:42.395 [schedule-pool-5] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9023308, and end block: 9025308
+16:32:42.395 [schedule-pool-5] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893162395 =====
+16:32:43.922 [schedule-pool-5] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893163922 =====
+16:32:52.683 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9025309, and end block: 9027309
+16:32:52.683 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893172683 =====
+16:32:53.721 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893173721 =====
+16:33:02.507 [schedule-pool-6] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9027310, and end block: 9029310
+16:33:02.507 [schedule-pool-6] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893182507 =====
+16:33:03.455 [schedule-pool-6] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893183455 =====
+16:33:12.493 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9029311, and end block: 9031311
+16:33:12.494 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893192494 =====
+16:33:13.471 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893193471 =====
+16:33:22.411 [schedule-pool-7] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9031312, and end block: 9033312
+16:33:22.412 [schedule-pool-7] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893202412 =====
+16:33:23.412 [schedule-pool-7] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893203412 =====
+16:33:32.239 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9033313, and end block: 9035313
+16:33:32.240 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893212240 =====
+16:33:33.183 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893213183 =====
+16:33:42.056 [schedule-pool-8] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9035314, and end block: 9037314
+16:33:42.057 [schedule-pool-8] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893222057 =====
+16:33:43.396 [schedule-pool-8] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893223396 =====
+16:33:53.378 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9037315, and end block: 9039315
+16:33:53.378 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893233378 =====
+16:33:54.371 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893234371 =====
+16:34:02.923 [schedule-pool-9] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9039316, and end block: 9041316
+16:34:02.923 [schedule-pool-9] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893242923 =====
+16:34:04.426 [schedule-pool-9] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893244426 =====
+16:34:22.136 [schedule-pool-10] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9041317, and end block: 9043317
+16:34:22.136 [schedule-pool-10] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893262136 =====
+16:34:23.132 [schedule-pool-10] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893263132 =====
+16:34:32.552 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9043318, and end block: 9045318
+16:34:32.552 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893272552 =====
+16:34:33.519 [schedule-pool-3] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893273519 =====
+16:34:41.999 [schedule-pool-11] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9045319, and end block: 9043589
+16:34:41.999 [schedule-pool-11] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893281999 =====
+16:34:42.957 [schedule-pool-11] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893282957 =====
+16:34:51.964 [schedule-pool-6] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9043590, and end block: 9043590
+16:34:51.965 [schedule-pool-6] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893291965 =====
+16:34:52.884 [schedule-pool-6] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893292884 =====
+16:35:02.624 [schedule-pool-12] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9043591, and end block: 9043591
+16:35:02.625 [schedule-pool-12] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893302625 =====
+16:35:03.609 [schedule-pool-12] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893303609 =====
+16:35:13.151 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9043592, and end block: 9043591
+16:35:13.152 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893313152 =====
+16:35:14.111 [schedule-pool-1] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893314111 =====
+16:35:25.772 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9043592, and end block: 9043592
+16:35:25.772 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893325772 =====
+16:35:27.034 [schedule-pool-13] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893327034 =====
+16:35:40.156 [schedule-pool-7] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9043593, and end block: 9043593
+16:35:40.158 [schedule-pool-7] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893340158 =====
+16:35:41.121 [schedule-pool-7] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893341121 =====
+16:35:44.612 [schedule-pool-14] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9043594, and end block: 9043593
+16:35:44.612 [schedule-pool-14] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893344612 =====
+16:35:45.593 [schedule-pool-14] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893345593 =====
+16:35:52.009 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9043594, and end block: 9043594
+16:35:52.010 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893352010 =====
+16:35:53.524 [schedule-pool-4] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893353524 =====
+16:36:02.793 [schedule-pool-15] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9043595, and end block: 9043595
+16:36:02.793 [schedule-pool-15] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893362793 =====
+16:36:03.712 [schedule-pool-15] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893363712 =====
+16:36:14.653 [schedule-pool-8] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9043596, and end block: 9043595
+16:36:14.655 [schedule-pool-8] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893374655 =====
+16:36:15.660 [schedule-pool-8] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893375660 =====
+16:36:25.560 [schedule-pool-16] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9043596, and end block: 9043596
+16:36:25.560 [schedule-pool-16] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893385560 =====
+16:36:26.539 [schedule-pool-16] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893386539 =====
+16:36:32.098 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9043597, and end block: 9043597
+16:36:32.099 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893392099 =====
+16:36:33.778 [schedule-pool-2] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893393778 =====
+16:36:42.121 [schedule-pool-17] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9043598, and end block: 9043597
+16:36:42.122 [schedule-pool-17] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893402122 =====
+16:36:43.094 [schedule-pool-17] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893403094 =====
+16:36:52.082 [schedule-pool-9] INFO  c.r.q.t.AutomaticStake - [monitorStakePoolEventOnRinkeby,114] - start block:9043598, and end block: 9043598
+16:36:52.083 [schedule-pool-9] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,131] - ==== deposit record start at: 1627893412083 =====
+16:36:53.036 [schedule-pool-9] INFO  c.r.q.t.AutomaticStake - [withdrawAndDepositEventHandler,154] - ==== withdraw record start at: 1627893413036 =====
+16:36:57.126 [Thread-45] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1627893074950 paused.
+16:36:57.180 [Thread-45] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1627893074950 shutting down.
+16:36:57.180 [Thread-45] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1627893074950 paused.
+16:36:57.181 [Thread-45] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1627893074950 shutdown complete.
+16:36:57.182 [Thread-45] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+16:36:57.197 [Thread-45] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+18:00:31.040 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 61595 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+18:00:31.043 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+18:00:34.731 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+18:00:34.738 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+18:00:34.738 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+18:00:34.841 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+18:00:35.638 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+18:00:35.672 [cluster-ClusterId{value='6107c2437bb1fef09bb5f530', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+18:00:39.398 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+18:00:39.632 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+18:00:40.141 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+18:00:41.417 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+18:00:41.430 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+18:00:41.430 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+18:00:41.436 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1627898441419'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+18:00:41.437 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+18:00:41.437 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+18:00:41.438 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@397ed36f
+18:00:42.779 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+18:00:43.438 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+18:00:43.603 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+18:00:43.604 [redisson-netty-5-5] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+18:00:44.358 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+18:00:44.369 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+18:00:44.430 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+18:00:44.553 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+18:00:44.573 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 13.888 seconds (JVM running for 14.958)
+18:00:44.978 [RMI TCP Connection(3)-192.168.1.40] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:00:44.990 [RMI TCP Connection(2)-192.168.1.40] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+18:00:45.571 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1627898441419 started.
+18:00:46.552 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009168, and end block: 9009300
+18:00:46.577 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898446577 =====
+18:00:48.855 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043599, and end block: 9045599
+18:00:48.855 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898448855 =====
+18:00:49.826 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898449826 =====
+18:00:59.584 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9009301, and end block: 9011301
+18:00:59.587 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898459587 =====
+18:00:59.822 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9045600, and end block: 9043933
+18:00:59.822 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898459822 =====
+18:01:00.737 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898460737 =====
+18:01:08.545 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043934, and end block: 9043934
+18:01:08.545 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898468545 =====
+18:01:09.466 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898469466 =====
+18:01:09.506 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9011302, and end block: 9013302
+18:01:09.507 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898469507 =====
+18:01:18.548 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043935, and end block: 9043934
+18:01:18.548 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898478548 =====
+18:01:19.062 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9013303, and end block: 9015303
+18:01:19.063 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898479063 =====
+18:01:19.463 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898479463 =====
+18:01:28.504 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043935, and end block: 9043935
+18:01:28.504 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898488504 =====
+18:01:28.989 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9015304, and end block: 9017304
+18:01:28.989 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898488989 =====
+18:01:29.413 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898489413 =====
+18:01:38.609 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043936, and end block: 9043936
+18:01:38.610 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898498610 =====
+18:01:39.546 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898499546 =====
+18:01:39.582 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9017305, and end block: 9019305
+18:01:39.582 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898499582 =====
+18:01:49.020 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043937, and end block: 9043937
+18:01:49.021 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898509021 =====
+18:01:49.049 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9019306, and end block: 9021306
+18:01:49.049 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898509049 =====
+18:01:49.952 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898509952 =====
+18:01:58.551 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043938, and end block: 9043937
+18:01:58.552 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898518552 =====
+18:01:59.503 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898519503 =====
+18:01:59.910 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9021307, and end block: 9023307
+18:01:59.910 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898519910 =====
+18:02:08.750 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043938, and end block: 9043938
+18:02:08.751 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898528751 =====
+18:02:09.107 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9023308, and end block: 9025308
+18:02:09.107 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898529107 =====
+18:02:09.672 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898529672 =====
+18:02:18.493 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043939, and end block: 9043939
+18:02:18.493 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898538493 =====
+18:02:19.049 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9025309, and end block: 9027309
+18:02:19.050 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898539050 =====
+18:02:19.436 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898539436 =====
+18:02:28.805 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043940, and end block: 9043939
+18:02:28.806 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898548806 =====
+18:02:29.016 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9027310, and end block: 9029310
+18:02:29.016 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898549016 =====
+18:02:29.769 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898549769 =====
+18:02:38.592 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043940, and end block: 9043940
+18:02:38.593 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898558593 =====
+18:02:39.119 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9029311, and end block: 9031311
+18:02:39.119 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898559119 =====
+18:02:39.556 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898559556 =====
+18:02:48.814 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043941, and end block: 9043941
+18:02:48.815 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898568815 =====
+18:02:49.279 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9031312, and end block: 9033312
+18:02:49.280 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898569280 =====
+18:02:49.745 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898569745 =====
+18:02:58.529 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043942, and end block: 9043941
+18:02:58.529 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898578529 =====
+18:02:59.081 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9033313, and end block: 9035313
+18:02:59.081 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898579081 =====
+18:02:59.469 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898579469 =====
+18:03:08.492 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043942, and end block: 9043942
+18:03:08.493 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898588493 =====
+18:03:09.019 [schedule-pool-18] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9035314, and end block: 9037314
+18:03:09.019 [schedule-pool-18] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898589019 =====
+18:03:09.931 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898589931 =====
+18:03:18.824 [schedule-pool-20] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043943, and end block: 9043943
+18:03:18.825 [schedule-pool-20] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898598825 =====
+18:03:19.038 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9037315, and end block: 9039315
+18:03:19.039 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898599039 =====
+18:03:19.777 [schedule-pool-20] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898599777 =====
+18:03:28.626 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043944, and end block: 9043943
+18:03:28.628 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898608628 =====
+18:03:29.030 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9039316, and end block: 9041316
+18:03:29.030 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898609030 =====
+18:03:29.570 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898609570 =====
+18:03:38.592 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043944, and end block: 9043944
+18:03:38.593 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898618593 =====
+18:03:39.217 [schedule-pool-22] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9041317, and end block: 9043317
+18:03:39.217 [schedule-pool-22] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898619217 =====
+18:03:39.528 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898619528 =====
+18:03:48.488 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043945, and end block: 9043945
+18:03:48.489 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898628489 =====
+18:03:48.976 [schedule-pool-24] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043318, and end block: 9045318
+18:03:48.976 [schedule-pool-24] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898628976 =====
+18:03:49.394 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898629394 =====
+18:03:58.532 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043946, and end block: 9043945
+18:03:58.532 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898638532 =====
+18:03:59.049 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9045319, and end block: 9043945
+18:03:59.050 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898639050 =====
+18:03:59.465 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898639465 =====
+18:04:08.482 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043946, and end block: 9043946
+18:04:08.484 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898648484 =====
+18:04:09.399 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898649399 =====
+18:04:09.839 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043946, and end block: 9043946
+18:04:09.839 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898649839 =====
+18:04:18.582 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043947, and end block: 9043947
+18:04:18.583 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898658583 =====
+18:04:19.527 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898659527 =====
+18:04:19.559 [schedule-pool-27] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043947, and end block: 9043947
+18:04:19.559 [schedule-pool-27] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898659559 =====
+18:04:28.825 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043948, and end block: 9043947
+18:04:28.826 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898668826 =====
+18:04:29.514 [schedule-pool-28] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043948, and end block: 9043947
+18:04:29.514 [schedule-pool-28] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898669514 =====
+18:04:29.754 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898669754 =====
+18:04:38.514 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043948, and end block: 9043948
+18:04:38.514 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898678514 =====
+18:04:39.008 [schedule-pool-29] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043948, and end block: 9043948
+18:04:39.008 [schedule-pool-29] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898679008 =====
+18:04:39.449 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898679449 =====
+18:04:48.613 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043949, and end block: 9043948
+18:04:48.613 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898688613 =====
+18:04:49.043 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043949, and end block: 9043948
+18:04:49.044 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898689044 =====
+18:04:49.529 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898689529 =====
+18:04:58.455 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043949, and end block: 9043949
+18:04:58.455 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898698455 =====
+18:04:58.997 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043949, and end block: 9043949
+18:04:58.997 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898698997 =====
+18:04:59.347 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898699347 =====
+18:05:08.472 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043950, and end block: 9043950
+18:05:08.472 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898708472 =====
+18:05:09.001 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043950, and end block: 9043950
+18:05:09.001 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898709001 =====
+18:05:09.398 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898709398 =====
+18:05:18.522 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043951, and end block: 9043951
+18:05:18.522 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898718522 =====
+18:05:19.063 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043951, and end block: 9043951
+18:05:19.063 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898719063 =====
+18:05:19.457 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898719457 =====
+18:05:28.450 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043952, and end block: 9043951
+18:05:28.451 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898728451 =====
+18:05:29.044 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043952, and end block: 9043951
+18:05:29.045 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898729045 =====
+18:05:29.350 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898729350 =====
+18:05:38.572 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043952, and end block: 9043952
+18:05:38.573 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898738573 =====
+18:05:39.026 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043952, and end block: 9043952
+18:05:39.026 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898739026 =====
+18:05:39.493 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898739493 =====
+18:05:48.473 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043953, and end block: 9043953
+18:05:48.473 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898748473 =====
+18:05:48.995 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043953, and end block: 9043953
+18:05:48.996 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898748996 =====
+18:05:49.403 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898749403 =====
+18:05:58.537 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043954, and end block: 9043953
+18:05:58.538 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898758538 =====
+18:05:58.977 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043954, and end block: 9043953
+18:05:58.977 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898758977 =====
+18:05:59.483 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898759483 =====
+18:06:10.299 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043954, and end block: 9043954
+18:06:10.299 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898770299 =====
+18:06:10.956 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043954, and end block: 9043954
+18:06:10.956 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898770956 =====
+18:06:11.916 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898771916 =====
+18:06:18.505 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043955, and end block: 9043955
+18:06:18.505 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898778505 =====
+18:06:18.985 [schedule-pool-41] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043955, and end block: 9043955
+18:06:18.985 [schedule-pool-41] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898778985 =====
+18:06:19.416 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898779416 =====
+18:06:28.580 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043956, and end block: 9043955
+18:06:28.581 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,134] - ==== stake deposit record start at: 1627898788581 =====
+18:06:29.544 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [stakeWithdrawAndDepositEventHandler,156] - ==== stake withdraw record start at: 1627898789544 =====
+18:06:31.507 [schedule-pool-41] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,115] - start block:9043956, and end block: 9043956
+18:06:31.507 [schedule-pool-41] INFO  c.r.q.t.d.e.AutomaticStake - [depositEventHandler,131] - ==== burn deposit record start at: 1627898791507 =====
+18:06:36.755 [Thread-42] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1627898441419 paused.
+18:06:36.830 [Thread-42] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1627898441419 shutting down.
+18:06:36.831 [Thread-42] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1627898441419 paused.
+18:06:36.832 [Thread-42] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1627898441419 shutdown complete.
+18:06:36.832 [Thread-42] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+18:06:36.845 [Thread-42] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+20:51:55.490 [main] INFO  o.s.c.KotlinDetector - [<clinit>,57] - Kotlin reflection implementation not found at runtime, related features won't be available.
+20:51:55.931 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 65698 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+20:51:55.931 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+20:51:59.783 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+20:51:59.792 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:51:59.792 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+20:51:59.916 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+20:52:00.741 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+20:52:00.772 [cluster-ClusterId{value='6107ea704bfb3e00a2e7c67e', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+20:52:03.728 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+20:52:03.967 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+20:52:05.103 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+20:52:05.634 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+20:52:05.804 [redisson-netty-5-4] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+20:52:05.803 [redisson-netty-5-3] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+20:52:06.457 [main] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+20:52:07.575 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+20:53:19.287 [main] INFO  o.s.c.KotlinDetector - [<clinit>,57] - Kotlin reflection implementation not found at runtime, related features won't be available.
+20:53:19.802 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 65750 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+20:53:19.802 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+20:53:23.116 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+20:53:23.130 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:53:23.130 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+20:53:23.318 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+20:53:24.287 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+20:53:24.324 [cluster-ClusterId{value='6107eac44bfb3e00d65983fe', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+20:53:27.234 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+20:53:27.463 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+20:53:27.928 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+20:53:28.299 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+20:53:28.474 [redisson-netty-5-6] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+20:53:28.476 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+20:53:28.953 [main] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+20:53:30.073 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+20:54:46.957 [main] INFO  o.s.c.KotlinDetector - [<clinit>,57] - Kotlin reflection implementation not found at runtime, related features won't be available.
+20:54:47.495 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 65781 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+20:54:47.495 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+20:54:50.796 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+20:54:50.805 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:54:50.805 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+20:54:50.958 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+20:54:51.754 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+20:54:51.793 [cluster-ClusterId{value='6107eb1b4bfb3e00f5c9e455', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+20:54:54.643 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+20:54:54.873 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+20:54:54.952 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+20:54:55.313 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+20:54:55.490 [redisson-netty-5-9] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+20:54:55.491 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+20:54:57.674 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+20:54:58.691 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+20:54:58.703 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+20:54:58.735 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+20:54:58.899 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+20:54:58.911 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+20:54:58.918 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+20:54:58.919 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+20:54:58.958 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+20:54:58.987 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+20:54:59.005 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 12.02 seconds (JVM running for 12.835)
+20:54:59.578 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:54:59.590 [RMI TCP Connection(3)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+20:56:19.596 [Thread-31] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+20:56:19.683 [Thread-31] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+20:56:24.557 [main] INFO  o.s.c.KotlinDetector - [<clinit>,57] - Kotlin reflection implementation not found at runtime, related features won't be available.
+20:56:25.063 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 65825 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+20:56:25.064 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+20:56:28.239 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+20:56:28.247 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:56:28.247 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+20:56:28.395 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+20:56:29.119 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+20:56:29.145 [cluster-ClusterId{value='6107eb7d4bfb3e01217a9129', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+20:56:33.303 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+20:56:33.513 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+20:56:33.573 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+20:56:33.942 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+20:56:34.118 [redisson-netty-5-4] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+20:56:34.119 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+20:56:37.541 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+20:56:38.944 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+20:56:38.953 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+20:56:38.984 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+20:56:39.125 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+20:56:39.136 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+20:56:39.143 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+20:56:39.144 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+20:56:39.198 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+20:56:39.240 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+20:56:39.393 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 14.804 seconds (JVM running for 15.629)
+20:56:39.728 [RMI TCP Connection(12)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:56:39.736 [RMI TCP Connection(13)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+21:00:35.745 [Thread-35] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+21:00:35.811 [Thread-35] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+21:00:40.465 [main] INFO  o.s.c.KotlinDetector - [<clinit>,57] - Kotlin reflection implementation not found at runtime, related features won't be available.
+21:00:40.900 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 65918 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+21:00:40.901 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+21:00:43.662 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+21:00:43.668 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+21:00:43.669 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+21:00:43.771 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+21:00:44.419 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+21:00:44.447 [cluster-ClusterId{value='6107ec7c4bfb3e017e5e36ce', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+21:00:47.076 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+21:00:47.242 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+21:00:47.739 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+21:00:48.049 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+21:00:48.208 [redisson-netty-5-5] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+21:00:48.209 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+21:00:50.170 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+21:00:51.059 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+21:00:51.067 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+21:00:51.093 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+21:00:51.235 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+21:00:51.245 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+21:00:51.252 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+21:00:51.253 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+21:00:51.298 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+21:00:51.327 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+21:00:51.346 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 10.835 seconds (JVM running for 11.802)
+21:00:51.442 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:00:51.449 [RMI TCP Connection(3)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+21:01:53.143 [Thread-28] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+21:01:53.241 [Thread-28] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+21:01:56.146 [main] INFO  o.s.c.KotlinDetector - [<clinit>,57] - Kotlin reflection implementation not found at runtime, related features won't be available.
+21:01:56.464 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 65948 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+21:01:56.464 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+21:01:59.004 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+21:01:59.011 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+21:01:59.011 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+21:01:59.137 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+21:01:59.941 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+21:01:59.969 [cluster-ClusterId{value='6107ecc74bfb3e019c7e9db5', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+21:02:02.552 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+21:02:02.725 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+21:02:02.789 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+21:02:03.118 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+21:02:03.272 [redisson-netty-5-5] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+21:02:03.274 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+21:02:05.296 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+21:02:06.291 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+21:02:06.300 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+21:02:06.324 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+21:02:06.466 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+21:02:06.476 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+21:02:06.483 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+21:02:06.484 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+21:02:06.532 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+21:02:06.564 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+21:02:06.585 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 10.411 seconds (JVM running for 11.002)
+21:02:06.961 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:02:06.968 [RMI TCP Connection(4)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+21:05:06.343 [Thread-27] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+21:05:06.440 [Thread-27] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+21:05:09.762 [main] INFO  o.s.c.KotlinDetector - [<clinit>,57] - Kotlin reflection implementation not found at runtime, related features won't be available.
+21:05:10.380 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 66035 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+21:05:10.381 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+21:05:13.340 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+21:05:13.348 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+21:05:13.349 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+21:05:13.462 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+21:05:14.203 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+21:05:14.233 [cluster-ClusterId{value='6107ed8a4bfb3e01f34d049d', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+21:05:16.931 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+21:05:17.110 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+21:05:17.428 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+21:05:17.753 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+21:05:17.913 [redisson-netty-5-4] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+21:05:17.912 [redisson-netty-5-10] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+21:05:20.158 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+21:05:21.234 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+21:05:21.244 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+21:05:21.274 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+21:05:21.949 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+21:05:21.968 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+21:05:21.988 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+21:05:21.995 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+21:05:22.078 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+21:05:22.111 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+21:05:22.141 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 12.303 seconds (JVM running for 13.307)
+21:05:22.505 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:05:22.527 [RMI TCP Connection(3)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+21:05:40.639 [Thread-30] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+21:05:40.680 [Thread-30] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+21:09:04.190 [main] INFO  o.s.c.KotlinDetector - [<clinit>,57] - Kotlin reflection implementation not found at runtime, related features won't be available.
+21:09:04.755 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 66142 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+21:09:04.755 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+21:09:08.629 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+21:09:08.643 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+21:09:08.644 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+21:09:08.802 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+21:09:09.644 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+21:09:09.673 [cluster-ClusterId{value='6107ee754bfb3e025e198440', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+21:09:12.741 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+21:09:12.958 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+21:09:13.433 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+21:09:13.799 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+21:09:13.976 [redisson-netty-5-2] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+21:09:13.977 [redisson-netty-5-2] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+21:09:16.064 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+21:09:17.098 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+21:09:17.112 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+21:09:17.148 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+21:09:17.348 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+21:09:17.360 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+21:09:17.368 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+21:09:17.374 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+21:09:17.423 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+21:09:17.461 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+21:09:17.484 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 13.264 seconds (JVM running for 14.04)
+21:09:17.628 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:09:17.651 [RMI TCP Connection(1)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+21:10:11.488 [Thread-32] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+21:10:11.567 [Thread-32] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+21:10:14.406 [main] INFO  o.s.c.KotlinDetector - [<clinit>,57] - Kotlin reflection implementation not found at runtime, related features won't be available.
+21:10:14.776 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 66172 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+21:10:14.778 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+21:10:17.932 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+21:10:17.941 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+21:10:17.941 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+21:10:18.096 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+21:10:18.848 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+21:10:18.884 [cluster-ClusterId{value='6107eeba4bfb3e027ce394c5', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+21:10:21.663 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+21:10:21.860 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+21:10:22.728 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+21:10:23.084 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+21:10:23.267 [redisson-netty-5-2] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+21:10:23.271 [redisson-netty-5-2] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+21:10:25.877 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+21:10:27.193 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+21:10:27.204 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+21:10:27.241 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+21:10:27.674 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+21:10:27.689 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+21:10:27.699 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+21:10:27.700 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+21:10:27.757 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+21:10:27.787 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+21:10:27.822 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 13.392 seconds (JVM running for 13.986)
+21:10:28.296 [RMI TCP Connection(6)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:10:28.303 [RMI TCP Connection(5)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+21:10:50.784 [Thread-33] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+21:10:50.844 [Thread-33] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+21:10:53.539 [main] INFO  o.s.c.KotlinDetector - [<clinit>,57] - Kotlin reflection implementation not found at runtime, related features won't be available.
+21:10:53.847 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 66189 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+21:10:53.848 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+21:10:56.492 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+21:10:56.500 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+21:10:56.500 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+21:10:56.606 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+21:10:57.229 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+21:10:57.253 [cluster-ClusterId{value='6107eee14bfb3e028da48ef3', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+21:10:59.733 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+21:10:59.908 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+21:11:00.288 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+21:11:00.619 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+21:11:00.775 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+21:11:00.774 [redisson-netty-5-7] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+21:11:02.818 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+21:11:03.960 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+21:11:03.969 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+21:11:03.994 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+21:11:04.148 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+21:11:04.158 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+21:11:04.169 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+21:11:04.170 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+21:11:04.224 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+21:11:04.257 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+21:11:04.281 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 10.719 seconds (JVM running for 11.271)
+21:11:04.737 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:11:04.744 [RMI TCP Connection(1)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+21:11:16.629 [Thread-27] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+21:11:16.667 [Thread-27] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed

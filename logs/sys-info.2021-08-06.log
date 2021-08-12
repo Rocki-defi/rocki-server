@@ -1,0 +1,1421 @@
+18:57:22.377 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 27184 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+18:57:22.391 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+18:57:26.435 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+18:57:26.446 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+18:57:26.446 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+18:57:26.567 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+18:57:27.487 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+18:57:27.525 [cluster-ClusterId{value='610d15971006be6a30624efe', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+18:57:31.908 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+18:57:32.180 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+18:57:32.719 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+18:57:34.168 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+18:57:34.180 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+18:57:34.180 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+18:57:34.186 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628247454170'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+18:57:34.187 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+18:57:34.187 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+18:57:34.189 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@7e6c9def
+18:57:35.798 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+18:57:36.462 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+18:57:36.660 [redisson-netty-5-9] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+18:57:36.661 [redisson-netty-5-9] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+18:57:37.535 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+18:57:37.569 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+18:57:37.650 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+18:57:37.805 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+18:57:37.826 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 15.936 seconds (JVM running for 17.623)
+18:57:38.171 [RMI TCP Connection(6)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:57:38.194 [RMI TCP Connection(7)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+18:57:38.829 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247454170 started.
+18:57:39.310 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,124] - start block:9009168, and end block: 9009300
+18:57:39.331 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,136] - ==== stake deposit record start at: 1628247459331 =====
+18:57:39.804 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9009168, and end block: 9009300
+18:57:39.804 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247459804 =====
+18:57:42.694 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,158] - ==== stake withdraw record start at: 1628247462694 =====
+18:57:42.934 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247462934 =====
+18:57:43.632 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,180] - ==== stake user claim record start at: 1628247463632 =====
+18:57:43.870 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247463870 =====
+18:57:44.550 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,201] - ==== stake artist claim record start at: 1628247464550 =====
+18:57:47.781 [Thread-48] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247454170 paused.
+18:57:47.820 [Thread-48] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247454170 shutting down.
+18:57:47.821 [Thread-48] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247454170 paused.
+18:57:47.821 [Thread-48] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247454170 shutdown complete.
+18:57:47.822 [Thread-48] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+18:57:47.833 [Thread-48] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+18:58:17.680 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 27267 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+18:58:17.694 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+18:58:21.484 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+18:58:21.491 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+18:58:21.492 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+18:58:21.592 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+18:58:22.444 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+18:58:22.487 [cluster-ClusterId{value='610d15ce1006be6a83c0061d', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+18:58:26.232 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+18:58:26.480 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+18:58:26.989 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+18:58:28.366 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+18:58:28.377 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+18:58:28.378 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+18:58:28.383 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628247508368'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+18:58:28.383 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+18:58:28.383 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+18:58:28.384 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@b22426a
+18:58:29.915 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+18:58:30.569 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+18:58:30.746 [redisson-netty-5-5] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+18:58:30.747 [redisson-netty-5-5] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+18:58:31.540 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+18:58:31.551 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+18:58:31.615 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+18:58:31.738 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+18:58:31.760 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 14.489 seconds (JVM running for 15.406)
+18:58:32.149 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:58:32.167 [RMI TCP Connection(3)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+18:58:32.748 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247508368 started.
+18:58:35.869 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,124] - start block:9009301, and end block: 9011301
+18:58:35.888 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,136] - ==== stake deposit record start at: 1628247515888 =====
+18:58:36.421 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9009301, and end block: 9011301
+18:58:36.422 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247516422 =====
+18:58:37.322 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247517322 =====
+18:58:37.339 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,158] - ==== stake withdraw record start at: 1628247517339 =====
+18:58:38.226 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247518226 =====
+18:58:38.235 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,180] - ==== stake user claim record start at: 1628247518235 =====
+18:58:39.135 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,201] - ==== stake artist claim record start at: 1628247519135 =====
+18:58:46.233 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9011302, and end block: 9013302
+18:58:46.235 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247526235 =====
+18:58:47.185 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247527185 =====
+18:58:48.103 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247528103 =====
+18:58:48.944 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,124] - start block:9011302, and end block: 9013302
+18:58:48.944 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,136] - ==== stake deposit record start at: 1628247528944 =====
+18:58:49.844 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,158] - ==== stake withdraw record start at: 1628247529844 =====
+18:58:50.754 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,180] - ==== stake user claim record start at: 1628247530754 =====
+18:58:51.660 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,201] - ==== stake artist claim record start at: 1628247531660 =====
+18:58:56.781 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9013303, and end block: 9015303
+18:58:56.782 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247536782 =====
+18:58:57.700 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247537700 =====
+18:58:58.857 [Thread-45] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247508368 paused.
+18:58:58.893 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247538893 =====
+18:58:58.900 [Thread-45] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247508368 shutting down.
+18:58:58.901 [Thread-45] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247508368 paused.
+18:58:58.902 [Thread-45] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247508368 shutdown complete.
+18:58:58.902 [Thread-45] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+18:58:58.915 [Thread-45] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+18:58:59.220 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,124] - start block:9013303, and end block: 9009300
+18:58:59.220 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,136] - ==== stake deposit record start at: 1628247539220 =====
+18:58:59.222 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,158] - ==== stake withdraw record start at: 1628247539222 =====
+18:58:59.225 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,180] - ==== stake user claim record start at: 1628247539225 =====
+18:58:59.227 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,201] - ==== stake artist claim record start at: 1628247539227 =====
+18:59:42.387 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 27313 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+18:59:42.392 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+18:59:45.667 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+18:59:45.673 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+18:59:45.673 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+18:59:45.759 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+18:59:46.443 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+18:59:46.470 [cluster-ClusterId{value='610d16221006be6ab1bc4981', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+18:59:49.944 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+18:59:50.141 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+18:59:50.465 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+18:59:51.833 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+18:59:51.843 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+18:59:51.843 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+18:59:51.848 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628247591835'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+18:59:51.848 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+18:59:51.848 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+18:59:51.849 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@2ff11b25
+18:59:53.071 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+18:59:53.644 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+18:59:53.794 [redisson-netty-5-5] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+18:59:53.797 [redisson-netty-5-3] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+18:59:54.515 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+18:59:54.524 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+18:59:54.575 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+18:59:54.680 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+18:59:54.697 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 12.646 seconds (JVM running for 13.566)
+18:59:54.898 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:59:54.912 [RMI TCP Connection(3)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+18:59:55.697 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247591835 started.
+19:00:03.950 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9015304, and end block: 9017304
+19:00:03.977 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247603977 =====
+19:00:04.397 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,124] - start block:9013303, and end block: 9015303
+19:00:04.398 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,136] - ==== stake deposit record start at: 1628247604398 =====
+19:00:05.008 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247605008 =====
+19:00:05.345 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,158] - ==== stake withdraw record start at: 1628247605345 =====
+19:00:05.940 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247605940 =====
+19:00:06.295 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,180] - ==== stake user claim record start at: 1628247606295 =====
+19:00:07.247 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,201] - ==== stake artist claim record start at: 1628247607247 =====
+19:00:10.642 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,124] - start block:9015304, and end block: 9017304
+19:00:10.642 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,136] - ==== stake deposit record start at: 1628247610642 =====
+19:00:11.080 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9017305, and end block: 9019305
+19:00:11.081 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247611081 =====
+19:00:11.554 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,158] - ==== stake withdraw record start at: 1628247611554 =====
+19:00:11.995 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247611995 =====
+19:00:12.479 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,180] - ==== stake user claim record start at: 1628247612479 =====
+19:00:12.908 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247612908 =====
+19:00:13.420 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,201] - ==== stake artist claim record start at: 1628247613420 =====
+19:00:19.427 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9019306, and end block: 9021306
+19:00:19.428 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247619428 =====
+19:00:20.347 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247620347 =====
+19:00:21.329 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247621329 =====
+19:00:22.599 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,124] - start block:9017305, and end block: 9019305
+19:00:22.599 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,136] - ==== stake deposit record start at: 1628247622599 =====
+19:00:24.047 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,158] - ==== stake withdraw record start at: 1628247624047 =====
+19:00:24.947 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,180] - ==== stake user claim record start at: 1628247624947 =====
+19:00:25.821 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,201] - ==== stake artist claim record start at: 1628247625821 =====
+19:00:29.192 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9021307, and end block: 9023307
+19:00:29.192 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247629192 =====
+19:00:30.158 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247630158 =====
+19:00:31.096 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247631096 =====
+19:00:42.191 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,124] - start block:9019306, and end block: 9009300
+19:00:42.192 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,136] - ==== stake deposit record start at: 1628247642192 =====
+19:00:44.166 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9023308, and end block: 9025308
+19:00:44.167 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247644167 =====
+19:00:44.956 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,158] - ==== stake withdraw record start at: 1628247644956 =====
+19:00:45.115 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247645115 =====
+19:00:45.891 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,180] - ==== stake user claim record start at: 1628247645891 =====
+19:00:46.052 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247646052 =====
+19:00:46.828 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,201] - ==== stake artist claim record start at: 1628247646828 =====
+19:00:49.457 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9025309, and end block: 9027309
+19:00:49.457 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247649457 =====
+19:00:50.164 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,124] - start block:9009301, and end block: 9011301
+19:00:50.164 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,136] - ==== stake deposit record start at: 1628247650164 =====
+19:00:50.393 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247650393 =====
+19:00:51.074 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,158] - ==== stake withdraw record start at: 1628247651074 =====
+19:00:51.314 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247651314 =====
+19:00:51.984 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,180] - ==== stake user claim record start at: 1628247651984 =====
+19:00:52.912 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,201] - ==== stake artist claim record start at: 1628247652912 =====
+19:01:06.186 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,124] - start block:9011302, and end block: 9009300
+19:01:06.187 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,136] - ==== stake deposit record start at: 1628247666187 =====
+19:01:11.722 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9027310, and end block: 9029310
+19:01:11.722 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247671722 =====
+19:01:12.255 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,158] - ==== stake withdraw record start at: 1628247672255 =====
+19:01:12.664 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247672664 =====
+19:01:13.182 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,180] - ==== stake user claim record start at: 1628247673182 =====
+19:01:13.598 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247673598 =====
+19:01:23.653 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,201] - ==== stake artist claim record start at: 1628247683653 =====
+19:01:33.785 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9029311, and end block: 9031311
+19:01:33.785 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247693785 =====
+19:01:34.726 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247694726 =====
+19:01:35.667 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247695667 =====
+19:01:36.114 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,124] - start block:9009301, and end block: 9011301
+19:01:36.115 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,136] - ==== stake deposit record start at: 1628247696115 =====
+19:01:37.060 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,158] - ==== stake withdraw record start at: 1628247697060 =====
+19:01:37.986 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,180] - ==== stake user claim record start at: 1628247697986 =====
+19:01:39.058 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9031312, and end block: 9033312
+19:01:39.058 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247699058 =====
+19:01:39.977 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247699977 =====
+19:01:40.065 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,201] - ==== stake artist claim record start at: 1628247700065 =====
+19:01:40.894 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247700894 =====
+19:01:44.311 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,124] - start block:9011302, and end block: 9013302
+19:01:44.312 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,136] - ==== stake deposit record start at: 1628247704312 =====
+19:01:44.755 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9033313, and end block: 9035313
+19:01:44.756 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247704756 =====
+19:01:45.241 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,158] - ==== stake withdraw record start at: 1628247705241 =====
+19:01:47.279 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,180] - ==== stake user claim record start at: 1628247707279 =====
+19:01:48.208 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,201] - ==== stake artist claim record start at: 1628247708208 =====
+19:01:49.450 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247709450 =====
+19:01:53.491 [Thread-40] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247591835 paused.
+19:01:53.550 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247713550 =====
+19:01:53.552 [Thread-40] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247591835 shutting down.
+19:01:53.552 [Thread-40] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247591835 paused.
+19:01:53.555 [Thread-40] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247591835 shutdown complete.
+19:01:53.555 [Thread-40] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+19:01:53.575 [Thread-40] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+19:02:03.366 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 27361 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+19:02:03.383 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+19:02:06.993 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+19:02:07.000 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+19:02:07.000 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+19:02:07.090 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+19:02:07.752 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+19:02:07.789 [cluster-ClusterId{value='610d16af1006be6ae121b96d', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+19:02:12.076 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+19:02:12.253 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+19:02:13.077 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+19:02:14.824 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+19:02:14.837 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+19:02:14.837 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+19:02:14.842 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628247734828'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+19:02:14.843 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+19:02:14.843 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+19:02:14.845 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@35d3f0cb
+19:02:16.351 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+19:02:16.986 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+19:02:17.158 [redisson-netty-5-2] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+19:02:17.159 [redisson-netty-5-5] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+19:02:18.117 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+19:02:18.127 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+19:02:18.181 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+19:02:18.295 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+19:02:18.317 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 15.297 seconds (JVM running for 16.196)
+19:02:18.673 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:02:18.688 [RMI TCP Connection(2)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+19:02:19.424 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247734828 started.
+19:02:23.016 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9035314, and end block: 9037314
+19:02:23.037 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247743037 =====
+19:02:23.980 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247743980 =====
+19:02:33.143 [Thread-45] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247734828 paused.
+19:02:33.178 [Thread-45] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247734828 shutting down.
+19:02:33.178 [Thread-45] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247734828 paused.
+19:02:33.179 [Thread-45] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247734828 shutdown complete.
+19:02:33.179 [Thread-45] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+19:02:33.181 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247753181 =====
+19:02:33.190 [Thread-45] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+19:03:37.503 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 27429 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+19:03:37.507 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+19:03:41.486 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+19:03:41.494 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+19:03:41.494 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+19:03:41.623 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+19:03:42.443 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+19:03:42.477 [cluster-ClusterId{value='610d170e1006be6b259f8d0d', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+19:03:46.163 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+19:03:46.380 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+19:03:46.441 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+19:03:47.782 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+19:03:47.795 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+19:03:47.795 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+19:03:47.800 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628247827785'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+19:03:47.800 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+19:03:47.801 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+19:03:47.802 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@1b721373
+19:03:49.144 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+19:03:49.813 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+19:03:49.991 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+19:03:49.992 [redisson-netty-5-5] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+19:03:50.819 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+19:03:50.830 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+19:03:50.889 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+19:03:51.003 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+19:03:51.024 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 13.879 seconds (JVM running for 14.587)
+19:03:51.481 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:03:51.494 [RMI TCP Connection(2)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+19:03:52.125 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247827785 started.
+19:03:53.002 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9009168, and end block: 9009300
+19:03:53.022 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247833022 =====
+19:04:01.625 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247841625 =====
+19:04:02.393 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247842393 =====
+19:04:06.202 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9009301, and end block: 9011301
+19:04:06.203 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247846203 =====
+19:04:07.653 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247847653 =====
+19:04:08.593 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247848593 =====
+19:04:30.199 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9011302, and end block: 9013302
+19:04:30.200 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247870199 =====
+19:04:31.132 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247871132 =====
+19:04:32.073 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247872073 =====
+19:04:47.798 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9013303, and end block: 9015303
+19:04:47.799 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247887799 =====
+19:04:48.748 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247888748 =====
+19:04:49.688 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247889688 =====
+19:04:53.240 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9015304, and end block: 9017304
+19:04:53.241 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247893241 =====
+19:04:54.162 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247894162 =====
+19:04:55.063 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247895063 =====
+19:04:58.640 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9017305, and end block: 9019305
+19:04:58.641 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247898641 =====
+19:05:02.736 [Thread-42] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247827785 paused.
+19:05:02.770 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247902770 =====
+19:05:02.771 [Thread-42] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247827785 shutting down.
+19:05:02.771 [Thread-42] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247827785 paused.
+19:05:02.772 [Thread-42] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247827785 shutdown complete.
+19:05:02.773 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247902773 =====
+19:05:02.772 [Thread-42] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+19:05:02.785 [Thread-42] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+19:05:40.351 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 27476 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+19:05:40.364 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+19:05:43.825 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+19:05:43.832 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+19:05:43.832 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+19:05:43.945 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+19:05:44.681 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+19:05:44.715 [cluster-ClusterId{value='610d17881006be6b548fc312', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+19:05:48.320 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+19:05:48.518 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+19:05:51.094 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+19:05:52.362 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+19:05:52.370 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+19:05:52.371 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+19:05:52.375 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628247952363'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+19:05:52.375 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+19:05:52.375 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+19:05:52.376 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@8f4e349
+19:05:53.587 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+19:05:54.169 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+19:05:54.316 [redisson-netty-5-3] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+19:05:54.315 [redisson-netty-5-1] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+19:05:55.085 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+19:05:55.094 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+19:05:55.146 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+19:05:55.251 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+19:05:55.269 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 15.355 seconds (JVM running for 16.212)
+19:05:55.367 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:05:55.382 [RMI TCP Connection(1)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+19:05:56.292 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247952363 started.
+19:06:03.202 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9019306, and end block: 9021306
+19:06:03.222 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247963222 =====
+19:06:04.220 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247964220 =====
+19:06:05.158 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247965158 =====
+19:06:10.221 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9021307, and end block: 9023307
+19:06:10.221 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247970221 =====
+19:06:11.138 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247971138 =====
+19:06:12.061 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247972061 =====
+19:06:19.809 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9023308, and end block: 9025308
+19:06:19.809 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247979809 =====
+19:06:20.697 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247980697 =====
+19:06:21.586 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247981586 =====
+19:06:29.719 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9025309, and end block: 9027309
+19:06:29.720 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247989720 =====
+19:06:31.187 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628247991187 =====
+19:06:32.086 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628247992086 =====
+19:06:39.691 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9027310, and end block: 9029310
+19:06:39.691 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628247999691 =====
+19:06:40.615 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248000615 =====
+19:06:41.509 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248001509 =====
+19:06:49.588 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9029311, and end block: 9031311
+19:06:49.588 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248009588 =====
+19:06:50.462 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248010462 =====
+19:06:51.881 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248011881 =====
+19:07:01.890 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9031312, and end block: 9033312
+19:07:01.890 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248021890 =====
+19:07:02.776 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248022776 =====
+19:07:04.375 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248024375 =====
+19:07:09.595 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9033313, and end block: 9035313
+19:07:09.595 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248029595 =====
+19:07:10.453 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248030453 =====
+19:07:11.348 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248031348 =====
+19:07:19.665 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9035314, and end block: 9037314
+19:07:19.665 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248039665 =====
+19:07:20.560 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248040560 =====
+19:07:21.421 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248041421 =====
+19:07:29.694 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9037315, and end block: 9039315
+19:07:29.694 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248049694 =====
+19:07:30.620 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248050620 =====
+19:07:31.543 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248051543 =====
+19:07:39.590 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9039316, and end block: 9041316
+19:07:39.591 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248059591 =====
+19:07:40.499 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248060499 =====
+19:07:41.393 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248061393 =====
+19:07:49.731 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9041317, and end block: 9043317
+19:07:49.733 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248069733 =====
+19:07:50.635 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248070635 =====
+19:07:51.556 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248071556 =====
+19:07:59.590 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9043318, and end block: 9045318
+19:07:59.591 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248079591 =====
+19:08:00.561 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248080561 =====
+19:08:01.430 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248081430 =====
+19:08:10.047 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9045319, and end block: 9047319
+19:08:10.047 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248090047 =====
+19:08:10.981 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248090981 =====
+19:08:11.895 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248091895 =====
+19:08:19.668 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9047320, and end block: 9049320
+19:08:19.669 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248099669 =====
+19:08:20.662 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248100662 =====
+19:08:21.566 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248101566 =====
+19:08:29.744 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9049321, and end block: 9051321
+19:08:29.744 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248109744 =====
+19:08:30.662 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248110662 =====
+19:08:31.609 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248111609 =====
+19:08:44.782 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9051322, and end block: 9053322
+19:08:44.782 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248124782 =====
+19:08:45.696 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248125696 =====
+19:08:46.583 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248126583 =====
+19:08:49.799 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9053323, and end block: 9055323
+19:08:49.799 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248129799 =====
+19:08:51.152 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248131152 =====
+19:08:52.044 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248132044 =====
+19:08:59.863 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9055324, and end block: 9057324
+19:08:59.864 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248139864 =====
+19:09:00.762 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248140762 =====
+19:09:01.656 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248141656 =====
+19:09:09.730 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9057325, and end block: 9059325
+19:09:09.730 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248149730 =====
+19:09:10.622 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248150622 =====
+19:09:11.503 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248151503 =====
+19:09:19.683 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9059326, and end block: 9061326
+19:09:19.684 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248159684 =====
+19:09:20.590 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248160590 =====
+19:09:21.509 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248161509 =====
+19:09:29.760 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9061327, and end block: 9063327
+19:09:29.760 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248169760 =====
+19:09:30.662 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248170662 =====
+19:09:31.574 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248171574 =====
+19:09:39.661 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9063328, and end block: 9065328
+19:09:39.662 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248179662 =====
+19:09:40.570 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248180570 =====
+19:09:41.460 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248181460 =====
+19:09:49.714 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9065329, and end block: 9067329
+19:09:49.714 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248189714 =====
+19:09:50.603 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248190603 =====
+19:09:52.031 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248192031 =====
+19:09:59.607 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9067330, and end block: 9067218
+19:09:59.607 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248199607 =====
+19:10:00.472 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248200472 =====
+19:10:01.364 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248201364 =====
+19:10:10.768 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9067219, and end block: 9067219
+19:10:10.768 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248210768 =====
+19:10:11.712 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248211712 =====
+19:10:12.648 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248212648 =====
+19:10:19.567 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9067220, and end block: 9067220
+19:10:19.569 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248219569 =====
+19:10:20.485 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248220485 =====
+19:10:21.358 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248221358 =====
+19:10:29.768 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9067221, and end block: 9067220
+19:10:29.768 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248229768 =====
+19:10:30.713 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248230713 =====
+19:10:31.673 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248231673 =====
+19:10:40.178 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9067221, and end block: 9067221
+19:10:40.179 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628248240179 =====
+19:10:41.071 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628248241071 =====
+19:10:41.984 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628248241984 =====
+19:10:45.914 [Thread-46] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247952363 paused.
+19:10:45.952 [Thread-46] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247952363 shutting down.
+19:10:45.952 [Thread-46] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247952363 paused.
+19:10:45.959 [Thread-46] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628247952363 shutdown complete.
+19:10:45.959 [Thread-46] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+19:10:46.066 [Thread-46] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+19:12:01.536 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 27620 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+19:12:01.539 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+19:12:05.373 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+19:12:05.380 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+19:12:05.380 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+19:12:05.473 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+19:12:06.163 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+19:12:06.191 [cluster-ClusterId{value='610d19061006be6be4da1c81', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+19:12:09.698 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+19:12:09.877 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+19:12:10.356 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+19:12:11.667 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+19:12:11.676 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+19:12:11.676 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+19:12:11.681 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628248331668'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+19:12:11.681 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+19:12:11.682 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+19:12:11.683 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@2e84cc02
+19:12:12.954 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+19:12:13.538 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+19:12:13.701 [redisson-netty-5-12] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+19:12:13.702 [redisson-netty-5-5] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+19:12:14.413 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+19:12:14.421 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+19:12:14.474 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+19:12:14.583 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+19:12:14.599 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 13.402 seconds (JVM running for 14.25)
+19:12:14.749 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:12:14.761 [RMI TCP Connection(2)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+19:12:15.662 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248331668 started.
+19:14:00.528 [Thread-41] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248331668 paused.
+19:14:00.574 [Thread-41] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248331668 shutting down.
+19:14:00.575 [Thread-41] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248331668 paused.
+19:14:00.575 [Thread-41] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248331668 shutdown complete.
+19:14:00.576 [Thread-41] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+19:14:00.588 [Thread-41] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+19:14:04.820 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 27662 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+19:14:04.823 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+19:14:08.153 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+19:14:08.160 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+19:14:08.160 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+19:14:08.282 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+19:14:08.952 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+19:14:08.985 [cluster-ClusterId{value='610d19801006be6c0e05c82f', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+19:14:12.416 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+19:14:12.610 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+19:14:12.665 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+19:14:13.976 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+19:14:13.986 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+19:14:13.988 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+19:14:13.993 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628248453977'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+19:14:13.994 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+19:14:13.994 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+19:14:13.995 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@7e29c801
+19:14:15.315 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+19:14:15.914 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+19:14:16.065 [redisson-netty-5-6] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+19:14:16.067 [redisson-netty-5-5] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+19:14:16.828 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+19:14:16.836 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+19:14:16.897 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+19:14:17.007 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+19:14:17.026 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 12.493 seconds (JVM running for 13.348)
+19:14:17.432 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:14:17.441 [RMI TCP Connection(1)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+19:14:18.019 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248453977 started.
+19:15:19.573 [Thread-41] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248453977 paused.
+19:15:19.618 [Thread-41] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248453977 shutting down.
+19:15:19.618 [Thread-41] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248453977 paused.
+19:15:19.619 [Thread-41] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248453977 shutdown complete.
+19:15:19.619 [Thread-41] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+19:15:19.630 [Thread-41] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+19:15:52.272 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 27705 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+19:15:52.275 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+19:15:55.681 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+19:15:55.687 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+19:15:55.687 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+19:15:55.783 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+19:15:56.416 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+19:15:56.444 [cluster-ClusterId{value='610d19ec1006be6c39f5b70e', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+19:15:59.791 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+19:15:59.990 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+19:16:00.334 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+19:16:01.600 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+19:16:01.608 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+19:16:01.608 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+19:16:01.613 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628248561601'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+19:16:01.613 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+19:16:01.613 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+19:16:01.614 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@4fbb52b8
+19:16:02.817 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+19:16:03.395 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+19:16:03.554 [redisson-netty-5-5] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+19:16:03.554 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+19:16:04.362 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+19:16:04.371 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+19:16:04.423 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+19:16:04.527 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+19:16:04.545 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 12.543 seconds (JVM running for 13.234)
+19:16:05.103 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:16:05.119 [RMI TCP Connection(3)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+19:16:05.663 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248561601 started.
+19:16:54.162 [Thread-40] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248561601 paused.
+19:16:54.194 [Thread-40] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248561601 shutting down.
+19:16:54.194 [Thread-40] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248561601 paused.
+19:16:54.195 [Thread-40] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248561601 shutdown complete.
+19:16:54.195 [Thread-40] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+19:16:54.206 [Thread-40] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+19:18:08.591 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 27757 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+19:18:08.594 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+19:18:12.512 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+19:18:12.519 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+19:18:12.519 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+19:18:12.621 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+19:18:13.406 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+19:18:13.442 [cluster-ClusterId{value='610d1a751006be6c6d8f2d9e', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+19:18:17.183 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+19:18:17.390 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+19:18:17.879 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+19:18:19.177 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+19:18:19.186 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+19:18:19.186 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+19:18:19.191 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628248699179'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+19:18:19.191 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+19:18:19.191 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+19:18:19.192 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@7f3c2720
+19:18:20.440 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+19:18:20.987 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+19:18:21.140 [redisson-netty-5-7] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+19:18:21.141 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+19:18:21.842 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+19:18:21.851 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+19:18:21.903 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+19:18:22.009 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+19:18:22.026 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 13.769 seconds (JVM running for 14.611)
+19:18:22.333 [RMI TCP Connection(3)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:18:22.349 [RMI TCP Connection(2)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+19:18:23.029 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248699179 started.
+19:21:02.173 [Thread-43] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248699179 paused.
+19:21:02.209 [Thread-43] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248699179 shutting down.
+19:21:02.210 [Thread-43] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248699179 paused.
+19:21:02.210 [Thread-43] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248699179 shutdown complete.
+19:21:02.211 [Thread-43] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+19:21:02.223 [Thread-43] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+19:21:39.712 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 27829 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+19:21:39.730 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+19:21:43.194 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+19:21:43.201 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+19:21:43.201 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+19:21:43.294 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+19:21:44.039 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+19:21:44.076 [cluster-ClusterId{value='610d1b481006be6cb5488c92', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+19:21:47.898 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+19:21:48.076 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+19:21:48.583 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+19:21:49.879 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+19:21:49.894 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+19:21:49.895 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+19:21:49.900 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628248909881'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+19:21:49.900 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+19:21:49.900 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+19:21:49.901 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@67f4f5db
+19:21:51.214 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+19:21:51.838 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+19:21:51.999 [redisson-netty-5-11] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+19:21:51.999 [redisson-netty-5-5] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+19:21:52.717 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+19:21:52.725 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+19:21:52.783 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+19:21:52.892 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+19:21:52.963 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 13.573 seconds (JVM running for 14.443)
+19:21:53.352 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:21:53.364 [RMI TCP Connection(2)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+19:21:53.948 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248909881 started.
+19:21:54.397 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9009168, and end block: 9009300
+19:21:54.422 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628248914422 =====
+19:22:00.043 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628248920043 =====
+19:22:00.937 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628248920937 =====
+19:22:01.828 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628248921828 =====
+19:22:07.051 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9009301, and end block: 9011301
+19:22:07.051 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628248927051 =====
+19:22:08.653 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628248928653 =====
+19:22:09.568 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628248929568 =====
+19:22:10.497 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628248930497 =====
+19:22:16.982 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9011302, and end block: 9013302
+19:22:16.983 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628248936983 =====
+19:22:17.894 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628248937894 =====
+19:22:19.151 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628248939151 =====
+19:22:20.077 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628248940077 =====
+19:22:26.896 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9013303, and end block: 9015303
+19:22:26.896 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628248946896 =====
+19:22:27.811 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628248947811 =====
+19:22:28.713 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628248948711 =====
+19:22:29.613 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628248949612 =====
+19:22:36.948 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9015304, and end block: 9017304
+19:22:36.949 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628248956949 =====
+19:22:37.863 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628248957863 =====
+19:22:39.526 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628248959526 =====
+19:22:40.435 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628248960435 =====
+19:22:47.145 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9017305, and end block: 9019305
+19:22:47.145 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628248967145 =====
+19:22:48.069 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628248968069 =====
+19:22:49.005 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628248969005 =====
+19:22:49.934 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628248969934 =====
+19:22:57.655 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9019306, and end block: 9021306
+19:22:57.655 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628248977655 =====
+19:22:58.570 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628248978570 =====
+19:22:59.484 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628248979484 =====
+19:23:00.391 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628248980391 =====
+19:23:07.054 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9021307, and end block: 9023307
+19:23:07.055 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628248987055 =====
+19:23:07.969 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628248987969 =====
+19:23:08.878 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628248988878 =====
+19:23:09.785 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628248989785 =====
+19:23:16.844 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9023308, and end block: 9025308
+19:23:16.846 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628248996846 =====
+19:23:17.751 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628248997751 =====
+19:23:18.657 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628248998657 =====
+19:23:19.549 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628248999549 =====
+19:23:27.009 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9025309, and end block: 9027309
+19:23:27.009 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249007009 =====
+19:23:27.976 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249007976 =====
+19:23:28.876 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249008876 =====
+19:23:29.777 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628249009777 =====
+19:23:38.336 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9027310, and end block: 9029310
+19:23:38.336 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249018336 =====
+19:23:39.262 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249019262 =====
+19:23:41.996 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249021996 =====
+19:23:42.939 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628249022939 =====
+19:23:47.084 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9029311, and end block: 9031311
+19:23:47.084 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249027084 =====
+19:23:48.025 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249028025 =====
+19:23:48.942 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249028942 =====
+19:23:50.180 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628249030180 =====
+19:23:56.930 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9031312, and end block: 9033312
+19:23:56.930 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249036930 =====
+19:23:57.878 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249037878 =====
+19:23:58.830 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249038830 =====
+19:24:00.301 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628249040301 =====
+19:24:07.201 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9033313, and end block: 9035313
+19:24:07.202 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249047202 =====
+19:24:08.089 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249048089 =====
+19:24:08.983 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249048983 =====
+19:24:09.879 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628249049879 =====
+19:24:12.846 [Thread-43] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248909881 paused.
+19:24:12.875 [Thread-43] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248909881 shutting down.
+19:24:12.876 [Thread-43] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248909881 paused.
+19:24:12.876 [Thread-43] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628248909881 shutdown complete.
+19:24:12.876 [Thread-43] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+19:24:12.886 [Thread-43] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+19:25:30.200 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 27920 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+19:25:30.209 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+19:25:34.058 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+19:25:34.066 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+19:25:34.066 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+19:25:34.170 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+19:25:35.011 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+19:25:35.049 [cluster-ClusterId{value='610d1c2f1006be6d105a0ef2', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+19:25:38.708 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+19:25:38.968 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+19:25:39.031 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+19:25:40.407 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+19:25:40.417 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+19:25:40.418 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+19:25:40.423 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628249140408'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+19:25:40.423 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+19:25:40.423 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+19:25:40.425 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@256b105b
+19:25:41.780 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+19:25:42.458 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+19:25:42.625 [redisson-netty-5-10] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+19:25:42.627 [redisson-netty-5-5] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+19:25:43.410 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+19:25:43.425 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+19:25:43.483 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+19:25:43.609 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+19:25:43.628 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 13.767 seconds (JVM running for 14.717)
+19:25:43.764 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:25:43.775 [RMI TCP Connection(1)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+19:25:44.633 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628249140408 started.
+19:25:45.115 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9009168, and end block: 9009300
+19:25:45.140 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249145140 =====
+19:25:45.613 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9009168, and end block: 9009300
+19:25:45.613 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249145613 =====
+19:25:48.391 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249148391 =====
+19:25:49.294 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249149294 =====
+19:25:49.426 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249149426 =====
+19:25:50.489 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628249150489 =====
+19:25:51.066 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628249151066 =====
+19:25:57.786 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9009301, and end block: 9011301
+19:25:57.786 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249157786 =====
+19:25:58.684 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9009301, and end block: 9011301
+19:25:58.684 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249158684 =====
+19:25:58.732 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249158732 =====
+19:25:59.678 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249159678 =====
+19:26:00.242 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249160242 =====
+19:26:00.643 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628249160643 =====
+19:26:01.154 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628249161154 =====
+19:26:07.991 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9011302, and end block: 9013302
+19:26:07.993 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249167991 =====
+19:26:08.292 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9011302, and end block: 9013302
+19:26:08.293 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249168293 =====
+19:26:08.951 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249168951 =====
+19:26:09.207 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249169207 =====
+19:26:09.891 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249169891 =====
+19:26:10.122 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628249170122 =====
+19:26:10.833 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628249170833 =====
+19:26:17.631 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9013303, and end block: 9015303
+19:26:17.632 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249177632 =====
+19:26:18.572 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249178572 =====
+19:26:19.366 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9013303, and end block: 9015303
+19:26:19.366 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249179366 =====
+19:26:19.513 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249179513 =====
+19:26:20.299 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249180299 =====
+19:26:20.442 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628249180442 =====
+19:26:21.223 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628249181223 =====
+19:26:27.924 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9015304, and end block: 9017304
+19:26:27.924 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249187924 =====
+19:26:28.046 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9015304, and end block: 9017304
+19:26:28.047 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249188047 =====
+19:26:28.857 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249188857 =====
+19:26:28.977 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249188977 =====
+19:26:29.784 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249189784 =====
+19:26:29.919 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628249189919 =====
+19:26:30.719 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628249190719 =====
+19:26:37.570 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9017305, and end block: 9019305
+19:26:37.571 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249197571 =====
+19:26:38.039 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9017305, and end block: 9019305
+19:26:38.040 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249198040 =====
+19:26:38.492 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249198492 =====
+19:26:38.967 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249198967 =====
+19:26:39.418 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249199418 =====
+19:26:40.365 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628249200365 =====
+19:26:40.544 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628249200544 =====
+19:26:47.554 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9019306, and end block: 9021306
+19:26:47.555 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249207555 =====
+19:26:48.308 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9019306, and end block: 9021306
+19:26:48.309 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249208309 =====
+19:26:48.472 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249208472 =====
+19:26:49.384 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249209384 =====
+19:26:49.804 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249209804 =====
+19:26:50.301 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628249210301 =====
+19:26:50.723 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628249210723 =====
+19:26:57.965 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9021307, and end block: 9023307
+19:26:57.965 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249217965 =====
+19:26:58.056 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9021307, and end block: 9023307
+19:26:58.056 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249218056 =====
+19:26:58.881 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249218881 =====
+19:26:58.988 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249218988 =====
+19:26:59.798 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249219798 =====
+19:26:59.921 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628249219921 =====
+19:27:01.398 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628249221398 =====
+19:27:08.003 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9023308, and end block: 9025308
+19:27:08.003 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249228003 =====
+19:27:08.088 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9023308, and end block: 9025308
+19:27:08.089 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249228089 =====
+19:27:09.444 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249229444 =====
+19:27:09.605 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249229604 =====
+19:27:10.350 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628249230350 =====
+19:27:10.785 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249230785 =====
+19:27:11.692 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628249231692 =====
+19:27:18.295 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9025309, and end block: 9027309
+19:27:18.295 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249238295 =====
+19:27:18.787 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9025309, and end block: 9027309
+19:27:18.787 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249238787 =====
+19:27:19.215 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249239215 =====
+19:27:19.758 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249239758 =====
+19:27:20.642 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628249240642 =====
+19:27:20.674 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249240674 =====
+19:27:21.587 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628249241587 =====
+19:27:28.456 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9027310, and end block: 9029310
+19:27:28.456 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249248456 =====
+19:27:29.366 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9027310, and end block: 9029310
+19:27:29.366 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249249366 =====
+19:27:30.002 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249250002 =====
+19:27:30.278 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249250278 =====
+19:27:30.927 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249250927 =====
+19:27:31.200 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628249251200 =====
+19:27:31.853 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628249251853 =====
+19:27:37.608 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9029311, and end block: 9031311
+19:27:37.608 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249257608 =====
+19:27:38.539 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249258539 =====
+19:27:39.468 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249259468 =====
+19:27:40.396 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628249260396 =====
+19:27:41.223 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9029311, and end block: 9031311
+19:27:41.223 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249261223 =====
+19:27:42.169 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249262169 =====
+19:27:43.111 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628249263111 =====
+19:27:49.123 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9031312, and end block: 9033312
+19:27:49.124 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249269124 =====
+19:27:49.577 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9031312, and end block: 9033312
+19:27:49.578 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249269578 =====
+19:27:50.032 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249270032 =====
+19:27:50.487 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249270487 =====
+19:27:50.949 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249270949 =====
+19:27:51.388 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628249271388 =====
+19:27:52.365 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628249272365 =====
+19:27:57.691 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9033313, and end block: 9035313
+19:27:57.691 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249277691 =====
+19:27:58.634 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249278634 =====
+19:27:59.575 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249279575 =====
+19:28:00.079 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9033313, and end block: 9035313
+19:28:00.079 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249280079 =====
+19:28:00.884 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628249280884 =====
+19:28:01.006 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249281006 =====
+19:28:02.493 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628249282493 =====
+19:28:07.543 [schedule-pool-18] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9035314, and end block: 9037314
+19:28:07.544 [schedule-pool-18] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249287544 =====
+19:28:07.989 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9035314, and end block: 9037314
+19:28:07.989 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249287989 =====
+19:28:08.606 [schedule-pool-18] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249288606 =====
+19:28:08.888 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249288888 =====
+19:28:09.548 [schedule-pool-18] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249289548 =====
+19:28:09.791 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628249289791 =====
+19:28:10.449 [schedule-pool-18] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628249290449 =====
+19:28:18.650 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9037315, and end block: 9039315
+19:28:18.650 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249298650 =====
+19:28:18.687 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9037315, and end block: 9039315
+19:28:18.687 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249298687 =====
+19:28:19.587 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249299587 =====
+19:28:20.311 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249300311 =====
+19:28:20.522 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,175] - ==== burn artist claim record start at: 1628249300522 =====
+19:28:21.901 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249301901 =====
+19:28:22.856 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,203] - ==== stake artist claim record start at: 1628249302856 =====
+19:28:25.774 [Thread-43] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628249140408 paused.
+19:28:25.810 [Thread-43] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628249140408 shutting down.
+19:28:25.810 [Thread-43] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628249140408 paused.
+19:28:25.811 [Thread-43] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628249140408 shutdown complete.
+19:28:25.812 [Thread-43] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+19:28:25.822 [Thread-43] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+19:30:07.774 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 28013 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+19:30:07.793 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+19:30:11.507 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+19:30:11.514 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+19:30:11.514 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+19:30:11.612 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+19:30:12.426 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+19:30:12.465 [cluster-ClusterId{value='610d1d441006be6d6d6e34e9', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+19:30:16.269 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+19:30:16.524 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+19:30:16.855 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+19:30:18.147 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+19:30:18.162 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+19:30:18.162 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+19:30:18.168 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628249418149'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+19:30:18.169 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+19:30:18.169 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+19:30:18.171 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@7e12c8b6
+19:30:19.766 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+19:30:20.382 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+19:30:20.553 [redisson-netty-5-11] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+19:30:20.554 [redisson-netty-5-5] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+19:30:21.268 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+19:30:21.279 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+19:30:21.342 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+19:30:21.467 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+19:30:21.522 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 14.09 seconds (JVM running for 15.02)
+19:30:21.956 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:30:21.974 [RMI TCP Connection(3)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+19:30:22.560 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628249418149 started.
+19:30:22.967 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9009168, and end block: 9009300
+19:30:22.991 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249422991 =====
+19:30:23.467 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9009168, and end block: 9009300
+19:30:23.468 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249423468 =====
+19:30:26.002 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249426002 =====
+19:30:26.304 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249426304 =====
+19:30:26.921 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249426921 =====
+19:30:27.206 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,176] - ==== burn artist claim record start at: 1628249427206 =====
+19:30:27.834 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,204] - ==== stake artist claim record start at: 1628249427834 =====
+19:30:35.882 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9009301, and end block: 9011301
+19:30:35.882 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249435882 =====
+19:30:36.394 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9009301, and end block: 9011301
+19:30:36.395 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249436395 =====
+19:30:36.800 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249436800 =====
+19:30:37.315 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249437315 =====
+19:30:37.718 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,176] - ==== burn artist claim record start at: 1628249437718 =====
+19:30:38.252 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249438252 =====
+19:30:39.184 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,204] - ==== stake artist claim record start at: 1628249439184 =====
+19:30:46.228 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9011302, and end block: 9013302
+19:30:46.229 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249446228 =====
+19:30:47.358 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9011302, and end block: 9013302
+19:30:47.358 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249447358 =====
+19:30:47.779 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249447779 =====
+19:30:48.298 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249448298 =====
+19:30:49.261 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,176] - ==== burn artist claim record start at: 1628249449261 =====
+19:30:49.986 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249449986 =====
+19:30:50.933 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,204] - ==== stake artist claim record start at: 1628249450933 =====
+19:30:55.833 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9013303, and end block: 9015303
+19:30:55.833 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249455833 =====
+19:30:56.034 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9013303, and end block: 9015303
+19:30:56.034 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249456034 =====
+19:30:56.734 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249456734 =====
+19:30:56.940 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249456940 =====
+19:30:57.627 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,176] - ==== burn artist claim record start at: 1628249457627 =====
+19:30:57.837 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249457837 =====
+19:30:58.738 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,204] - ==== stake artist claim record start at: 1628249458738 =====
+19:31:05.426 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9015304, and end block: 9017304
+19:31:05.427 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249465427 =====
+19:31:05.877 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9015304, and end block: 9017304
+19:31:05.877 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249465877 =====
+19:31:06.338 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249466338 =====
+19:31:06.790 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249466790 =====
+19:31:07.253 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249467253 =====
+19:31:07.709 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,176] - ==== burn artist claim record start at: 1628249467709 =====
+19:31:08.165 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,204] - ==== stake artist claim record start at: 1628249468165 =====
+19:31:15.913 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9017305, and end block: 9019305
+19:31:15.913 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249475913 =====
+19:31:16.525 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9017305, and end block: 9019305
+19:31:16.525 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249476525 =====
+19:31:17.102 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249477102 =====
+19:31:17.439 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249477439 =====
+19:31:18.036 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,176] - ==== burn artist claim record start at: 1628249478035 =====
+19:31:18.348 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249478348 =====
+19:31:19.860 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,204] - ==== stake artist claim record start at: 1628249479860 =====
+19:31:25.916 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9019306, and end block: 9021306
+19:31:25.916 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249485916 =====
+19:31:26.126 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9019306, and end block: 9021306
+19:31:26.126 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249486126 =====
+19:31:26.851 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249486851 =====
+19:31:27.057 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249487057 =====
+19:31:27.785 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,176] - ==== burn artist claim record start at: 1628249487785 =====
+19:31:27.984 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249487984 =====
+19:31:28.916 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,204] - ==== stake artist claim record start at: 1628249488916 =====
+19:31:35.969 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9021307, and end block: 9023307
+19:31:35.970 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249495970 =====
+19:31:36.003 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9021307, and end block: 9023307
+19:31:36.003 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249496003 =====
+19:31:36.880 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249496880 =====
+19:31:36.934 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249496934 =====
+19:31:37.790 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,176] - ==== burn artist claim record start at: 1628249497790 =====
+19:31:37.862 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249497862 =====
+19:31:38.790 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,204] - ==== stake artist claim record start at: 1628249498790 =====
+19:31:46.669 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9023308, and end block: 9025308
+19:31:46.669 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249506669 =====
+19:31:47.029 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9023308, and end block: 9025308
+19:31:47.030 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249507030 =====
+19:31:47.927 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249507927 =====
+19:31:48.146 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249508146 =====
+19:31:48.824 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249508824 =====
+19:31:49.073 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,176] - ==== burn artist claim record start at: 1628249509073 =====
+19:31:49.722 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,204] - ==== stake artist claim record start at: 1628249509722 =====
+19:31:55.424 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9025309, and end block: 9027309
+19:31:55.425 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249515425 =====
+19:31:56.093 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9025309, and end block: 9027309
+19:31:56.094 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249516094 =====
+19:31:56.356 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249516356 =====
+19:31:56.986 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249516986 =====
+19:31:57.242 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249517242 =====
+19:31:57.878 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,176] - ==== burn artist claim record start at: 1628249517878 =====
+19:31:58.129 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,204] - ==== stake artist claim record start at: 1628249518129 =====
+19:32:06.261 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9027310, and end block: 9029310
+19:32:06.262 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249526262 =====
+19:32:06.629 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9027310, and end block: 9029310
+19:32:06.629 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249526629 =====
+19:32:07.161 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249527161 =====
+19:32:07.554 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249527554 =====
+19:32:07.810 [Thread-44] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628249418149 paused.
+19:32:07.842 [Thread-44] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628249418149 shutting down.
+19:32:07.843 [Thread-44] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628249418149 paused.
+19:32:07.844 [Thread-44] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628249418149 shutdown complete.
+19:32:07.844 [Thread-44] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+19:32:07.846 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,176] - ==== burn artist claim record start at: 1628249527846 =====
+19:32:07.847 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249527847 =====
+19:32:07.849 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,204] - ==== stake artist claim record start at: 1628249527849 =====
+19:32:07.856 [Thread-44] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+19:34:28.027 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 28092 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+19:34:28.032 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+19:34:31.836 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+19:34:31.845 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+19:34:31.846 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+19:34:31.944 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+19:34:32.735 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+19:34:32.768 [cluster-ClusterId{value='610d1e481006be6dbc7cfac6', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+19:34:36.454 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+19:34:36.690 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+19:34:37.177 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+19:34:38.536 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+19:34:38.554 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+19:34:38.555 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+19:34:38.562 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628249678538'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+19:34:38.562 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+19:34:38.562 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+19:34:38.564 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@250eed43
+19:34:40.017 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+19:34:40.664 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+19:34:40.836 [redisson-netty-5-4] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+19:34:40.836 [redisson-netty-5-5] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+19:34:41.586 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+19:34:41.602 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+19:34:41.666 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+19:34:41.849 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+19:34:41.867 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 14.231 seconds (JVM running for 15.228)
+19:34:41.970 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:34:41.983 [RMI TCP Connection(3)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+19:34:42.876 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628249678538 started.
+19:34:43.351 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9061122, and end block: 9063122
+19:34:43.373 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249683373 =====
+19:34:43.848 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9061122, and end block: 9063122
+19:34:43.848 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249683848 =====
+19:34:46.653 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249686653 =====
+19:34:46.888 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249686888 =====
+19:34:47.556 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249687556 =====
+19:34:47.792 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,176] - ==== burn artist claim record start at: 1628249687792 =====
+19:34:48.455 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,204] - ==== stake artist claim record start at: 1628249688455 =====
+19:34:56.078 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9063123, and end block: 9065123
+19:34:56.078 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249696078 =====
+19:34:57.002 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249697002 =====
+19:34:57.830 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9063123, and end block: 9065123
+19:34:57.831 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249697831 =====
+19:34:57.925 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249697925 =====
+19:34:58.751 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249698751 =====
+19:34:58.898 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,204] - ==== stake artist claim record start at: 1628249698898 =====
+19:34:59.682 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,176] - ==== burn artist claim record start at: 1628249699682 =====
+19:35:05.901 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9065124, and end block: 9067124
+19:35:05.902 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249705902 =====
+19:35:06.837 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249706837 =====
+19:35:07.121 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9065124, and end block: 9067124
+19:35:07.122 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249707122 =====
+19:35:08.023 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249708023 =====
+19:35:08.055 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249708055 =====
+19:35:08.958 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,176] - ==== burn artist claim record start at: 1628249708958 =====
+19:35:09.013 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,204] - ==== stake artist claim record start at: 1628249709013 =====
+19:35:15.781 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,121] - start block:9067125, and end block: 9069125
+19:35:15.781 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,138] - ==== stake deposit record start at: 1628249715781 =====
+19:35:16.612 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEventOnRinkeby,117] - start block:9067125, and end block: 9069125
+19:35:16.612 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,133] - ==== burn deposit record start at: 1628249716612 =====
+19:35:17.253 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,160] - ==== stake withdraw record start at: 1628249717253 =====
+19:35:17.529 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,155] - ==== burn user claim record start at: 1628249717529 =====
+19:35:18.158 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,182] - ==== stake user claim record start at: 1628249718158 =====
+19:35:18.444 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [burnEventHandler,176] - ==== burn artist claim record start at: 1628249718444 =====
+19:35:19.064 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [stakeEventHandler,204] - ==== stake artist claim record start at: 1628249719064 =====
+19:35:22.571 [Thread-43] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628249678538 paused.
+19:35:22.608 [Thread-43] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628249678538 shutting down.
+19:35:22.608 [Thread-43] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628249678538 paused.
+19:35:22.609 [Thread-43] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628249678538 shutdown complete.
+19:35:22.610 [Thread-43] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+19:35:22.623 [Thread-43] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed

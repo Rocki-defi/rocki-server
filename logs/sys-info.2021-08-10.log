@@ -1,0 +1,1066 @@
+10:44:42.943 [main] INFO  o.s.c.KotlinDetector - [<clinit>,57] - Kotlin reflection implementation not found at runtime, related features won't be available.
+10:44:43.595 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 2057 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+10:44:43.597 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+10:44:46.759 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+10:44:46.766 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+10:44:46.766 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+10:44:46.877 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+10:44:47.739 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+10:44:47.775 [cluster-ClusterId{value='6111e81fc2ec7e08092c23cd', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+10:44:50.896 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+10:44:50.903 [main] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+10:44:50.919 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+10:46:15.492 [main] INFO  o.s.c.KotlinDetector - [<clinit>,57] - Kotlin reflection implementation not found at runtime, related features won't be available.
+10:46:15.860 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 2172 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+10:46:15.861 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+10:46:18.899 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+10:46:18.906 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+10:46:18.906 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+10:46:19.032 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+10:46:19.823 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+10:46:19.854 [cluster-ClusterId{value='6111e87bc2ec7e087cfc3bf4', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+10:46:22.862 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+10:46:23.114 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+10:46:23.497 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+10:46:23.891 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+10:46:24.071 [redisson-netty-5-11] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+10:46:24.072 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+10:46:24.620 [main] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+10:46:25.738 [main] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+10:46:58.263 [main] INFO  o.s.c.KotlinDetector - [<clinit>,57] - Kotlin reflection implementation not found at runtime, related features won't be available.
+10:46:58.680 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 2192 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+10:46:58.680 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+10:47:01.355 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+10:47:01.362 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+10:47:01.362 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+10:47:01.462 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+10:47:02.108 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+10:47:02.142 [cluster-ClusterId{value='6111e8a6c2ec7e089066e346', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+10:47:04.730 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+10:47:04.900 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+10:47:05.158 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+10:47:05.474 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+10:47:05.629 [redisson-netty-5-3] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+10:47:05.629 [redisson-netty-5-4] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+10:47:07.830 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+10:47:08.851 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+10:47:08.863 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+10:47:08.894 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+10:47:09.055 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+10:47:09.071 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+10:47:09.080 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+10:47:09.081 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+10:47:09.117 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+10:47:09.145 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+10:47:09.163 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 10.875 seconds (JVM running for 11.638)
+10:47:09.472 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:47:09.484 [RMI TCP Connection(1)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+10:48:36.960 [Thread-28] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+10:48:37.020 [Thread-28] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+11:30:17.546 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 3364 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+11:30:17.551 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+11:30:21.416 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+11:30:21.423 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:30:21.423 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+11:30:21.550 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:30:22.412 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+11:30:22.446 [cluster-ClusterId{value='6111f2cec2ec7e0d24d0535d', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+11:30:26.115 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+11:30:26.338 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+11:30:26.412 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+11:30:27.784 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+11:30:27.797 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+11:30:27.797 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+11:30:27.802 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628566227787'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+11:30:27.803 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+11:30:27.803 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+11:30:27.804 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@69dc9fdc
+11:30:28.337 [restartedMain] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628566227787 shutting down.
+11:30:28.337 [restartedMain] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628566227787 paused.
+11:30:28.337 [restartedMain] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628566227787 shutdown complete.
+11:30:28.337 [restartedMain] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+11:30:28.347 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+11:30:29.467 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+11:31:25.399 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 3409 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+11:31:25.401 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+11:31:28.981 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+11:31:28.994 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:31:28.994 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+11:31:29.135 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:31:29.841 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+11:31:29.871 [cluster-ClusterId{value='6111f311c2ec7e0d515493dc', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+11:31:33.470 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+11:31:33.646 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+11:31:34.451 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+11:31:36.023 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+11:31:36.035 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+11:31:36.035 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+11:31:36.040 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628566296025'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+11:31:36.040 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+11:31:36.040 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+11:31:36.042 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@4edd8d57
+11:31:36.470 [restartedMain] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628566296025 shutting down.
+11:31:36.470 [restartedMain] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628566296025 paused.
+11:31:36.470 [restartedMain] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628566296025 shutdown complete.
+11:31:36.470 [restartedMain] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+11:31:36.478 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+11:31:37.598 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+11:32:47.994 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 3448 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+11:32:47.996 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+11:32:51.233 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+11:32:51.240 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:32:51.240 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+11:32:51.333 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:32:51.998 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+11:32:52.034 [cluster-ClusterId{value='6111f363c2ec7e0d78277ba0', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+11:32:55.654 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+11:32:55.870 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+11:32:56.267 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+11:32:57.547 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+11:32:57.556 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+11:32:57.556 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+11:32:57.560 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628566377548'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+11:32:57.561 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+11:32:57.561 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+11:32:57.563 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@373c7e3a
+11:32:57.967 [restartedMain] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628566377548 shutting down.
+11:32:57.967 [restartedMain] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628566377548 paused.
+11:32:57.967 [restartedMain] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628566377548 shutdown complete.
+11:32:57.968 [restartedMain] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+11:32:57.975 [restartedMain] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+11:32:59.097 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Stopping service [Tomcat]
+11:34:20.744 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 3507 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+11:34:20.747 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+11:34:23.974 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+11:34:23.982 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:34:23.983 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+11:34:24.111 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:34:25.009 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+11:34:25.040 [cluster-ClusterId{value='6111f3c1c2ec7e0db3ba47dc', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+11:34:28.424 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+11:34:28.615 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+11:34:29.000 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+11:34:30.209 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+11:34:30.218 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+11:34:30.218 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+11:34:30.223 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628566470210'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+11:34:30.223 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+11:34:30.223 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+11:34:30.225 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@6893a51f
+11:34:31.539 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+11:34:32.188 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+11:34:32.360 [redisson-netty-5-5] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+11:34:32.362 [redisson-netty-5-5] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+11:34:33.079 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+11:34:33.092 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+11:34:33.158 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+11:34:33.281 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+11:34:33.303 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 12.86 seconds (JVM running for 13.488)
+11:34:33.763 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:34:33.777 [RMI TCP Connection(2)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+11:34:34.315 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628566470210 started.
+11:34:34.786 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9009168, and end block: 9011168
+11:34:34.786 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9009173, and end block: 9011173
+11:34:51.943 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9011168, and end block: 9013168
+11:34:52.777 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9011173, and end block: 9013173
+11:35:07.413 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9013174, and end block: 9015174
+11:35:07.591 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9013169, and end block: 9015169
+11:35:21.866 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9015175, and end block: 9017175
+11:35:21.888 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9015170, and end block: 9017170
+11:35:38.077 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9017171, and end block: 9019171
+11:35:39.806 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9017176, and end block: 9019176
+11:35:52.030 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9019172, and end block: 9021172
+11:35:54.952 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9019177, and end block: 9021177
+11:36:07.233 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9021178, and end block: 9023178
+11:36:09.841 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9021173, and end block: 9023173
+11:36:23.173 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9023174, and end block: 9025174
+11:36:23.409 [Thread-41] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628566470210 paused.
+11:36:23.454 [Thread-41] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628566470210 shutting down.
+11:36:23.454 [Thread-41] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628566470210 paused.
+11:36:23.455 [Thread-41] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628566470210 shutdown complete.
+11:36:23.455 [Thread-41] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+11:36:23.472 [Thread-41] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+11:36:48.281 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 3562 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+11:36:48.289 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+11:36:51.902 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+11:36:51.909 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:36:51.909 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+11:36:52.001 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:36:52.695 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+11:36:52.727 [cluster-ClusterId{value='6111f454c2ec7e0dea0f243e', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+11:36:56.356 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+11:36:56.533 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+11:36:56.599 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+11:36:58.014 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+11:36:58.024 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+11:36:58.024 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+11:36:58.028 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628566618016'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+11:36:58.028 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+11:36:58.028 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+11:36:58.029 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@6f28d7d9
+11:36:59.413 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+11:37:00.143 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+11:37:00.378 [redisson-netty-5-3] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+11:37:00.382 [redisson-netty-5-5] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+11:37:01.528 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+11:37:01.538 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+11:37:01.596 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+11:37:01.721 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+11:37:01.749 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 13.759 seconds (JVM running for 14.729)
+11:37:01.963 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:37:01.979 [RMI TCP Connection(3)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+11:37:02.738 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628566618016 started.
+11:37:08.861 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9023179, and end block: 9025179
+11:37:08.966 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9025175, and end block: 9027175
+11:37:20.988 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9027176, and end block: 9029176
+11:37:23.467 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9025180, and end block: 9027180
+11:37:35.703 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9027181, and end block: 9029181
+11:37:36.140 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9029177, and end block: 9031177
+11:37:51.355 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9031178, and end block: 9033178
+11:37:54.721 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9029182, and end block: 9031182
+11:38:06.107 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9031183, and end block: 9033183
+11:38:06.482 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9033179, and end block: 9035179
+11:38:21.148 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9035180, and end block: 9037180
+11:38:21.158 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9033184, and end block: 9035184
+11:38:36.040 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9035185, and end block: 9037185
+11:38:37.265 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9037181, and end block: 9039181
+11:38:50.817 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9039182, and end block: 9041182
+11:38:51.502 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9037186, and end block: 9039186
+11:39:06.948 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9041183, and end block: 9043183
+11:39:07.356 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9039187, and end block: 9041187
+11:39:21.085 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9041188, and end block: 9043188
+11:39:24.852 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9043184, and end block: 9045184
+11:39:36.503 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9045185, and end block: 9047185
+11:39:36.506 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9043189, and end block: 9045189
+11:39:50.338 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9045190, and end block: 9047190
+11:39:52.120 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9047186, and end block: 9049186
+11:40:08.641 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9047191, and end block: 9049191
+11:40:09.257 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9049187, and end block: 9051187
+11:40:21.036 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9049192, and end block: 9051192
+11:40:21.668 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9051188, and end block: 9053188
+11:40:35.973 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9051193, and end block: 9053193
+11:40:37.050 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9053189, and end block: 9055189
+11:40:52.893 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9053194, and end block: 9055194
+11:40:54.233 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9055190, and end block: 9057190
+11:41:12.865 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9055195, and end block: 9057195
+11:41:26.693 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9057196, and end block: 9059196
+11:41:40.559 [schedule-pool-20] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9059197, and end block: 9061197
+11:42:07.441 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9057191, and end block: 9059191
+11:42:15.912 [schedule-pool-23] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9061198, and end block: 9063198
+11:42:24.285 [schedule-pool-24] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9059192, and end block: 9061192
+11:42:39.569 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9061193, and end block: 9063193
+11:43:07.107 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9063199, and end block: 9065199
+11:43:12.720 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9063194, and end block: 9065194
+11:43:13.317 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9065200, and end block: 9067200
+11:43:18.801 [schedule-pool-28] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9067201, and end block: 9069201
+11:43:23.456 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9065195, and end block: 9067195
+11:43:23.575 [schedule-pool-28] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorStakePoolEvent,85] - start block:9069202, and end block: 9071202
+11:43:31.481 [Thread-43] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628566618016 paused.
+11:43:31.521 [Thread-43] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628566618016 shutting down.
+11:43:31.522 [Thread-43] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628566618016 paused.
+11:43:31.526 [Thread-43] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628566618016 shutdown complete.
+11:43:31.526 [Thread-43] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+11:43:31.537 [Thread-43] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+11:49:53.229 [main] INFO  o.s.c.KotlinDetector - [<clinit>,57] - Kotlin reflection implementation not found at runtime, related features won't be available.
+11:49:53.625 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 3886 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+11:49:53.625 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+11:49:57.924 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+11:49:57.932 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:49:57.933 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+11:49:58.072 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:49:58.988 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+11:49:59.027 [cluster-ClusterId{value='6111f766c2ec7e0f2e39efac', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+11:50:02.201 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+11:50:02.471 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+11:50:02.889 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+11:50:03.293 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+11:50:03.479 [redisson-netty-5-4] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+11:50:03.481 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+11:50:05.768 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+11:50:06.799 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+11:50:06.811 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+11:50:06.840 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+11:50:07.008 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+11:50:07.021 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+11:50:07.028 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+11:50:07.030 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+11:50:07.065 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+11:50:07.090 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+11:50:07.112 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 13.856 seconds (JVM running for 14.464)
+11:50:07.573 [RMI TCP Connection(6)-192.168.1.40] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:50:07.583 [RMI TCP Connection(5)-192.168.1.40] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+11:50:29.117 [Thread-33] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+11:50:29.167 [Thread-33] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+11:53:29.585 [main] INFO  o.s.c.KotlinDetector - [<clinit>,57] - Kotlin reflection implementation not found at runtime, related features won't be available.
+11:53:30.051 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 3981 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+11:53:30.051 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+11:53:33.030 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+11:53:33.037 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:53:33.038 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+11:53:33.152 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:53:33.964 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+11:53:33.996 [cluster-ClusterId{value='6111f83dc2ec7e0f8d8172e7', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+11:53:37.046 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+11:53:37.280 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+11:53:38.047 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+11:53:38.434 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+11:53:38.614 [redisson-netty-5-11] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+11:53:38.614 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+11:53:40.782 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+11:53:41.789 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+11:53:41.803 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+11:53:41.838 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+11:53:42.005 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+11:53:42.018 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+11:53:42.026 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+11:53:42.027 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+11:53:42.071 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+11:53:42.100 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+11:53:42.122 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 12.509 seconds (JVM running for 13.286)
+11:53:42.615 [RMI TCP Connection(2)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:53:42.629 [RMI TCP Connection(1)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+11:59:31.362 [Thread-31] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+11:59:31.433 [Thread-31] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+11:59:35.750 [main] INFO  o.s.c.KotlinDetector - [<clinit>,57] - Kotlin reflection implementation not found at runtime, related features won't be available.
+11:59:36.071 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 4102 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+11:59:36.072 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+11:59:39.104 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+11:59:39.110 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+11:59:39.111 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+11:59:39.208 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+11:59:39.845 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+11:59:39.870 [cluster-ClusterId{value='6111f9abc2ec7e1006721577', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+11:59:42.390 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+11:59:42.558 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+11:59:42.963 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+11:59:43.277 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+11:59:43.432 [redisson-netty-5-10] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+11:59:43.437 [redisson-netty-5-3] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+11:59:45.484 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+11:59:46.489 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+11:59:46.497 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+11:59:46.523 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+11:59:46.668 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+11:59:46.678 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+11:59:46.686 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+11:59:46.687 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+11:59:46.732 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+11:59:46.762 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+11:59:46.781 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 10.995 seconds (JVM running for 11.732)
+11:59:47.332 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:59:47.339 [RMI TCP Connection(2)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+12:00:03.196 [Thread-29] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+12:00:03.242 [Thread-29] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+14:09:08.027 [main] INFO  o.s.c.KotlinDetector - [<clinit>,57] - Kotlin reflection implementation not found at runtime, related features won't be available.
+14:09:08.364 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 6815 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+14:09:08.365 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+14:09:11.406 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+14:09:11.415 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:09:11.415 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+14:09:11.542 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:09:12.424 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+14:09:12.454 [cluster-ClusterId{value='61121808c2ec7e1a9ffc8970', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+14:09:15.270 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+14:09:15.487 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+14:09:15.546 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+14:09:15.931 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+14:09:16.104 [redisson-netty-5-12] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+14:09:16.106 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+14:09:18.224 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:09:19.235 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+14:09:19.246 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+14:09:19.279 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+14:09:19.460 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+14:09:19.472 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+14:09:19.480 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+14:09:19.481 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+14:09:19.526 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+14:09:19.556 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+14:09:19.578 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 11.521 seconds (JVM running for 12.359)
+14:09:20.125 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:09:20.137 [RMI TCP Connection(2)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+14:18:40.916 [Thread-30] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+14:18:40.972 [Thread-30] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+14:18:49.816 [main] INFO  o.s.c.KotlinDetector - [<clinit>,57] - Kotlin reflection implementation not found at runtime, related features won't be available.
+14:18:50.218 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 7025 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+14:18:50.219 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+14:18:53.881 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+14:18:53.890 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:18:53.890 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+14:18:54.058 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:18:54.861 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+14:18:54.884 [cluster-ClusterId{value='61121a4ecdf5be1b71d69bd8', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+14:18:57.408 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+14:18:57.581 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+14:18:57.851 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+14:18:58.172 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+14:18:58.326 [redisson-netty-5-4] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+14:18:58.327 [redisson-netty-5-4] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+14:19:00.330 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:19:01.281 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+14:19:01.291 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+14:19:01.317 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+14:19:01.455 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+14:19:01.465 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+14:19:01.472 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+14:19:01.474 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+14:19:01.518 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+14:19:01.546 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+14:19:01.566 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 11.725 seconds (JVM running for 12.514)
+14:19:01.884 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:19:01.891 [RMI TCP Connection(5)-127.0.0.1] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+14:20:31.144 [Thread-29] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+14:20:31.188 [Thread-29] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+14:31:52.050 [main] INFO  o.s.c.KotlinDetector - [<clinit>,57] - Kotlin reflection implementation not found at runtime, related features won't be available.
+14:31:52.542 [main] INFO  c.rocki.Application - [logStarting,50] - Starting Application on ShidiandeMac-mini.local with PID 7348 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-app/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+14:31:52.552 [main] INFO  c.rocki.Application - [logStartupProfileInfo,679] - The following profiles are active: dev
+14:31:55.669 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8081"]
+14:31:55.677 [main] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:31:55.677 [main] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+14:31:55.806 [main] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:31:56.611 [main] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+14:31:56.642 [cluster-ClusterId{value='61121d5c02975e1cb47ca800', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+14:31:59.281 [main] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+14:31:59.518 [main] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+14:31:59.577 [main] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+14:31:59.947 [main] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+14:32:00.116 [redisson-netty-5-3] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for 127.0.0.1/127.0.0.1:6379
+14:32:00.116 [redisson-netty-5-4] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
+14:32:02.281 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:32:03.335 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+14:32:03.348 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+14:32:03.378 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+14:32:03.533 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: playTrackUsingGET_1
+14:32:03.544 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_1
+14:32:03.551 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: detailUsingGET_2
+14:32:03.552 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listByAddressUsingGET_1
+14:32:03.589 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator - [startingWith,40] - Generating unique operation named: listForPlaylistUsingGET_1
+14:32:03.618 [main] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8081"]
+14:32:03.635 [main] INFO  c.rocki.Application - [logStarted,59] - Started Application in 11.55 seconds (JVM running for 12.36)
+14:32:04.174 [RMI TCP Connection(1)-192.168.1.40] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:32:04.183 [RMI TCP Connection(2)-192.168.1.40] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+14:32:31.725 [Thread-27] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+14:32:31.768 [Thread-27] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed
+15:01:39.864 [restartedMain] INFO  c.r.CCApplication - [logStarting,50] - Starting CCApplication on ShidiandeMac-mini.local with PID 8596 (/Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server/rocki-admin/target/classes started by ann in /Users/ann/Desktop/Work/PZKJ/rocki/rocki-backend-server)
+15:01:39.867 [restartedMain] INFO  c.r.CCApplication - [logStartupProfileInfo,679] - The following profiles are active: dev
+15:01:43.634 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+15:01:43.642 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+15:01:43.642 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.19]
+15:01:43.754 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+15:01:44.548 [restartedMain] INFO  o.m.driver.cluster - [info,71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+15:01:44.581 [cluster-ClusterId{value='61122458f5815e21944642c3', description='null'}-localhost:27017] INFO  o.m.driver.cluster - [info,76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:606)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 common frames omitted
+15:01:48.373 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,991] - {dataSource-1} inited
+15:01:48.600 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+15:01:48.667 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,66] - Starting with kqueue library
+15:01:50.060 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1208] - Using default implementation for ThreadExecutor
+15:01:50.072 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+15:01:50.072 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.1 created.
+15:01:50.077 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'CCScheduler' with instanceId 'ShidiandeMac-mini.local1628578910062'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+15:01:50.077 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1362] - Quartz scheduler 'CCScheduler' initialized from an externally provided properties instance.
+15:01:50.078 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1366] - Quartz scheduler version: 2.3.1
+15:01:50.079 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@46dfd8cc
+15:01:51.509 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+15:01:52.167 [restartedMain] INFO  org.redisson.Version - [logVersion,41] - Redisson 3.9.1
+15:01:52.344 [redisson-netty-5-11] INFO  o.r.c.p.MasterPubSubConnectionPool - [operationComplete,168] - 1 connections initialized for localhost/127.0.0.1:6379
+15:01:52.346 [redisson-netty-5-5] INFO  o.r.c.p.MasterConnectionPool - [operationComplete,168] - 32 connections initialized for localhost/127.0.0.1:6379
+15:01:53.158 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+15:01:53.170 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+15:01:53.236 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+15:01:53.360 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+15:01:53.384 [restartedMain] INFO  c.r.CCApplication - [logStarted,59] - Started CCApplication in 14.01 seconds (JVM running for 14.824)
+15:01:53.920 [RMI TCP Connection(1)-192.168.1.40] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:01:53.938 [RMI TCP Connection(2)-192.168.1.40] INFO  o.m.driver.cluster - [info,71] - Cluster description not yet available. Waiting for 30000 ms before timing out
+15:01:54.370 [Quartz Scheduler [CCScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628578910062 started.
+15:01:54.864 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9009168, and end block: 9011168
+15:01:54.864 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9009173, and end block: 9011173
+15:02:12.891 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9011168, and end block: 9013168
+15:02:13.004 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9011173, and end block: 9013173
+15:02:27.338 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9013169, and end block: 9015169
+15:02:29.741 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9013174, and end block: 9015174
+15:02:42.200 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9015170, and end block: 9017170
+15:02:43.149 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9015175, and end block: 9017175
+15:02:57.194 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9017176, and end block: 9019176
+15:02:58.066 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9017171, and end block: 9019171
+15:03:12.396 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9019172, and end block: 9021172
+15:03:13.052 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9019177, and end block: 9021177
+15:03:28.689 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9021178, and end block: 9023178
+15:03:32.711 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9021173, and end block: 9023173
+15:03:45.392 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9023174, and end block: 9025174
+15:03:45.710 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9023179, and end block: 9025179
+15:03:58.343 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9025180, and end block: 9027180
+15:03:58.912 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9025175, and end block: 9027175
+15:04:12.908 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9027176, and end block: 9029176
+15:04:13.048 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9027181, and end block: 9029181
+15:04:32.036 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9029182, and end block: 9031182
+15:04:33.197 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9029177, and end block: 9031177
+15:04:42.385 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9031178, and end block: 9033178
+15:04:43.018 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9031183, and end block: 9033183
+15:04:57.754 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9033184, and end block: 9035184
+15:05:01.016 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9033179, and end block: 9035179
+15:05:13.149 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9035180, and end block: 9037180
+15:05:14.496 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9035185, and end block: 9037185
+15:05:28.941 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9037181, and end block: 9039181
+15:05:29.833 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9037186, and end block: 9039186
+15:05:42.096 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9039187, and end block: 9041187
+15:05:46.306 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9039182, and end block: 9041182
+15:05:57.584 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9041188, and end block: 9043188
+15:05:58.656 [schedule-pool-18] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9041183, and end block: 9043183
+15:06:14.126 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9043184, and end block: 9045184
+15:06:14.900 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9043189, and end block: 9045189
+15:06:25.677 [schedule-pool-21] INFO  sys-user - [run,53] - [127.0.0.1]内网IP[admin][Error][验证码已失效]
+15:06:28.390 [schedule-pool-20] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9045190, and end block: 9047190
+15:06:29.481 [schedule-pool-11] INFO  sys-user - [run,53] - [127.0.0.1]内网IP[admin][Success][登录成功]
+15:06:57.315 [schedule-pool-23] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9047191, and end block: 9049191
+15:07:00.538 [schedule-pool-12] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9045185, and end block: 9047185
+15:07:14.149 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9047186, and end block: 9049186
+15:07:14.635 [schedule-pool-24] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9049192, and end block: 9051192
+15:07:28.493 [schedule-pool-25] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9051193, and end block: 9053193
+15:07:30.428 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9049187, and end block: 9051187
+15:07:46.067 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9051188, and end block: 9053188
+15:07:59.410 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9053194, and end block: 9055194
+15:08:02.929 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9053189, and end block: 9055189
+15:08:13.226 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9055195, and end block: 9057195
+15:08:14.425 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9055190, and end block: 9057190
+15:08:28.910 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9057196, and end block: 9059196
+15:08:30.408 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9057191, and end block: 9059191
+15:08:42.964 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9059192, and end block: 9061192
+15:08:48.271 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9059197, and end block: 9061197
+15:08:57.461 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9061198, and end block: 9063198
+15:09:00.293 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9061193, and end block: 9063193
+15:09:12.252 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9063194, and end block: 9065194
+15:09:12.545 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9063199, and end block: 9065199
+15:09:27.078 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9065200, and end block: 9067200
+15:09:28.514 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9065195, and end block: 9067195
+15:09:43.017 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9067196, and end block: 9069196
+15:09:43.434 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9067201, and end block: 9069201
+15:09:58.590 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9069197, and end block: 9071197
+15:09:58.726 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9069202, and end block: 9071202
+15:10:13.047 [schedule-pool-37] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9071198, and end block: 9073198
+15:10:13.325 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9071203, and end block: 9073203
+15:10:28.251 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9073204, and end block: 9075204
+15:10:30.451 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9073199, and end block: 9075199
+15:10:42.266 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9075205, and end block: 9077205
+15:10:42.306 [schedule-pool-39] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9075200, and end block: 9077200
+15:10:59.256 [schedule-pool-40] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9077201, and end block: 9079201
+15:11:00.180 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9077206, and end block: 9079206
+15:11:13.223 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9079207, and end block: 9081207
+15:11:14.800 [schedule-pool-40] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9079202, and end block: 9081202
+15:11:28.375 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9081208, and end block: 9083208
+15:11:30.285 [schedule-pool-42] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9081203, and end block: 9083203
+15:11:44.178 [schedule-pool-43] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9083204, and end block: 9085204
+15:11:44.331 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9083209, and end block: 9085209
+15:11:58.809 [schedule-pool-44] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9085205, and end block: 9087205
+15:11:59.161 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9085210, and end block: 9087210
+15:12:13.104 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9087211, and end block: 9089211
+15:12:13.418 [schedule-pool-45] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9087206, and end block: 9089206
+15:12:27.489 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089212, and end block: 9089286
+15:12:29.816 [schedule-pool-46] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089207, and end block: 9089286
+15:12:42.345 [schedule-pool-47] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089287, and end block: 9089282
+15:12:43.382 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089287, and end block: 9089282
+15:12:57.940 [schedule-pool-47] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089283, and end block: 9089283
+15:12:59.536 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089283, and end block: 9089283
+15:13:12.885 [schedule-pool-50] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089284, and end block: 9089284
+15:13:16.859 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089284, and end block: 9089284
+15:13:28.645 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089285, and end block: 9089285
+15:13:30.830 [schedule-pool-28] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089285, and end block: 9089285
+15:13:43.102 [schedule-pool-29] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089286, and end block: 9089286
+15:13:43.183 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089286, and end block: 9089286
+15:13:57.525 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089287, and end block: 9089287
+15:13:59.889 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089287, and end block: 9089287
+15:14:14.191 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089288, and end block: 9089288
+15:14:15.370 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089288, and end block: 9089288
+15:14:29.816 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089289, and end block: 9089289
+15:14:31.024 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089289, and end block: 9089289
+15:14:43.631 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089290, and end block: 9089290
+15:14:43.918 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089290, and end block: 9089290
+15:14:58.934 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089291, and end block: 9089291
+15:14:59.679 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089291, and end block: 9089291
+15:15:15.324 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089292, and end block: 9089292
+15:15:16.191 [schedule-pool-36] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089292, and end block: 9089292
+15:15:27.076 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089293, and end block: 9089293
+15:15:28.134 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089293, and end block: 9089293
+15:15:48.130 [schedule-pool-37] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089294, and end block: 9089294
+15:16:02.925 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089294, and end block: 9089295
+15:16:04.763 [schedule-pool-37] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089295, and end block: 9089296
+15:16:14.140 [schedule-pool-37] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089297, and end block: 9089296
+15:16:18.354 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089296, and end block: 9089297
+15:16:29.770 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089298, and end block: 9089297
+15:16:31.186 [schedule-pool-37] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089297, and end block: 9089297
+15:16:42.579 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089298, and end block: 9089298
+15:16:44.639 [schedule-pool-22] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089298, and end block: 9089298
+15:16:59.379 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089299, and end block: 9089299
+15:17:00.975 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089299, and end block: 9089299
+15:17:12.726 [schedule-pool-44] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089300, and end block: 9089300
+15:17:13.334 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089300, and end block: 9089300
+15:17:27.726 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089301, and end block: 9089301
+15:17:28.839 [schedule-pool-44] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089301, and end block: 9089301
+15:17:42.855 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089302, and end block: 9089302
+15:17:45.015 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089302, and end block: 9089302
+15:17:58.563 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089303, and end block: 9089303
+15:17:59.162 [schedule-pool-25] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089303, and end block: 9089303
+15:18:12.921 [schedule-pool-13] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089304, and end block: 9089304
+15:18:13.478 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089304, and end block: 9089304
+15:18:27.843 [schedule-pool-27] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089305, and end block: 9089305
+15:18:32.852 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089305, and end block: 9089306
+15:18:44.514 [schedule-pool-27] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089306, and end block: 9089306
+15:18:44.915 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089307, and end block: 9089306
+15:18:58.707 [schedule-pool-28] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089307, and end block: 9089307
+15:18:59.995 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089307, and end block: 9089307
+15:19:12.907 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089308, and end block: 9089308
+15:19:14.739 [schedule-pool-29] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089308, and end block: 9089308
+15:19:28.002 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089309, and end block: 9089309
+15:19:29.692 [schedule-pool-31] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089309, and end block: 9089309
+15:19:43.689 [schedule-pool-32] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089310, and end block: 9089310
+15:19:45.074 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089310, and end block: 9089310
+15:19:57.393 [schedule-pool-33] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089311, and end block: 9089311
+15:19:57.957 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089311, and end block: 9089311
+15:20:12.354 [schedule-pool-34] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089312, and end block: 9089312
+15:20:12.969 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089312, and end block: 9089312
+15:20:28.440 [schedule-pool-35] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089313, and end block: 9089313
+15:20:28.743 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089313, and end block: 9089313
+15:20:42.785 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089314, and end block: 9089314
+15:20:42.788 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089314, and end block: 9089314
+15:20:57.353 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089315, and end block: 9089315
+15:20:59.671 [schedule-pool-36] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089315, and end block: 9089315
+15:21:13.456 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089316, and end block: 9089316
+15:21:14.629 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089316, and end block: 9089316
+15:21:28.232 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089317, and end block: 9089317
+15:21:29.980 [schedule-pool-21] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089317, and end block: 9089317
+15:21:43.176 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089318, and end block: 9089318
+15:21:43.424 [schedule-pool-11] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089318, and end block: 9089318
+15:21:56.990 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089319, and end block: 9089319
+15:21:58.808 [schedule-pool-41] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089319, and end block: 9089319
+15:22:14.479 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089320, and end block: 9089320
+15:22:15.140 [schedule-pool-40] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089320, and end block: 9089320
+15:22:27.258 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089321, and end block: 9089321
+15:22:33.418 [schedule-pool-42] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089321, and end block: 9089321
+15:22:43.104 [schedule-pool-43] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089322, and end block: 9089322
+15:22:43.418 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089322, and end block: 9089322
+15:22:57.037 [schedule-pool-6] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089323, and end block: 9089323
+15:22:58.398 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089323, and end block: 9089323
+15:23:13.843 [schedule-pool-24] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089324, and end block: 9089324
+15:23:14.027 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089324, and end block: 9089324
+15:23:28.576 [schedule-pool-44] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089325, and end block: 9089325
+15:23:28.619 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089325, and end block: 9089325
+15:23:42.620 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089326, and end block: 9089326
+15:23:43.458 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089326, and end block: 9089326
+15:23:57.553 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089327, and end block: 9089327
+15:23:59.783 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089327, and end block: 9089327
+15:24:12.385 [schedule-pool-50] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089328, and end block: 9089328
+15:24:19.494 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089328, and end block: 9089329
+15:24:28.843 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089330, and end block: 9089329
+15:24:30.038 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089329, and end block: 9089329
+15:24:43.423 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089330, and end block: 9089330
+15:24:45.235 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089330, and end block: 9089330
+15:24:57.232 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089331, and end block: 9089331
+15:24:59.024 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089331, and end block: 9089331
+15:25:13.384 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089332, and end block: 9089332
+15:25:13.742 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089332, and end block: 9089332
+15:25:28.327 [schedule-pool-33] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089333, and end block: 9089333
+15:25:30.619 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089333, and end block: 9089333
+15:25:43.391 [schedule-pool-18] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089334, and end block: 9089334
+15:25:43.656 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089334, and end block: 9089334
+15:26:00.094 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089335, and end block: 9089335
+15:26:01.780 [schedule-pool-1] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089335, and end block: 9089335
+15:26:17.440 [schedule-pool-36] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089336, and end block: 9089336
+15:26:28.012 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089337, and end block: 9089337
+15:26:32.499 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089336, and end block: 9089337
+15:26:42.404 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089338, and end block: 9089338
+15:26:44.777 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089338, and end block: 9089338
+15:26:58.658 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089339, and end block: 9089339
+15:26:58.816 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089339, and end block: 9089339
+15:27:14.457 [schedule-pool-37] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089340, and end block: 9089340
+15:27:15.290 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089340, and end block: 9089340
+15:27:28.944 [schedule-pool-42] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089341, and end block: 9089341
+15:27:29.306 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089341, and end block: 9089341
+15:27:44.974 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089342, and end block: 9089342
+15:27:47.304 [schedule-pool-43] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089342, and end block: 9089342
+15:27:58.375 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089343, and end block: 9089343
+15:27:58.575 [schedule-pool-45] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089343, and end block: 9089343
+15:28:13.133 [schedule-pool-46] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089344, and end block: 9089344
+15:28:13.535 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089344, and end block: 9089344
+15:28:28.415 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089345, and end block: 9089345
+15:28:30.453 [schedule-pool-46] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089345, and end block: 9089345
+15:28:43.576 [schedule-pool-25] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089346, and end block: 9089346
+15:28:45.258 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089346, and end block: 9089346
+15:28:58.453 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089347, and end block: 9089347
+15:29:02.541 [schedule-pool-8] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089347, and end block: 9089347
+15:29:15.616 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089348, and end block: 9089348
+15:29:16.548 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089348, and end block: 9089348
+15:29:28.363 [schedule-pool-28] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089349, and end block: 9089349
+15:29:29.230 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089349, and end block: 9089349
+15:29:42.610 [schedule-pool-29] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089350, and end block: 9089350
+15:29:43.382 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089350, and end block: 9089350
+15:29:58.700 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089351, and end block: 9089351
+15:30:00.732 [schedule-pool-16] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089351, and end block: 9089351
+15:30:13.822 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089352, and end block: 9089352
+15:30:14.420 [schedule-pool-9] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089352, and end block: 9089352
+15:30:27.381 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089353, and end block: 9089353
+15:30:27.900 [schedule-pool-17] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089353, and end block: 9089353
+15:30:43.154 [schedule-pool-33] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089354, and end block: 9089354
+15:30:44.699 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089354, and end block: 9089354
+15:30:58.938 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089355, and end block: 9089355
+15:31:00.060 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089355, and end block: 9089355
+15:31:13.897 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089356, and end block: 9089356
+15:31:18.102 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089356, and end block: 9089356
+15:31:27.716 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089357, and end block: 9089357
+15:31:31.382 [schedule-pool-4] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089357, and end block: 9089357
+15:31:43.552 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089358, and end block: 9089358
+15:31:43.816 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089358, and end block: 9089358
+15:31:57.655 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089359, and end block: 9089359
+15:32:00.174 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089359, and end block: 9089359
+15:32:12.696 [schedule-pool-41] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089360, and end block: 9089360
+15:32:13.950 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089360, and end block: 9089360
+15:32:28.735 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089361, and end block: 9089361
+15:32:31.697 [schedule-pool-41] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089361, and end block: 9089361
+15:32:42.595 [schedule-pool-23] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089362, and end block: 9089362
+15:32:45.253 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089362, and end block: 9089362
+15:32:57.294 [schedule-pool-43] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089363, and end block: 9089363
+15:32:57.351 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089363, and end block: 9089363
+15:33:13.087 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089364, and end block: 9089364
+15:33:15.217 [schedule-pool-45] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089364, and end block: 9089364
+15:33:27.296 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089365, and end block: 9089365
+15:33:29.424 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089365, and end block: 9089365
+15:33:43.778 [schedule-pool-49] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089366, and end block: 9089366
+15:33:44.270 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089366, and end block: 9089366
+15:33:58.639 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089367, and end block: 9089367
+15:33:58.665 [schedule-pool-49] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089367, and end block: 9089367
+15:34:12.319 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089368, and end block: 9089368
+15:34:14.162 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089368, and end block: 9089368
+15:34:27.340 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089369, and end block: 9089369
+15:34:27.679 [schedule-pool-27] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089369, and end block: 9089369
+15:34:42.866 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089370, and end block: 9089370
+15:34:43.737 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089370, and end block: 9089370
+15:34:57.862 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089371, and end block: 9089371
+15:34:59.917 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089371, and end block: 9089371
+15:35:13.479 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089372, and end block: 9089372
+15:35:15.671 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089372, and end block: 9089372
+15:35:29.228 [schedule-pool-15] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089373, and end block: 9089373
+15:35:32.444 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089373, and end block: 9089373
+15:35:43.456 [schedule-pool-35] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089374, and end block: 9089374
+15:35:45.297 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089374, and end block: 9089374
+15:35:57.536 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089375, and end block: 9089375
+15:35:59.935 [schedule-pool-19] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089375, and end block: 9089375
+15:36:13.479 [schedule-pool-10] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089376, and end block: 9089376
+15:36:14.137 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089376, and end block: 9089376
+15:36:28.699 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089377, and end block: 9089377
+15:36:29.716 [schedule-pool-39] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089377, and end block: 9089377
+15:36:42.463 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089378, and end block: 9089378
+15:36:44.407 [schedule-pool-20] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089378, and end block: 9089378
+15:36:58.252 [schedule-pool-7] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089379, and end block: 9089379
+15:36:58.654 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089379, and end block: 9089379
+15:37:14.414 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089380, and end block: 9089380
+15:37:14.534 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089380, and end block: 9089380
+15:37:27.911 [schedule-pool-26] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089381, and end block: 9089381
+15:37:33.362 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089381, and end block: 9089381
+15:37:42.287 [schedule-pool-42] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089382, and end block: 9089382
+15:37:43.332 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089382, and end block: 9089382
+15:37:58.413 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089383, and end block: 9089383
+15:38:00.291 [schedule-pool-42] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089383, and end block: 9089383
+15:38:12.048 [schedule-pool-24] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089384, and end block: 9089384
+15:38:12.934 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089384, and end block: 9089384
+15:38:28.362 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089385, and end block: 9089385
+15:38:29.945 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089385, and end block: 9089385
+15:38:44.496 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089386, and end block: 9089386
+15:38:45.170 [schedule-pool-48] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089386, and end block: 9089386
+15:38:57.459 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089387, and end block: 9089387
+15:38:58.966 [schedule-pool-49] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089387, and end block: 9089387
+15:39:12.706 [schedule-pool-2] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089388, and end block: 9089388
+15:39:13.687 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089388, and end block: 9089388
+15:39:29.386 [schedule-pool-14] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089389, and end block: 9089389
+15:39:30.394 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089389, and end block: 9089389
+15:39:44.944 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089390, and end block: 9089390
+15:39:45.811 [schedule-pool-3] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089390, and end block: 9089390
+15:39:58.178 [schedule-pool-29] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089391, and end block: 9089391
+15:39:59.113 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089391, and end block: 9089391
+15:40:11.984 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089392, and end block: 9089392
+15:40:13.621 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089392, and end block: 9089392
+15:40:29.974 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089393, and end block: 9089393
+15:40:30.150 [schedule-pool-30] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089393, and end block: 9089393
+15:40:44.651 [schedule-pool-33] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089394, and end block: 9089394
+15:40:47.549 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089394, and end block: 9089394
+15:41:17.963 [schedule-pool-33] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089395, and end block: 9089396
+15:41:19.769 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089395, and end block: 9089396
+15:41:58.648 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089397, and end block: 9089399
+15:41:59.069 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089397, and end block: 9089399
+15:42:28.108 [schedule-pool-5] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089400, and end block: 9089401
+15:42:29.347 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089400, and end block: 9089401
+15:43:03.049 [schedule-pool-23] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089402, and end block: 9089403
+15:43:04.248 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089402, and end block: 9089403
+15:43:42.315 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089404, and end block: 9089406
+15:44:06.713 [schedule-pool-47] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089404, and end block: 9089407
+15:44:18.272 [schedule-pool-47] INFO  c.r.q.t.d.e.AutomaticStake - [monitorStakePoolEvent,85] - start block:9089408, and end block: 9089408
+15:44:19.023 [schedule-pool-38] INFO  c.r.q.t.d.e.AutomaticBurn - [monitorBurnPoolEvent,85] - start block:9089407, and end block: 9089408
+15:44:41.536 [Thread-44] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628578910062 paused.
+15:44:41.683 [Thread-44] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628578910062 shutting down.
+15:44:41.684 [Thread-44] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628578910062 paused.
+15:44:41.686 [Thread-44] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler CCScheduler_$_ShidiandeMac-mini.local1628578910062 shutdown complete.
+15:44:41.688 [Thread-44] INFO  sys-user - [shutdownAsyncManager,31] - ====关闭后台任务任务线程池====
+15:44:41.728 [Thread-44] INFO  c.a.d.p.DruidDataSource - [close,1928] - {dataSource-1} closed

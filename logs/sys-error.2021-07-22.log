@@ -1,0 +1,19 @@
+12:41:44.165 [main] ERROR o.s.b.SpringApplication - [reportFailure,858] - Application run failed
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is java.lang.IllegalStateException: Unable to create the directory [/root/tomcat] to use as the base directory
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:157)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.rocki.Application.main(Application.java:18)
+Caused by: java.lang.IllegalStateException: Unable to create the directory [/root/tomcat] to use as the base directory
+	at org.apache.catalina.startup.Tomcat.initBaseDir(Tomcat.java:815)
+	at org.apache.catalina.startup.Tomcat.getServer(Tomcat.java:624)
+	at org.apache.catalina.startup.Tomcat.getService(Tomcat.java:557)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:171)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+	... 8 common frames omitted
